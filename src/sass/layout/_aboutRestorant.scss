@@ -1,0 +1,112 @@
+.section-about-restaurant {
+  background-color: #fffdee;
+  height: 1191px;
+  overflow: hidden;
+  position: relative;
+
+  // УДАЛИТЬ НЕ ЗАБЫТЬ
+  max-width: 414px;
+  margin: 0 auto;
+}
+
+//  КОНТЕЙНЕРІ
+.restaurant-wrap:nth-child(even) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// ОФОРМЛЕНИЕ ТЕКСТА
+.restaurant__slogan {
+  font-family: 'Times New Roman';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+
+  color: #b4b4b4;
+
+  padding-top: 16px;
+}
+.restaurant__name {
+  font-family: Film P3 Wide Light;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 43px;
+  /* identical to box height */
+
+  letter-spacing: 0.3em;
+
+  color: #494848;
+
+  margin-top: 12px;
+}
+
+.restaurant__description {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.02em;
+
+  color: #5f5f5f;
+
+  margin-top: 12px;
+
+  // mobile
+
+  max-width: 256px;
+}
+
+.accent_description {
+  color: #c79002;
+  margin-left: 15px;
+}
+
+// КАРТИНКИ РЕСТОРАНА
+
+.restaurant-container-img {
+  margin-top: 28px;
+}
+.img-position-one {
+  margin-left: auto;
+  height: 332px;
+  width: 244px;
+}
+
+// СЛАЙДЕР
+
+.restaurant-slaider-wrap {
+  position: absolute;
+  top: 900px;
+  right: -155px;
+  width: 495px;
+  margin: 0 auto;
+}
+
+.slick-slide {
+  margin-right: 40px;
+}
+.slick-next::before {
+  content: '→';
+  width: 30px;
+  height: 17px;
+  background-color: #000000 !important;
+  font-size: 35px !important;
+  font-family: 'Courier New', Courier, monospace !important;
+}
+.slick-next {
+  top: 120% !important;
+  right: 191px !important;
+}
+.slick-prev:before {
+  content: '←';
+  width: 30px;
+  height: 17px;
+  background-color: #000000;
+  font-size: 35px;
+  font-family: 'Courier New', Courier, monospace;
+}
+.slick-prev {
+  top: 120% !important;
+  left: 235px !important;
+}
