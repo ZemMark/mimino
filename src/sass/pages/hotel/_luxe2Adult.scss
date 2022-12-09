@@ -1,0 +1,234 @@
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6,
+// p {
+//   margin: 0;
+// }
+
+// img {
+//   display: block;
+//   max-width: 100%;
+//   height: auto;
+// }
+
+// ul,
+// ol {
+//   padding: 0;
+//   margin: 0;
+// }
+
+// .list {
+//   list-style-type: none;
+// }
+
+// button {
+//   display: block;
+//   cursor: pointer;
+//   border: none;
+// }
+
+// *,
+// ::after,
+// ::before {
+//   box-sizing: border-box;
+// }
+
+// @mixin phone {
+//   @media screen and (min-width: 414px) {
+//     @content;
+//   }
+// }
+
+// @mixin tablet {
+//   @media screen and (min-width: 1024px) {
+//     @content;
+//   }
+// }
+
+// @mixin desktop {
+//   @media screen and (min-width: 1280px) {
+//     @content;
+//   }
+// }
+
+// .container {
+//   width: 100%;
+//   margin: 0 auto;
+//   padding-left: 15px;
+//   padding-right: 15px;
+//   border: solid 1px red;
+
+//   @include phone {
+//     width: 414px;
+//   }
+
+//   @include tablet {
+//     width: 1024px;
+//     padding-left: 47px;
+//     padding-right: 47px;
+//   }
+
+//   @include desktop {
+//     width: 1280px;
+//     padding-left: 85px;
+//     padding-right: 85px;
+//   }
+// }
+
+// .wrap-discribe {
+//   display: block;
+
+//   @include tablet {
+//     position: relative;
+//     display: flex;
+//     gap: 26px;
+//     margin-bottom: 176px;
+//   }
+// }
+
+// .section {
+//   border: solid 1px blue;
+//   background: #fffdee;
+//   padding-top: 32px;
+//   padding-bottom: 32px;
+
+//   @include tablet {
+//     padding-top: 62px;
+//     padding-bottom: 104px;
+//   }
+
+//   @include desktop {
+//     padding-top: 72px;
+//     padding-bottom: 112px;
+//   }
+// }
+
+// .text-pre-title {
+//   margin-bottom: 8px;
+//   font-family: "Times New Roman";
+//   font-style: normal;
+//   font-weight: 400;
+//   font-size: 20px;
+//   line-height: 1.15;
+//   color: #b4b4b4;
+
+//   @include tablet {
+//     margin-bottom: 4px;
+//     font-size: 32px;
+//   }
+// }
+
+// .text-logo {
+//   margin-bottom: 32px;
+//   font-family: "Film P3";
+//   font-style: normal;
+//   font-weight: 700;
+//   font-size: 40px;
+//   line-height: 1.08;
+//   letter-spacing: 0.3em;
+//   color: #494848;
+//   text-transform: uppercase;
+
+//   @include tablet {
+//     margin-bottom: 62px;
+//     font-size: 64px;
+//   }
+
+//   @include desktop {
+//     margin-bottom: 72px;
+//   }
+// }
+
+// .text-title {
+//   margin-bottom: 12px;
+//   font-family: "Times New Roman";
+//   font-style: normal;
+//   font-weight: 700;
+//   font-size: 24px;
+//   line-height: 1.17;
+//   letter-spacing: 0.05em;
+//   color: #000000;
+//   & > span {
+//     text-transform: uppercase;
+//   }
+//   @include tablet {
+//     margin-bottom: 16px;
+//     font-size: 30px;
+//   }
+
+//   @include desktop {
+//     margin-bottom: 24px;
+//     font-size: 36px;
+//   }
+// }
+
+// .text-after-title {
+//   width: 258px;
+//   margin-bottom: 32px;
+//   font-family: "Montserrat";
+//   font-style: normal;
+//   font-weight: 600;
+//   font-size: 12px;
+//   line-height: 1.25;
+//   letter-spacing: 0.02em;
+//   color: #5f5f5f;
+//   @include tablet {
+//     font-size: 16px;
+//     width: 439px;
+//   }
+
+//   @include desktop {
+//     font-weight: 700;
+//     width: 400px;
+//   }
+// }
+
+// .thumb {
+//   position: relative;
+//   @include tablet {
+//     position: absolute;
+//     top: -94px;
+//     left: 465px;
+//   }
+// }
+
+// .room-img {
+//   margin-left: auto;
+//   margin-bottom: 32px;
+//   @include tablet {
+//     width: 400px;
+//   }
+
+//   @include desktop {
+//     width: 460px;
+//   }
+// }
+
+// .wrap-info {
+//   display: block;
+//   @include tablet {
+//     display: flex;
+//   }
+// }
+
+// .btn {
+//   min-width: 236px;
+//   padding-top: 14px;
+//   padding-bottom: 14px;
+//   margin-top: 16px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   background: #000000;
+//   border: 2px solid #fffdee;
+//   border-radius: 25px;
+//   font-family: "Montserrat";
+//   font-style: normal;
+//   font-weight: 700;
+//   font-size: 16px;
+//   line-height: 1.25;
+//   letter-spacing: 0.02em;
+//   color: #f3c653;
+// }

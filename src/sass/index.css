@@ -1,0 +1,105 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+@import '~node_modules/modern-normalize/modern-normalize.css';
+body {
+  font-family: "Montserrat", Sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  background-color: #ffffff;
+}
+
+button {
+  cursor: pointer;
+  border-style: none;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@font-face {
+  font-family: "Film P3 Wide Light";
+  src: url(../fonts/FontsFree-Net-FilmP3WideLight.ttf);
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 414px) {
+  .container {
+    width: 414px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 1024px;
+    padding-left: 47px;
+    padding-right: 47px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    padding-left: 85px;
+    padding-right: 85px;
+    width: 1280px;
+  }
+}
+
+.header {
+  font-family: "Film P3 Wide Light";
+  color: palevioletred;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+}/*# sourceMappingURL=index.css.map */
