@@ -1,69 +1,85 @@
 <section class="amenities">
-  <h2 class="amenities__title">ЗРУЧНОСТІ У НОМЕРІ</h2>
-  <p class="amenities__description">
-    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-    Velit officia consequat duis enim velit mollit. Exercitation veniam
-    consequat sunt nostrud amet.
-  </p>
-  <ul class="amenities__list">
-    <li class="amenities__item">
-      <h3 class="amenities__subtitle">ЗАГАЛЬНІ</h3>
-      <p class="amenities__text">
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-        sint. Velit officia consequat duis enim velit mollit. Exercitation
-        veniam consequat sunt nostrud amet.
-      </p>
-      <p class="amenities__text">
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-        sint. Velit officia consequat duis enim velit mollit. Exercitation
-        veniam consequat sunt nostrud amet.
-      </p>
-    </li>
-    <li class="amenities__item">
-      <h3 class="amenities__subtitle">ВАННА КІМНАТА</h3>
-      <p class="amenities__text">
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-        sint. Velit officia consequat duis enim velit mollit. Exercitation
-        veniam consequat sunt nostrud amet.
-      </p>
-      <p class="amenities__text">
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-        sint. Velit officia consequat duis enim velit mollit. Exercitation
-        veniam consequat sunt nostrud amet.
-      </p>
-    </li>
-    <li class="amenities__item">
-      <h3 class="amenities__subtitle">СПАЛЬНЯ</h3>
-      <p class="amenities__text">
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-        sint.
-      </p>
-    </li>
-    <li class="amenities__item">
-      <h3 class="amenities__subtitle">КУХНЯ</h3>
-      <p class="amenities__text">
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-        sint.
-      </p>
-      <p class="amenities__text">
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-        sint.
-      </p>
-    </li>
-    <li class="amenities__item">
-      <h3 class="amenities__subtitle">МЕДІА</h3>
-      <p class="amenities__text">
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-        sint. Velit officia consequat duis enim velit mollit.
-      </p>
-    </li>
-  </ul>
-  <!-- СТИЛІВ КОНПКИ ЩЕ НЕМАЄ -->
-  <button type="button" class="button">ОФОРМИТИ БРОНЮВАННЯ</button>
-  <a href="./hotel.html" class="amenities__link"
-    >Повернутися до перегляду номерів
-    <svg class="amenities__link-icon" width="24" height="24">
-      <use href="../src/images/icons.svg#arrow-right-24-min"></use>
-    </svg>
-  </a>
+  <div class="container">
+    <h2 class="amenities__title">Зручності у номері</h2>
+    <p class="amenities__description">
+      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+      Velit officia consequat duis enim velit mollit. Exercitation veniam
+      consequat sunt nostrud amet.
+    </p>
+    <ul class="amenities__list">
+      <li class="amenities__item">
+        <h3 class="amenities__subtitle">Загальні</h3>
+        <div class="amenities__wrap">
+          <p class="amenities__text">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+          <p class="amenities__text">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+        </div>
+      </li>
+      <li class="amenities__item">
+        <h3 class="amenities__subtitle">Ванна кімната</h3>
+        <div class="amenities__wrap">
+          <p class="amenities__text">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+          <p class="amenities__text">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+        </div>
+      </li>
+      <li class="amenities__item">
+        <h3 class="amenities__subtitle">Спальня</h3>
+        <div class="amenities__wrap">
+          <p class="amenities__text">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint.
+          </p>
+        </div>
+      </li>
+      <li class="amenities__item">
+        <h3 class="amenities__subtitle">Кухня</h3>
+        <div class="amenities__wrap">
+          <p class="amenities__text">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint.
+          </p>
+          <p class="amenities__text">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint.
+          </p>
+        </div>
+      </li>
+      <li class="amenities__item">
+        <h3 class="amenities__subtitle">Медіа</h3>
+        <div class="amenities__wrap">
+          <p class="amenities__text">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit.
+          </p>
+        </div>
+      </li>
+    </ul>
+    <!-- ПРОБЛЕМИ З КНОПКОЮ -->
+    <div class="amenities__button-wrap">
+      <button type="button" class="amenitites__button">
+        Офоромити бронювання
+      </button>
+      <a href="./hotel.html" class="amenities__link"
+        >Повернутися до перегляду номерів
+        <svg class="amenities__link-icon" width="24" height="24">
+          <use href="../src/images/icons.svg#arrow-right-24-min"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
 </section>
