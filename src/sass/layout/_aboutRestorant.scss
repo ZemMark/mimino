@@ -66,6 +66,10 @@
 
 .restaurant-container-img {
   margin-top: 28px;
+  margin-left: auto;
+  @media screen and (max-width: 1023px) {
+    max-width: 244px;
+  }
 }
 .img-position-one {
   margin-left: auto;
@@ -80,6 +84,7 @@
     position: relative;
     left: 83px;
     margin: 0;
+    margin-top: 32px;
   }
   &__container {
     width: 330px;

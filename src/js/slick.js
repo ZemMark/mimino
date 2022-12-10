@@ -1,11 +1,10 @@
 // about-restaurant js slaider
 
-$('.about-restaurant-slaider').slick({
-  infinite: true,
-  slidesToShow: 2,
-  slidesToScroll: 1,
-  // autoplay: true,
-});
+// $('.about-restaurant-slaider').slick({
+//   infinite: true,
+//   slidesToShow: 2,
+//   slidesToScroll: 1,
+// });
 
 $(document).ready(function () {
   $('.restaurant-about-slider').slick({
@@ -14,5 +13,6 @@ $(document).ready(function () {
     variableWidth: true,
     appendArrows: $('.restaurant-about__slider-nav'),
     speed: 300,
+    autoplay: true,
   });
 });
