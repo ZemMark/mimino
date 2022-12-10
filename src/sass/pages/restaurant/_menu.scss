@@ -1,5 +1,6 @@
 .menu-section {
   background-color: #F0ECD6;
+  color: $textBlackColor;
   padding: 32px 0;
   @include tablet {
   padding: 60px 0;
@@ -8,6 +9,11 @@
 
 .title {
   text-transform:uppercase;
+  font-family: 'Times New Roman';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 37px;
 }
 
 .tables-wrap {
@@ -15,11 +21,9 @@
    display: flex;
    flex-direction: column;
    flex-wrap: wrap;
-  //  justify-content: space-between;
-  align-content: space-between;
+    align-content: space-between;
    height: 620px;
   }
-
 }
 table {
     text-align: left;
@@ -36,7 +40,6 @@ table {
   table caption {
     text-align: left;
     padding: 10px 0;
-
     font-family: 'Times New Roman';
     font-weight: 700;
     font-size: 20px;
@@ -44,7 +47,6 @@ table {
 
     .collumn-head {
     width: 60%;
-     // padding-top: 3px;
     font-weight: 500;
     font-size: 14px;
     @include tablet {
