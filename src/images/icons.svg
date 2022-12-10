@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
 <symbol id="arrow-left-min" viewBox="0 0 32 32">
@@ -46,4 +47,19 @@
       <path d="M53.481 14.222H7.122L17.789 3.555l-2.517-2.514L.316 15.999l14.958 14.958 2.516-2.514L7.123 17.776h46.359V14.22z"/></symbol>
 </defs>
 </svg>
+<<<<<<< Updated upstream
 
+=======
+=======
+<svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+
+    <symbol id="icon-next-button" viewBox="0 0 53 32">
+      <path d="m38.208 1.042-2.514 2.514 10.667 10.667H0v3.556h46.361L35.694 28.446l2.514 2.514 14.958-14.958L38.208 1.044z"/>
+    </symbol>
+    <symbol id="icon-prev-button" viewBox="0 0 55 32">
+      <path d="M53.481 14.222H7.122L17.789 3.555l-2.517-2.514L.316 15.999l14.958 14.958 2.516-2.514L7.123 17.776h46.359V14.22z"/>
+  </defs>
+  </svg>
+>>>>>>> about-restaurant
+>>>>>>> Stashed changes
