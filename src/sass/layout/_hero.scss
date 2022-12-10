@@ -79,10 +79,20 @@
 // adress
 .hero-main-adress {
   display: flex;
-
   position: absolute;
-  top: 64px;
-  right: 15px;
+  @media screen and (max-width: 1023px) {
+    top: 64px;
+    right: 15px;
+  }
+
+  @include tablet {
+    bottom: 64px;
+    left: 47px;
+  }
+
+  @include desktop {
+    left: 85px;
+  }
 }
 
 .hero-main-adress__link {
@@ -130,6 +140,7 @@
   color: #ffffff;
 
   @include tablet {
+    margin-bottom: 16px;
     font-size: 128px;
     line-height: 1.08;
   }
@@ -154,6 +165,10 @@
   letter-spacing: 0.02em;
 
   color: #ffffff;
+
+  @include tablet {
+    margin-bottom: 56px;
+  }
 }
 
 .hero-main__moto {
@@ -170,8 +185,20 @@
   letter-spacing: 0.05em;
 
   color: #ffffff;
-}
 
+  @include tablet {
+    margin-bottom: 145px;
+  }
+}
+// button
+
+.hero-main-button__list {
+  @include tablet {
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+  }
+}
 .hero-main__button-table {
   margin-left: auto;
   margin-right: auto;
@@ -217,18 +244,15 @@
 }
 
 .hero-main-social {
-  padding-left: 16px;
-}
-// .hero-main-social__link {
-//   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//   &:hover {
-//     fill: #ffffff;
-//   }
+  @media screen and (max-width: 1023px) {
+    padding-left: 15px;
+  }
 
-//   &:focus {
-//     fill: #ffffff;
-//   }
-// }
+  @include desktop {
+    display: none;
+  }
+}
+
 .hero-main-social__list {
   display: flex;
   gap: 23px;
