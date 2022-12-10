@@ -295,13 +295,13 @@ p {
   color: #f3c653;
 }
 
-.restaurant-slaider-wrap {
+.lux-room-slaider-wrap {
   width: 418px;
   margin-left: -135px;
   margin-bottom: 72px;
 }
 @media screen and (min-width: 1024px) {
-  .restaurant-slaider-wrap {
+  .lux-room-slaider-wrap {
     width: 428px;
   }
 }
