@@ -1,12 +1,18 @@
 .section-about-restaurant {
   background-color: #fffdee;
-
   // УДАЛИТЬ НЕ ЗАБЫТЬ
-  margin: 0 auto;
+
+  @media screen and (min-width: 320px) and (max-width: 413px) {
+    height: 1060px;
+    overflow: hidden;
+  }
+
+  @media screen and (min-width: 413px) and (max-width: 1023px) {
+    height: 1160px;
+  }
 }
 
 .container {
-  background-color: #fffdee;
 }
 //  КОНТЕЙНЕРІ
 
