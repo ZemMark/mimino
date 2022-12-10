@@ -1,21 +1,42 @@
 .header {
   display: flex;
+<<<<<<< Updated upstream
   width: 100%;
   height: 64px;
   background-color: transparent;
   position: absolute;
   justify-content: space-around;
+=======
+  width: 414px;
+  height: 64px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: transparent;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  justify-content: space-between;
+>>>>>>> Stashed changes
 }
 
 .header-logo {
   font-family: 'Film P3 Wide Light';
   font-style: normal;
   font-weight: 700;
+<<<<<<< Updated upstream
   font-size: 36px;
   line-height: 39px;
   letter-spacing: 0.3em;
   padding-top: 16px;
   color: aqua;
+=======
+  /*---font-size змінити на : 36px;---*/
+  font-size: 24px;
+  line-height: 39px;
+  letter-spacing: 0.3em;
+  padding-top: 16px;
+  color: darkred;
+>>>>>>> Stashed changes
   text-decoration: none;
 }
 
@@ -27,10 +48,27 @@
   display: flex;
   list-style: none;
   gap: 20px;
+<<<<<<< Updated upstream
 }
 
 .contacts-link {
   display: none;
+=======
+  margin: 0;
+}
+
+.contacts-link {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+>>>>>>> Stashed changes
 }
 
 .contacts-item {
@@ -54,14 +92,49 @@
   fill: #f3c653;
 }
 
+<<<<<<< Updated upstream
 .box {
   width: 100%;
   height: 400px;
   background-color: blue;
+=======
+/*--- не забути видалити ---*/
+.box {
+  width: 414px;
+  height: 400px;
+  background-color: rgb(255, 255, 255);
+>>>>>>> Stashed changes
   margin-left: auto;
   margin-right: auto;
 }
 
+<<<<<<< Updated upstream
 .soc-icon {
   display: none;
+=======
+.soc-link {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.soc-icon {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+>>>>>>> Stashed changes
 }
