@@ -100,8 +100,6 @@ p {
 }
 
 .container {
-  padding-left: 15px;
-  padding-right: 15px;
   border: solid 1px red;
 }
 
@@ -232,7 +230,14 @@ p {
   .thumb {
     position: absolute;
     top: -94px;
-    left: 465px;
+    right: 65px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .thumb {
+    position: absolute;
+    top: -105px;
+    right: 95px;
   }
 }
 
@@ -257,7 +262,14 @@ p {
 @media screen and (min-width: 1024px) {
   .wrap-info {
     display: flex;
+    justify-content: space-between;
   }
+}
+
+.overflow {
+  overflow: hidden;
+  margin-left: -15px;
+  border: solid 1px yellow;
 }
 
 .list-btn {
@@ -284,15 +296,26 @@ p {
 }
 
 .restaurant-slaider-wrap {
-  position: absolute;
-  top: 900px;
-  right: -155px;
-  width: 495px;
-  margin: 0 auto;
+  width: 418px;
+  margin-left: -135px;
+  margin-bottom: 72px;
+}
+@media screen and (min-width: 1024px) {
+  .restaurant-slaider-wrap {
+    width: 428px;
+  }
+}
+
+.slaider-img-wrap.slick-slide {
+  width: 194px !important;
+}
+
+.slick-track {
+  width: 2500px !important;
 }
 
 .slick-slide {
-  margin-right: 40px;
+  margin-right: 16px;
 }
 
 .slick-next::before {
@@ -320,5 +343,5 @@ p {
 
 .slick-prev {
   top: 120% !important;
-  left: 235px !important;
+  left: 155px !important;
 }/*# sourceMappingURL=index.css.map */
