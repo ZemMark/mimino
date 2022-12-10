@@ -1,0 +1,24 @@
+.footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo {
+  text-decoration: none;
+}
+.footer-menu {
+  margin-left: 85px;
+}
+.footer-socials__list {
+  display: flex;
+  flex-direction: row;
+}
+.footer-socials__text {
+  display: none;
+}
