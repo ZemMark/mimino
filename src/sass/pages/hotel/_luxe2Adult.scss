@@ -162,3 +162,41 @@
   letter-spacing: 0.02em;
   color: #f3c653;
 }
+
+// СЛАЙДЕР
+
+.restaurant-slaider-wrap {
+  position: absolute;
+  top: 900px;
+  right: -155px;
+  width: 495px;
+  margin: 0 auto;
+}
+
+.slick-slide {
+  margin-right: 40px;
+}
+.slick-next::before {
+  content: '→';
+  width: 30px;
+  height: 17px;
+  background-color: #000000 !important;
+  font-size: 35px !important;
+  font-family: 'Courier New', Courier, monospace !important;
+}
+.slick-next {
+  top: 120% !important;
+  right: 191px !important;
+}
+.slick-prev:before {
+  content: '←';
+  width: 30px;
+  height: 17px;
+  background-color: #000000;
+  font-size: 35px;
+  font-family: 'Courier New', Courier, monospace;
+}
+.slick-prev {
+  top: 120% !important;
+  left: 235px !important;
+}

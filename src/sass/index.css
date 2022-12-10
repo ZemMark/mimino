@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import '~node_modules/modern-normalize/modern-normalize.css';
 @import '~node_modules/modern-normalize/modern-normalize.css';
 body {
@@ -44,12 +45,6 @@ ul {
   padding: 0;
   list-style: none;
   margin: 0;
-}
-
-img {
-  display: block;
-  width: 100%;
-  height: auto;
 }
 
 address {
@@ -102,4 +97,228 @@ p {
   color: palevioletred;
   text-transform: uppercase;
   letter-spacing: 0.3em;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  border: solid 1px red;
+}
+
+.wrap-discribe {
+  display: block;
+}
+@media screen and (min-width: 1024px) {
+  .wrap-discribe {
+    position: relative;
+    display: flex;
+    gap: 26px;
+    margin-bottom: 176px;
+  }
+}
+
+.section.lux-room {
+  border: solid 1px blue;
+  background: #fffdee;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+@media screen and (min-width: 1024px) {
+  .section.lux-room {
+    padding-top: 62px;
+    padding-bottom: 104px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .section.lux-room {
+    padding-top: 72px;
+    padding-bottom: 112px;
+  }
+}
+
+.text-pre-title {
+  margin-bottom: 8px;
+  font-family: "Times New Roman";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  color: #b4b4b4;
+}
+@media screen and (min-width: 1024px) {
+  .text-pre-title {
+    margin-bottom: 4px;
+    font-size: 32px;
+  }
+}
+
+.text-logo {
+  margin-bottom: 32px;
+  font-family: "Film P3 Wide Light";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.08;
+  letter-spacing: 0.3em;
+  color: #494848;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 1024px) {
+  .text-logo {
+    margin-bottom: 62px;
+    font-size: 64px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .text-logo {
+    margin-bottom: 72px;
+  }
+}
+
+.text-title {
+  margin-bottom: 12px;
+  font-family: "Times New Roman";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+.text-title > span {
+  text-transform: uppercase;
+}
+@media screen and (min-width: 1024px) {
+  .text-title {
+    margin-bottom: 16px;
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .text-title {
+    margin-bottom: 24px;
+    font-size: 36px;
+  }
+}
+
+.text-after-title {
+  width: 258px;
+  margin-bottom: 32px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #5f5f5f;
+}
+@media screen and (min-width: 1024px) {
+  .text-after-title {
+    font-size: 16px;
+    width: 439px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .text-after-title {
+    font-weight: 700;
+    width: 400px;
+  }
+}
+
+.thumb {
+  position: relative;
+}
+@media screen and (min-width: 1024px) {
+  .thumb {
+    position: absolute;
+    top: -94px;
+    left: 465px;
+  }
+}
+
+.room-img {
+  margin-left: auto;
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 1024px) {
+  .room-img {
+    width: 400px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .room-img {
+    width: 460px;
+  }
+}
+
+.wrap-info {
+  display: block;
+}
+@media screen and (min-width: 1024px) {
+  .wrap-info {
+    display: flex;
+  }
+}
+
+.list-btn {
+  text-align: center;
+}
+
+.btn {
+  min-width: 236px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #000000;
+  border: 2px solid #fffdee;
+  border-radius: 25px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #f3c653;
+}
+
+.restaurant-slaider-wrap {
+  position: absolute;
+  top: 900px;
+  right: -155px;
+  width: 495px;
+  margin: 0 auto;
+}
+
+.slick-slide {
+  margin-right: 40px;
+}
+
+.slick-next::before {
+  content: "→";
+  width: 30px;
+  height: 17px;
+  background-color: #000000 !important;
+  font-size: 35px !important;
+  font-family: "Courier New", Courier, monospace !important;
+}
+
+.slick-next {
+  top: 120% !important;
+  right: 191px !important;
+}
+
+.slick-prev:before {
+  content: "←";
+  width: 30px;
+  height: 17px;
+  background-color: #000000;
+  font-size: 35px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.slick-prev {
+  top: 120% !important;
+  left: 235px !important;
 }/*# sourceMappingURL=index.css.map */
