@@ -1,0 +1,147 @@
+.amenities {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  background-color: $primaryBackgroundColor;
+}
+
+.amenities__title {
+  margin-bottom: 16px;
+
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: calc(37 / 32);
+  color: $textBlackColor;
+  text-transform: uppercase;
+}
+
+.amenities__description {
+  margin-bottom: 32px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  color: $textColor;
+
+  @include tablet {
+    width: 757px;
+  }
+}
+
+.amenities__item {
+  margin-bottom: 32px;
+}
+
+.amenities__wrap {
+  @include tablet {
+    display: flex;
+    align-items: baseline;
+    gap: 80px;
+  }
+  @include desktop {
+    gap: 159px;
+  }
+}
+
+.amenities__subtitle {
+  margin-bottom: 16px;
+
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  text-transform: uppercase;
+}
+
+.amenities__text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.02em;
+  color: $textColor;
+  & + & {
+    margin-top: 16px;
+  }
+
+  @include tablet {
+    flex-basis: 400px;
+  }
+}
+
+.amenities__button-wrap {
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    width: 434px;
+
+    margin-left: 50%;
+  }
+}
+
+.amenitites__button {
+  padding: 20px 43px;
+  margin-bottom: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: $textBlackColor;
+  border: 1px solid $modalBackgroundColor;
+  border-radius: 25px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  color: $whiteColor;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $modalBackgroundColor;
+    color: $textBlackColor;
+  }
+
+  @include tablet {
+    width: 434px;
+
+    font-size: 24px;
+    line-height: calc(29 / 24);
+  }
+}
+
+.amenities__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  color: $borderColor;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $modalBackgroundColor;
+  }
+
+  @include tablet {
+    justify-content: start;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+  }
+}
+
+.amenities__link-icon {
+  margin-left: 12px;
+  fill: currentColor;
+}
