@@ -11,13 +11,14 @@
 }
 .logo {
   text-decoration: none;
-
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 1.07;
   letter-spacing: 0.3em;
   color: $modalBackgroundColor;
+  font-family: 'Film P3 Wide Light';
+  src: url(../fonts/FontsFree-Net-FilmP3WideLight.ttf);
 }
 .footer-menu {
   margin-left: 85px;
