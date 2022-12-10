@@ -5,3 +5,12 @@ $('.about-restaurant-slaider').slick({
   slidesToShow: 2,
   slidesToScroll: 2,
 });
+
+/* room-page slider */
+$('.hero-slider').slick({
+  slidesToShow: 1,
+  infinite: true,
+  speed: 500,
+  fade: true,
+  cssEase: 'linear',
+});
