@@ -1,57 +1,71 @@
-<section class="hero-backround hero">
-  <div class="container hero__container">
-    <h1 class="hero__title">Mimino</h1>
-    <p class="hero__text">Ресторанно-готельний комплекс</p>
-    <p class="hero__moto">Смак життя 24/7</p>
-    <!-- <ul class="hero-buttons__list">
-      <li class="hero-buttons__item">
-        <button class="" type="button">Забронювати столик</button>
-      </li>
-      <li class="hero-buttons_item">
-        <button class="" type="button">Забронювати номер</button>
-      </li>
-    </ul> -->
-    <button class="hero-main__button-table" type="button">
+<section class="hero-backround hero-main">
+  <div class="container">
+    <address class="hero-main-adress">
+      <a href="#" class="hero-main-adress__link"
+        ><span
+          ><svg class="hero-main-adress__icon" width="20px" height="20px">
+            <use href="/src/images/icons.svg#location-min"></use></svg></span
+        >Україна, м. Полтава,<br />
+        вул. Маршала Бірюзова, 15</a
+      >
+    </address>
+    <h1 class="hero-main__title">Mimino</h1>
+    <p class="hero-main__text">Ресторанно-готельний комплекс</p>
+    <p class="hero-main__moto">Смак життя 24/7</p>
+    <!-- main buttons -->
+
+    <button
+      class="hero-main__button-table js-open-modal"
+      data-modal="table"
+      type="button"
+    >
       Забронювати столик
     </button>
-    <button class="hero-main__button-suit" type="button">
+    <button
+      class="hero-main__button-room js-open-modal"
+      data-modal="room"
+      type="button"
+    >
       Забронювати номер
     </button>
   </div>
-  <div class="hero-social">
-    <ul class="hero-social_list list">
-      <li>
+
+  <!-- social links -->
+
+  <div class="hero-main-social">
+    <ul class="hero-main-social__list list">
+      <li class="hero">
         <a
-          href=""
+          href="#"
           target="_blank"
           rel="noopener noreferrer"
-          class="hero-soial__link"
+          class="hero-main-soial__link"
         >
-          <svg class="hero-social__icon" width="24" height="24">
+          <svg class="hero-main-social__icon" width="24" height="24">
             <use href="/src/images/icons.svg#instagram-min"></use>
           </svg>
         </a>
       </li>
       <li>
         <a
-          href=""
+          href="#"
           target="_blank"
           rel="noopener noreferrer"
-          class="hero-soial__link"
+          class="hero-main-soial__link"
         >
-          <svg class="hero-social__icon" width="24" height="24">
+          <svg class="hero-main-social__icon" width="24" height="24">
             <use href="/src/images/icons.svg#facebook-min"></use>
           </svg>
         </a>
       </li>
       <li>
         <a
-          href=""
+          href="#"
           target="_blank"
           rel="noopener noreferrer"
-          class="hero-soial__link"
+          class="hero-main-soial__link"
         >
-          <svg class="hero-social__icon" width="24" height="24">
+          <svg class="hero-main-social__icon" width="24" height="24">
             <use href="/src/images/icons.svg#telegram-min"></use>
           </svg>
         </a>
