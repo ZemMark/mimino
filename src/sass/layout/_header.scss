@@ -1,0 +1,93 @@
+.header {
+    display: flex;
+    width: 100%;
+    height: 64px;
+    background-color: transparent;
+    position: absolute;
+    justify-content: space-around;
+
+    @include phone {
+        max-width: 414px;
+    }
+}
+
+.header-logo {
+    font-family: 'Film P3 Wide Light';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 39px;
+    letter-spacing: 0.3em;
+    padding-top: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+
+    @include tablet {
+        font-size: 40px;
+        line-height: 43px;
+    }
+}
+
+.contacts-nav {
+    display: flex;
+}
+
+.contacts-list {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.contacts-link {
+    display: none;
+}
+
+.contacts-item {
+    display: flexbox;
+    padding-top: 28px;
+}
+
+.contacts-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #F3C653;
+    text-decoration: none;
+
+    @include tablet {
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
+.contacts-icon {
+    vertical-align: middle;
+    fill: #F3C653;
+}
+
+.item-box {
+    @include tablet {
+        border: 1px solid rgba(243, 198, 83, 0.7);
+        border-radius: 2px;
+    }
+}
+
+.box {
+    width: 100%;
+    height: 400px;
+    background-color: blue;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.soc-icon {
+    display: none;
+
+    @include tablet {
+        display: flex;
+        fill: #F3C653;
+    }
+}
