@@ -1,0 +1,131 @@
+// Кнопки десктоп,таблет,мобайл
+
+// disabled 
+
+.disabled-button {
+    color: #F3C653;
+    background: black;
+    border: 2px solid #FFFFFF;
+    border-radius: 25px;
+    width: 236px;
+    height: 48px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+}
+
+.modal-button {
+    width: 434px;
+    height: 64px;
+    background-color: black;
+    border: 1px solid #F3C653;
+    border-radius: 25px;
+    color: white;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+// hover and clik
+
+.hover-and-clik-button {
+    color: #F3C653;
+    background: white;
+    border: 2px solid #FFFFFF;
+    border-radius: 25px;
+    width: 236px;
+    height: 48px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+}
+
+.modal-big-button {
+    width: 434px;
+    height: 64px;
+    background-color: #F3C653;
+    border: 1px solid #F3C653;
+    border-radius: 25px;
+    color: black;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+// Кнопки для модалок десктоп і таблет
+
+.frame-32 {
+    width: 592px;
+    height: 64px;
+    background: #000000;
+    border: 1px solid #F3C653;
+    border-radius: 2px;
+    color: white;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.frame-33 {
+    width: 592px;
+    height: 64px;
+    background: #F3C653;
+    border: 1px solid #F3C653;
+    border-radius: 2px;
+    color: black;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+// Кнопки мобайл
+
+.frame-27 {
+    width: 384px;
+    height: 64px;
+    background: #000000;
+    color: white;
+    border: 1px solid #F3C653;
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.frame-29 {
+    width: 384px;
+    height: 64px;
+    background: #F3C653;
+    border: 1px solid #F3C653;
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.frame-31 {
+    width: 384px;
+    height: 64px;
+    background: #000000;
+    border: 1px solid #F3C653;
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.frame-34 {
+    width: 384px;
+    height: 64px;
+    background: #F3C653;
+    border: 1px solid #F3C653;
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: black;
+}
