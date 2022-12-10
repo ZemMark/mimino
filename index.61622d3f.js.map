@@ -1,1 +1,0 @@
-{"mappings":"AAEAA,EAAE,6BAA6BC,MAAM,CACnCC,UAAU,EACVC,aAAc,EACdC,eAAgB","sources":["src/js/slick.js"],"sourcesContent":["// about-restaurant js slaider\n\n$('.about-restaurant-slaider').slick({\n  infinite: true,\n  slidesToShow: 2,\n  slidesToScroll: 2,\n});\n"],"names":["$","slick","infinite","slidesToShow","slidesToScroll"],"version":3,"file":"index.61622d3f.js.map"}
