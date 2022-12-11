@@ -14,7 +14,19 @@
     
   }
 
+  @include desktop{
+    flex-wrap: wrap;
+      flex-direction: row;
+      column-gap: 10px;
+      justify-content: center;
+  }
+
 }
+// .modal.table{
+//   @include desktop{
+
+//   }
+// }
 
 .modal {
   display: none;
