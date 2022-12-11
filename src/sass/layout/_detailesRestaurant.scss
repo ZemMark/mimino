@@ -1,16 +1,11 @@
 .restdet {
-<<<<<<< Updated upstream
-    padding-top: 24px;
-    padding-bottom: 40px;
-
-    // прибрати потім
-    background-color: darkslateblue;
-    position: relative;
-    z-index: 20;
-=======
   padding-top: 24px;
   padding-bottom: 40px;
+
+    // прибрати потім
   background-color: darkslateblue;
+  position: relative;
+  z-index: 20;
 
   &__container {
     padding-left: 140px;
@@ -102,73 +97,6 @@
 
 // tablet
 @include tablet {
-  .restdet {
-    padding-top: 48px;
-    padding-bottom: 96px;
->>>>>>> Stashed changes
-
-    &__container {
-      padding-left: 278px;
-    }
-
-    &__logo {
-      font-size: 64px;
-      line-height: calc(69 / 64);
-    }
-
-    &__title {
-      margin-top: 16px;
-      margin-bottom: 8px;
-
-      font-size: 24px;
-      line-height: calc(29 / 24);
-    }
-
-    &__text {
-      max-width: 610px;
-      margin-bottom: 40px;
-
-<<<<<<< Updated upstream
-        font-weight: 600;
-        font-size: 12px;
-        line-height: calc(15/12);
-
-        color: #BABABA;
-    }
-
-    &__button {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        margin-top: 80px;
-    }
-
-    &__order {
-        color: #F3C653;
-        max-width: 236px;
-        margin-bottom: 16px;
-        padding: 14px 24px;
-        background: rgba(0, 0, 0, 0.4);
-        border: 2px solid #FFFFFF;
-        border-radius: 25px;
-        font-weight: 700;
-        line-height: calc(20/16);
-    }
-
-    &__menu {
-        color: #F3C653;
-        max-width: 236px;
-        padding: 14px 32px;
-        background: rgba(0, 0, 0, 0.4);
-        border: 2px solid #FFFFFF;
-        border-radius: 25px;
-        font-weight: 700;
-        line-height: calc(20/16);
-    }
-}
-
-// tablet
-@include tablet {
     .restdet {
         padding-top: 48px;
         padding-bottom: 96px;
@@ -195,13 +123,8 @@
             font-size: 16px;
             line-height: calc(20/16);
         }
-=======
-      font-size: 16px;
-      line-height: calc(20 / 16);
->>>>>>> Stashed changes
     }
   }
-}
 
 // desktop
 

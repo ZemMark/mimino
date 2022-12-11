@@ -15,28 +15,26 @@ $(document).ready(function () {
     speed: 300,
     autoplay: true,
   });
-<<<<<<< HEAD
 });
 
 // details-restaurant js slaider
 
 // $('.restdet__slaider').slick({
+//   dots: false,
 //   infinite: true,
-//   slidesToShow: 2,
-//   slidesToScroll: 1,
+//   speed: 300,
+//   slidesToShow: 1,
+//   centerMode: false,
+//   variableWidth: true,
+//   prevArrow: $(".restdet__prev"),
+//   // nextArrow: $(".restdet__next")
 // });
 
-$('.restdet__slaider').slick({
-  dots: false,
+$('.variable-width').slick({
+  dots: true,
   infinite: true,
   speed: 300,
   slidesToShow: 1,
-  centerMode: false,
-  variableWidth: true,
-  prevArrow: $(".restdet__prev"),
-  // nextArrow: $(".restdet__next")
+  centerMode: true,
+  variableWidth: true
 });
-
-=======
-});
->>>>>>> main
