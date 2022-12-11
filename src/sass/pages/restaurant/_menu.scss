@@ -1,0 +1,107 @@
+.menu-section {
+  background-color: $secondaryBackgroundColor;
+  color: $textBlackColor;
+  padding: 32px 0;
+  @include tablet {
+  padding: 60px 0;
+   }
+ }
+
+.title {
+  text-transform:uppercase;
+  font-family: 'Times New Roman';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 37px;
+}
+
+.tables-wrap {
+   @include tablet {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+    align-content: space-between;
+   height: 620px;
+  }
+}
+table {
+    text-align: left;
+    font-family: 'Montserrat';
+    line-height: 1.2;
+    width: 100%;
+    @include tablet {
+      width: 412px;
+       }
+       @include desktop {
+        width: 485px;
+         }
+  }
+  table caption {
+    text-align: left;
+    padding: 10px 0;
+    font-family: 'Times New Roman';
+    font-weight: 700;
+    font-size: 20px;
+     }
+
+    .collumn-head {
+    width: 60%;
+    font-weight: 500;
+    font-size: 14px;
+    @include tablet {
+           width: 56%;
+      }
+      }
+  .collumn1 { 
+       padding-bottom:  4px;
+    font-weight: 400;
+    font-size: 10px;
+  }
+  .collumn2, .collumn3 {
+    width: 86px;
+    padding-left: 10px;
+    font-weight: 300;
+    font-size: 14px;
+      
+    @include tablet {
+      width: 22%;
+      }
+    @include desktop {
+      font-size: 16px; 
+            }
+    }
+    .collumn2 {
+      padding-left: 20px;
+      @include tablet {
+        padding-left: 35px;
+        }
+      @include desktop {
+        
+              }
+    }
+  .collumn3 {
+       font-weight: 700;
+      @include desktop {
+      font-size: 16px; 
+      padding-left: 26px;
+      }
+  }
+  .food-order-button {
+    display: block;
+    @extend .disabled-button;
+    margin-top: 32px;
+    margin-left:auto;
+    margin-right: auto;
+    transition:all $transition;
+
+    &:hover, &:focus, &:active {
+      @extend .hover-and-clik-button;
+    }
+        @include tablet {
+      margin-top: 40px;
+      margin-left: auto;
+      margin-right: 0;
+          }
+  
+      }
