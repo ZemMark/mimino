@@ -1,0 +1,197 @@
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  
+  @include tablet{
+    flex-wrap: wrap;
+    flex-direction: row;
+    column-gap: 10px;
+    justify-content: center;
+    
+    & .input-item{
+      width: 288px;
+    }
+    
+  }
+
+}
+
+.modal {
+  // display: none;
+  position: fixed;
+  z-index: 20;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  @include phone {
+    width: 414px;
+    height: 668px;
+    background-color: $primaryBackgroundColor;
+
+
+  }
+  @include tablet{
+    width: 712px;
+    height: 522px;
+    overflow-y: scroll;
+  }
+
+  &__title {
+    font-family: 'Times New Roman', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+    text-align: center;
+    margin-bottom: 40px;
+    @include tablet{
+      font-size: 40px;
+    }
+
+  }
+
+  &__form {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    width: 100%;
+    @include tablet{
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+    
+    // position: relative;
+  }
+
+  &__input {
+    outline: none;
+    height: 54px;
+    width: 100%;
+    border: 2px solid $borderColor;
+    border-radius: 2px;
+    background-color: $primaryBackgroundColor;
+    padding-left: 12px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+
+
+
+  }
+
+  &__label {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: $borderColor;
+
+    padding-left: 12px;
+    margin-top: 8px;
+  }
+
+  &__input.select {
+    position: relative;
+    appearance: none;
+
+  }
+
+
+
+}
+
+.setting {
+  position: relative;
+}
+
+.modal__close {
+  background-color: transparent;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  padding: 0;
+  
+}
+.modal__icon-close{
+  
+  stroke: currentColor;
+  transition: stroke 300ms ease-in cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.modal__icon-close:hover,
+.modal__icon-close:focus,
+.modal__icon-close:active{
+  
+  stroke: $borderColor;
+}
+
+.select__arrow {
+  pointer-events: none;
+  display: block;
+  position: absolute;
+  top: 15px;
+  right: 0;
+  margin-right: 10px;
+  width: 30px;
+  height: 54px;
+  background-color: transparent;
+  padding: 0;
+}
+
+.inputs li:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.button-submit {
+  padding: 20px 43px;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 100%;
+
+}
+
+
+
+.overlay {
+  // display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .4);
+
+  z-index: 10;
+}
+
+.modal.is-shown,
+.overlay.is-shown {
+  display: block;
+}
+
+.modal.restaurant{
+  height: 100vh;
+  z-index: 20;
+  overflow: hidden;
+
+  @include tablet{
+    max-width: 712px;
+    height: 638px;
+  }
+  
+  &__input-item{
+    max-width: 288px;
+    height: 64px;
+  }
+}
