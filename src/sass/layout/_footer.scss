@@ -1,15 +1,38 @@
 .footer {
+  position: relative;
   background-color: $footerColor;
-  padding-top: 40px;
-  padding-bottom: 40px;
+
   @include tablet {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    background-color: $textBlackColor;
   }
 }
-
+.footer-grad {
+  @include tablet {
+    background-image: linear-gradient(
+      to right,
+      $footerColor 508px,
+      rgba(122, 122, 122, 0.4) 509px,
+      $footerColor 510px,
+      $footerColor 743px,
+      rgba(122, 122, 122, 0.4) 744px,
+      $footerColor 745px
+    );
+  }
+  @include desktop {
+    background-image: linear-gradient(
+      to right,
+      $footerColor 639px,
+      rgba(122, 122, 122, 0.4) 640px,
+      $footerColor 641px,
+      $footerColor 941px,
+      rgba(122, 122, 122, 0.4) 942px,
+      $footerColor 943px
+    );
+  }
+}
 .footer__container {
   display: flex;
+  width: 100%;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
@@ -30,10 +53,17 @@
     line-height: 1.08;
   }
 }
-@include tablet {
-  .footer-menu {
-    display: flex;
+
+.footer-menu {
+  display: flex;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  @include tablet {
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
+}
+@include tablet {
   .footer-nav {
     margin-right: 136px;
   }
@@ -74,8 +104,9 @@
   }
 }
 .footer-socials__link {
-  fill: $modalBackgroundColor;
+  fill: rgba(243, 198, 83, 0.7);
   @include tablet {
+    fill: $modalBackgroundColor;
     display: flex;
     align-items: center;
     justify-content: space-between;
