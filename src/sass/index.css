@@ -915,7 +915,7 @@ p {
   .thumb {
     position: absolute;
     top: -105px;
-    lright: 95px;
+    right: 95px;
   }
 }
 
@@ -1125,23 +1125,14 @@ p {
   }
 }
 
-.container {
-  outline: solid 1px red;
-}
-@media screen and (max-width: 413px) {
-  .container {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
-
-.wrap-discribe {
+.wrap-discribe.room-3-adult {
   display: block;
 }
 @media screen and (min-width: 1024px) {
-  .wrap-discribe {
+  .wrap-discribe.room-3-adult {
     position: relative;
     display: flex;
+    flex-direction: row-reverse;
     gap: 26px;
     margin-bottom: 176px;
   }
@@ -1151,73 +1142,34 @@ p {
   background: #F0ECD6;
 }
 
-.text-pre-title {
-  margin-bottom: 8px;
-  font-family: "Times New Roman";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.15;
-  color: #B4B4B4;
-}
-@media screen and (min-width: 1024px) {
-  .text-pre-title {
-    margin-bottom: 4px;
-    font-size: 32px;
-  }
+.text-pre-title.room-3-adult {
+  text-align: end;
 }
 
-.text-logo {
-  margin-bottom: 32px;
-  font-family: "Film P3 Wide Light";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 1.08;
-  letter-spacing: 0.3em;
-  color: #494848;
-  text-transform: uppercase;
-}
-@media screen and (min-width: 1024px) {
-  .text-logo {
-    margin-bottom: 62px;
-    font-size: 64px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .text-logo {
-    margin-bottom: 72px;
-  }
+.text-logo.room-3-adult {
+  text-align: end;
 }
 
-.text-title {
-  margin-bottom: 12px;
-  font-family: "Times New Roman";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.17;
-  letter-spacing: 0.05em;
-  color: #000000;
-}
-.text-title > span {
-  text-transform: uppercase;
+.text-title.room-3-adult {
+  margin-left: 80px;
 }
 @media screen and (min-width: 1024px) {
-  .text-title {
+  .text-title.room-3-adult {
     margin-bottom: 16px;
     font-size: 30px;
+    margin-left: 90px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .text-title {
+  .text-title.room-3-adult {
     margin-bottom: 24px;
     font-size: 36px;
   }
 }
 
-.text-after-title {
+.text-after-title.room-3-adult {
   width: 258px;
+  margin-left: 80px;
   margin-bottom: 32px;
   font-family: "Montserrat";
   font-style: normal;
@@ -1228,62 +1180,64 @@ p {
   color: #5F5F5F;
 }
 @media screen and (min-width: 1024px) {
-  .text-after-title {
+  .text-after-title.room-3-adult {
     font-size: 16px;
     width: 439px;
+    margin-left: 90px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .text-after-title {
+  .text-after-title.room-3-adult {
     font-weight: 700;
     width: 400px;
   }
 }
 
-.thumb {
+.thumb.room-3-adult {
   position: relative;
 }
 @media screen and (min-width: 1024px) {
-  .thumb {
+  .thumb.room-3-adult {
     position: absolute;
     top: -94px;
-    right: 65px;
+    right: 465px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .thumb {
+  .thumb.room-3-adult {
     position: absolute;
     top: -105px;
-    lright: 95px;
+    right: 555px;
   }
 }
 
-.room-img {
+.room-img.room-3-adult {
   width: 246px;
-  margin-left: auto;
+  margin-left: 0;
   margin-bottom: 32px;
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
 }
 @media screen and (min-width: 1024px) {
-  .room-img {
+  .room-img.room-3-adult {
     width: 400px;
     box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
   }
 }
 @media screen and (min-width: 1280px) {
-  .room-img {
+  .room-img.room-3-adult {
     width: 460px;
   }
 }
 
-.wrap-info {
+.wrap-info.room-3-adult {
   display: block;
   text-align: center;
 }
 @media screen and (min-width: 1024px) {
-  .wrap-info {
+  .wrap-info.room-3-adult {
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
   }
 }
@@ -1299,29 +1253,29 @@ p {
   border: 1px solid #F3C653;
 }
 
-.lux-room-slider__container {
-  margin-left: -135px;
+.lux-room-slider__container.room-3-adult {
+  margin-left: 130px;
   width: 404px;
 }
 @media screen and (min-width: 1024px) {
-  .lux-room-slider__container {
+  .lux-room-slider__container.room-3-adult {
     width: 428px;
     margin-left: 0;
   }
 }
 @media screen and (min-width: 1280px) {
-  .lux-room-slider__container {
+  .lux-room-slider__container.room-3-adult {
     width: 548px;
   }
 }
 
-.lux-room-slider__wrapper {
+.lux-room-slider__wrapper.room-3-adult {
   overflow: hidden;
-  margin-left: -15px;
+  margin-right: -15px;
 }
 @media screen and (min-width: 1024px) {
-  .lux-room-slider__wrapper {
-    margin-left: 0;
+  .lux-room-slider__wrapper.room-3-adult {
+    margin-right: 0;
   }
 }
 
