@@ -2,13 +2,18 @@
   background-color: $footerColor;
   padding-top: 40px;
   padding-bottom: 40px;
+  @include tablet {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 }
 
-.container {
+.footer__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  margin: 0 auto;
 }
 .logo {
   display: inline-block;
@@ -20,10 +25,22 @@
   letter-spacing: 0.3em;
   color: $modalBackgroundColor;
   font-family: 'Film P3 Wide Light';
+  @include tablet {
+    font-size: 64px;
+    line-height: 1.08;
+  }
 }
 @include tablet {
   .footer-menu {
     display: flex;
+  }
+  .footer-nav {
+    margin-right: 136px;
+  }
+}
+@include desktop {
+  .footer-nav {
+    margin-right: 199px;
   }
 }
 .footer-nav__item:not(:last-child) {
@@ -46,12 +63,26 @@
   margin-top: 32px;
 
   @include tablet {
+    gap: 12px;
     flex-direction: column-reverse;
+    margin-top: 0;
   }
 }
-
+@include tablet {
+  .footer-socials__item {
+    width: 144px;
+  }
+}
 .footer-socials__link {
   fill: $modalBackgroundColor;
+  @include tablet {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 0.5px solid $modalBackgroundColor;
+    border-radius: 2px;
+    padding: 10px 12px;
+  }
 }
 .footer-socials__text {
   display: none;
