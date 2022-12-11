@@ -1,7 +1,11 @@
 .restdet {
     padding-top: 24px;
     padding-bottom: 40px;
+
+    // прибрати потім
     background-color: darkslateblue;
+    position: relative;
+    z-index: 20;
 
     &__container {
         padding-left: 140px;
@@ -36,6 +40,36 @@
         line-height: calc(15/12);
 
         color: #BABABA;
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 80px;
+    }
+
+    &__order {
+        color: #F3C653;
+        max-width: 236px;
+        margin-bottom: 16px;
+        padding: 14px 24px;
+        background: rgba(0, 0, 0, 0.4);
+        border: 2px solid #FFFFFF;
+        border-radius: 25px;
+        font-weight: 700;
+        line-height: calc(20/16);
+    }
+
+    &__menu {
+        color: #F3C653;
+        max-width: 236px;
+        padding: 14px 32px;
+        background: rgba(0, 0, 0, 0.4);
+        border: 2px solid #FFFFFF;
+        border-radius: 25px;
+        font-weight: 700;
+        line-height: calc(20/16);
     }
 }
 
