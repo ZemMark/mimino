@@ -82,9 +82,9 @@ table {
     }
   .collumn3 {
        font-weight: 700;
-       padding-left: 26px;
-    @include desktop {
+      @include desktop {
       font-size: 16px; 
+      padding-left: 26px;
       }
   }
   .food-order-button {
