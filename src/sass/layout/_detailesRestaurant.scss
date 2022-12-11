@@ -1,4 +1,5 @@
 .restdet {
+<<<<<<< Updated upstream
     padding-top: 24px;
     padding-bottom: 40px;
 
@@ -6,35 +7,128 @@
     background-color: darkslateblue;
     position: relative;
     z-index: 20;
+=======
+  padding-top: 24px;
+  padding-bottom: 40px;
+  background-color: darkslateblue;
+
+  &__container {
+    padding-left: 140px;
+  }
+
+  &__logo {
+    color: white;
+
+    font-family: 'Film P3 Wide Light';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: calc(43 / 40);
+    letter-spacing: 0.3em;
+  }
+
+  &__title {
+    margin-top: 12px;
+    margin-bottom: 20px;
+    color: #ffffff;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+  }
+
+  &__text {
+    max-width: 259px;
+    margin-bottom: 48px;
+
+    font-weight: 600;
+    font-size: 12px;
+    line-height: calc(15 / 12);
+
+    color: #bababa;
+  }
+
+  &__button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+  }
+
+  &__order {
+    max-width: 236px;
+    padding: 14px 24px;
+    margin-bottom: 16px;
+    color: #F3C653;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 2px solid #FFFFFF;
+    border-radius: 25px;
+    font-weight: 700;
+    line-height: calc(20/16);
+  }
+
+  &__menu {
+    max-width: 236px;
+    padding: 14px 31px;
+    color: #F3C653;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 2px solid #FFFFFF;
+    border-radius: 25px;
+    font-weight: 700;
+    line-height: calc(20/16);
+  }
+
+  &__prev {
+    background: url(../images/icons.svg#arrow-left-min);
+  }
+
+  &__next {
+    background: url(../images/icons.svg#arrow-right-min);
+  }
+}
+
+.img-meat {
+  width: 270px;
+  height: 270px;
+}
+
+.img-eat {
+  width: 162px;
+  height: 270px;
+}
+
+.img-dish {
+  height: 270px;
+}
+
+// tablet
+@include tablet {
+  .restdet {
+    padding-top: 48px;
+    padding-bottom: 96px;
+>>>>>>> Stashed changes
 
     &__container {
-        padding-left: 140px;
+      padding-left: 278px;
     }
 
     &__logo {
-        color: white;
-
-        font-family: 'Film P3 Wide Light';
-        font-weight: 700;
-        font-size: 40px;
-        line-height: calc(43/40);
-        letter-spacing: 0.3em;
+      font-size: 64px;
+      line-height: calc(69 / 64);
     }
 
     &__title {
-        margin-top: 12px;
-        margin-bottom: 20px;
-        color: #FFFFFF;
+      margin-top: 16px;
+      margin-bottom: 8px;
 
-        font-weight: 700;
-        font-size: 20px;
-        line-height: calc(24/20);
+      font-size: 24px;
+      line-height: calc(29 / 24);
     }
 
     &__text {
-        max-width: 259px;
-        margin-bottom: 48px;
+      max-width: 610px;
+      margin-bottom: 40px;
 
+<<<<<<< Updated upstream
         font-weight: 600;
         font-size: 12px;
         line-height: calc(15/12);
@@ -101,15 +195,20 @@
             font-size: 16px;
             line-height: calc(20/16);
         }
+=======
+      font-size: 16px;
+      line-height: calc(20 / 16);
+>>>>>>> Stashed changes
     }
+  }
 }
 
 // desktop
 
 @include desktop {
-    .restdet {
-        &__container {
-            padding-left: 338px;
-        }
+  .restdet {
+    &__container {
+      padding-left: 338px;
     }
+  }
 }
