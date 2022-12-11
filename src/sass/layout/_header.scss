@@ -8,8 +8,9 @@
   left: 50%;
   margin-left: -50%;
   top: 0px;
-  justify-content: space-around;
+  justify-content: center;
   @include phone {
+    justify-content: space-around;
     max-width: 414px;
     margin-left: -207px;
   }
@@ -47,8 +48,10 @@
 .contacts-list {
   display: flex;
   list-style: none;
-  gap: 20px;
   margin: 0;
+  @include phone {
+    gap: 20px;
+  }
   @include tablet {
     gap: 72px;
   }
