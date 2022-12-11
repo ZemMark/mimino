@@ -4,7 +4,7 @@
 
   background-color: $primaryBackgroundColor;
 }
-
+/* ЗАГОЛОВОК */
 .amenities__title {
   margin-bottom: 16px;
 
@@ -16,7 +16,7 @@
   color: $textBlackColor;
   text-transform: uppercase;
 }
-
+/* ОПИС */
 .amenities__description {
   margin-bottom: 32px;
 
@@ -34,7 +34,7 @@
 .amenities__item {
   margin-bottom: 32px;
 }
-
+/* ОБГОРТКА */
 .amenities__wrap {
   @include tablet {
     display: flex;
@@ -45,7 +45,7 @@
     gap: 159px;
   }
 }
-
+/* ПІДЗАГОЛОВКИ */
 .amenities__subtitle {
   margin-bottom: 16px;
 
@@ -56,7 +56,7 @@
   line-height: calc(28 / 24);
   text-transform: uppercase;
 }
-
+/* ОПИСИ ЗРУЧНОСТЕЙ */
 .amenities__text {
   font-style: normal;
   font-weight: 700;
@@ -72,7 +72,7 @@
     flex-basis: 400px;
   }
 }
-
+/* ОБГОРТКА КНОПКА + ПОСИЛАННЯ */
 .amenities__button-wrap {
   @include tablet {
     display: flex;
@@ -82,7 +82,7 @@
     margin-left: 50%;
   }
 }
-
+/* КНОПКА БРОНЮВАННЯ */
 .amenitites__button {
   padding: 20px 43px;
   margin-bottom: 20px;
@@ -95,12 +95,17 @@
   border: 1px solid $modalBackgroundColor;
   border-radius: 25px;
 
+  font-family: inherit;
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
-  line-height: calc(24 / 20);
+  font-size: 18px;
+  /* font-size: 20px; */
+  line-height: calc(24 / 18);
   color: $whiteColor;
   text-transform: uppercase;
+
+  /* АНІМАЦІЯ */
+  transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
 
   &:hover,
   &:focus,
@@ -109,11 +114,18 @@
     color: $textBlackColor;
   }
 
-  @include tablet {
-    width: 434px;
+  @media screen and (max-width: 413px) {
+    font-size: 16px;
+  }
 
-    font-size: 24px;
-    line-height: calc(29 / 24);
+  @include tablet {
+    padding: 18px 38px;
+
+    min-width: 434px;
+
+    font-size: 22px;
+    /* font-size: 24px; */
+    line-height: calc(29 / 22);
   }
 }
 
@@ -128,10 +140,17 @@
   line-height: calc(20 / 16);
   color: $borderColor;
 
+  /* АНІМАЦІЯ */
+  transition: color 300ms ease-in-out;
+
   &:hover,
   &:focus,
   &:active {
     color: $modalBackgroundColor;
+  }
+
+  @media screen and (max-width: 413px) {
+    font-size: 15px;
   }
 
   @include tablet {
