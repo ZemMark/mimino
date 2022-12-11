@@ -1,21 +1,48 @@
 .section-about-restaurant {
   background-color: #fffdee;
-  height: 1191px;
-  overflow: hidden;
-  position: relative;
-
   // УДАЛИТЬ НЕ ЗАБЫТЬ
-  max-width: 414px;
-  margin: 0 auto;
+
+  @media screen and (min-width: 320px) and (max-width: 413px) {
+    height: 1060px;
+    overflow: hidden;
+  }
+
+  @media screen and (min-width: 413px) and (max-width: 1023px) {
+    height: 1160px;
+  }
 }
 
+.container {
+}
 //  КОНТЕЙНЕРІ
+
+.restaurant-wrap {
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
 .restaurant-wrap:nth-child(even) {
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (min-width: 1024px) {
+    justify-content: left;
+  }
 }
-
+.restaurant-text-container {
+  @media screen and (min-width: 1024px) {
+    margin-right: 26px;
+  }
+}
+.restaurant-text-container-right {
+  @media screen and (min-width: 1024px) {
+    margin-right: 0px;
+    margin-left: 48px;
+    max-width: 312px;
+  }
+}
 // ОФОРМЛЕНИЕ ТЕКСТА
 .restaurant__slogan {
   font-family: 'Times New Roman';
@@ -26,6 +53,11 @@
   color: #b4b4b4;
 
   padding-top: 16px;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 32px;
+    line-height: 37px;
+  }
 }
 .restaurant__name {
   font-family: Film P3 Wide Light;
@@ -40,6 +72,11 @@
   color: #494848;
 
   margin-top: 12px;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 64px;
+    line-height: 69px;
+  }
 }
 
 .restaurant__description {
@@ -55,6 +92,11 @@
   // mobile
 
   max-width: 256px;
+  @media screen and (min-width: 1024px) {
+    font-size: 16px;
+    line-height: 20px;
+    max-width: 440px;
+  }
 }
 
 .accent_description {
@@ -64,49 +106,145 @@
 
 // КАРТИНКИ РЕСТОРАНА
 
-.restaurant-container-img {
+.restaurant-container-img-right {
   margin-top: 28px;
-}
-.img-position-one {
   margin-left: auto;
-  height: 332px;
-  width: 244px;
+  @media screen and (max-width: 1023px) {
+    max-width: 244px;
+  }
+  @media screen and (min-width: 1024px) {
+    margin: 0px;
+  }
+}
+.restaurant-container-img-left {
+  margin-top: 32px;
+  // margin-left: auto;
+  @media screen and (max-width: 1023px) {
+    max-width: 200px;
+  }
+  @media screen and (min-width: 1024px) {
+    margin: 0;
+    position: relative;
+    top: -40px;
+    width: 350px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 460px;
+  }
 }
 
+.restaurant-container-img-right-wrap {
+  @media screen and (min-width: 1024px) {
+    position: relative;
+    top: -32px;
+    width: 400px;
+    margin-right: 65px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 460px;
+  }
+}
 // СЛАЙДЕР
 
-.restaurant-slaider-wrap {
-  position: absolute;
-  top: 900px;
-  right: -155px;
-  width: 495px;
-  margin: 0 auto;
-}
+.restaurant-about-slider {
+  &__wrapper {
+    position: relative;
+    left: 68px;
+    margin: 0;
+    margin-top: 32px;
+    @media screen and (min-width: 1024px) {
+      left: 0px;
+      margin-top: 0px;
+      top: -80px;
+    }
+  }
+  &__container {
+    width: 330px;
+    @media screen and (min-width: 1024px) {
+      width: 413px;
+      margin-left: auto;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 515px;
+    }
+  }
+  & .slick-track {
+    position: relative;
+    display: flex;
+    gap: 25px;
+  }
+  & .slick-list {
+    overflow: hidden;
+  }
 
-.slick-slide {
-  margin-right: 40px;
-}
-.slick-next::before {
-  content: '→';
-  width: 30px;
-  height: 17px;
-  background-color: #000000 !important;
-  font-size: 35px !important;
-  font-family: 'Courier New', Courier, monospace !important;
-}
-.slick-next {
-  top: 120% !important;
-  right: 191px !important;
-}
-.slick-prev:before {
-  content: '←';
-  width: 30px;
-  height: 17px;
-  background-color: #000000;
-  font-size: 35px;
-  font-family: 'Courier New', Courier, monospace;
+  &__item {
+    width: 245px;
+    height: 245px;
+    @media screen and (min-width: 1024px) and (max-width: 1279px) {
+      width: 194px;
+    }
+  }
+  &__image {
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.08);
+  }
+  &__img {
+    width: 245px;
+    height: 245px;
+  }
+  &__wrapper .slick-prev {
+    position: absolute;
+    background-color: transparent;
+    font-size: 0;
+    z-index: 10;
+    width: 45px;
+    height: 25px;
+    border: none;
+    cursor: pointer;
+  }
+  &__wrapper .slick-next {
+    position: absolute;
+    background-color: transparent;
+    font-size: 0;
+    width: 45px;
+    height: 25px;
+    left: 55px;
+    border: none;
+    cursor: pointer;
+  }
+  &__arrow-left {
+    padding: 0;
+    border: none;
+    margin-right: 30px;
+    background-color: transparent;
+  }
+  &__arrow-right {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
+  &__buttons {
+    position: absolute;
+    top: 265px;
+    right: 90px;
+    width: 108px;
+    @media screen and (max-width: 320px) {
+      left: 145px;
+    }
+    @media screen and (min-width: 1024px) {
+      right: -15px;
+      top: 228px;
+    }
+    @media screen and (min-width: 1280px) {
+      top: 270px;
+    }
+  }
+  &__arrow-left-svg {
+  }
 }
 .slick-prev {
-  top: 120% !important;
-  left: 235px !important;
+  left: -15px !important;
+}
+.slick-prev:before,
+.slick-next:before {
+  color: transparent !important;
 }
