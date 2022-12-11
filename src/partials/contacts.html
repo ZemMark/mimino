@@ -1,22 +1,22 @@
 <section class="contact">
-    <!-- <h2 class="contact__title">
+    <h2 class="visually-hidden">
         Контакти
-    </h2> -->
-        <p class="logo">
-            Міміно
-        </p>
-        <p class="logotext">
-            Ресторанно-готельний комплекс
-        </p>
+    </h2>
+    <p class="logo">
+        MIMIHO
+    </p>
+    <p class="logotext">
+        Ресторанно-готельний комплекс
+    </p>
     <div class="contact-nav">
         <ul class="contact__list">
             <li class="contact__item">
                 <p class="contact__title-box">Ресторан</p>
                 <div class="contact__box-restaurant">
                     <a class="contact__link-tel" href="tel:0955559533">
-                        <svg class="contact-icons" width="10px" height="16px">
+                        <!-- <svg class="contact-icon" width="12px" height="20px">
                             <use href="/src/images/icons.svg#smartphone-min"></use>
-                        </svg>
+                        </svg> -->
                         095 555 95 33
                     </a>
                 </div>
@@ -24,42 +24,45 @@
             <li class="contact__item">
                 <p class="contact__title-box">Готель</p>
                 <div class="contact__box-hotel">
-                    <a class="contact__link-tel" href="tel:0668491089">
-                        <svg class="contact-icons" width="10px" height="16px">
-                            <use href="/src/images/icons.svg#smartphone-min"></use>
-                        </svg>
-                        066 849 10 89
-                    </a>
-                    <a class="contact__link-tel" href="tel:0672758540">
-                        <svg class="contact-icons" width="10px" height="16px">
-                            <use href="/src/images/icons.svg#smartphone-min"></use>
-                        </svg>
-                        067 275 85 40
-                    </a>
+                    <ul class="contact-hotel-list">
+                        <li class="contact-hotel-item">
+                            <a class="contact__link-tel" href="tel:0668491089">
+                                <!-- <svg class="contact-icons" width="10px" height="16px">
+                                    <use href="/src/images/icons.svg#smartphone-min"></use>
+                                </svg>  -->
+                                066 849 10 89
+                            </a>
+                        </li>
+                        <li>
+                            <a class="contact__link-tel" href="tel:0672758540">
+                                067 275 85 40
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </li>
             <li class="contact__item">
-                <p class="contact__title-box">Адреса</p>
+                <p class="visually-hidden">Адреса</p>
                 <div class="contact__box-address">
                     <a class="contact__link-address" href="https://goo.gl/maps/9rVzUmqa4cN52UdM6" target="_blank" rel="noopener noreferrer nofollow">
-                        <svg class="contact-icons" width="10px" height="16px">
+                        <!-- <svg class="contact-icons" width="10px" height="16px">
                             <use href="/src/images/icons.svg#smartphone-min"></use>
-                        </svg>
+                        </svg>-->
                         Україна, м. Полтава, вул. Маршала Бірюзова, 15</a>
-                </div>  
+                </div>
             </li>
         </ul>
     </div>
-    <picture>
-        <source srcset="./images/studio/desktop/ihor.jpg 1x, 
-                        ./images/studio/desktop/ihor@2x.jpg 2x" 
+     <picture class="contact-map">
+        <source srcset="/src/images/contacts/desktop/map.jpg 1x, 
+                        /src/images/contacts/desktop/map@2x.jpg 2x" 
                 media="(min-width: 1280px)">
-        <source srcset="./images/studio/tablet/ihor.jpg 1x, 
-                        ./images/studio/tablet/ihor@2x.jpg 2x" 
+        <source srcset="/src/images/contacts/tablet/map.jpg 1x, 
+                        /src/images/contacts/tablet/map@2x.jpg 2x" 
                 media="(min-width: 1024px)">
-        <source srcset="./images/studio/mobile/ihor.jpg 1x, 
-                        ./images/studio/mobile/ihor@2x.jpg 2x" 
+        <source srcset="/src/images/contacts/mobile/map.jpg 1x, 
+                        /src/images/contacts/mobile/map@2x.jpg 2x" 
                 media="(max-width: 1025px)">
-        <img class="contact__map" src="./images/studio/desktop/ihor@2x.jpg" alt="мапа" width="634" height="412">
+        <img class="contact__map" src="/src/images/contacts/desktop/map@2x.jpg" alt="мапа" width="634" height="412">
     </picture>
 </section>

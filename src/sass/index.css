@@ -715,4 +715,139 @@ p {
 .slick-prev:before,
 .slick-next:before {
   color: transparent !important;
+}
+
+.contact {
+  padding: 36px 15px 32px 15px;
+}
+@media screen and (min-width: 1024px) {
+  .contact {
+    padding: 56px 47px 40px 47px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contact {
+    padding: 56px 85px 73px 85px;
+  }
+}
+
+.logo {
+  letter-spacing: 0.3em;
+  color: #494848;
+  font-family: Film P3 Wide Light;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.075;
+  margin-bottom: 12px;
+}
+@media screen and (min-width: 1024px) {
+  .logo {
+    margin-bottom: 8px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .logo {
+    margin-bottom: 16px;
+  }
+}
+
+.logotext {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #5F5F5F;
+  margin-bottom: 40px;
+}
+
+.contact__item {
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (min-width: 1024px) {
+  .contact__item {
+    flex-direction: column;
+  }
+}
+
+.contact__title-box {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #C79002;
+  margin-bottom: 8px;
+}
+
+.contact__box-restaurant {
+  width: 144px;
+  height: 40px;
+  background: #FFFFFF;
+  border: 0.5px solid #F3C653;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.contact__link-tel {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2142857143;
+  letter-spacing: 0.02em;
+  color: #828282;
+}
+
+.contact__box-hotel {
+  padding-top: 12px;
+  padding-bottom: 11px;
+  padding-left: 14px;
+  width: 264px;
+  height: 40px;
+  background: #FFFFFF;
+  border: 0.5px solid #F3C653;
+  border-radius: 2px;
+  margin-bottom: 48px;
+}
+
+.contact-hotel-list {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.contact__box-address {
+  padding-top: 9px;
+  padding-bottom: 7px;
+  padding-left: 16px;
+  width: 285px;
+  height: 56px;
+  background: #FFFFFF;
+  border: 0.5px solid #F3C653;
+  border-radius: 2px;
+}
+
+.contact__link-address {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  color: #828282;
+  font-family: "Montserrat";
+}
+
+.contact-map {
+  border: 1px solid #BABABA;
+  box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
 }/*# sourceMappingURL=index.css.map */
