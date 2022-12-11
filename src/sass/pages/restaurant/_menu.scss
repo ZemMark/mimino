@@ -1,5 +1,5 @@
 .menu-section {
-  background-color: #F0ECD6;
+  background-color: $secondaryBackgroundColor;
   color: $textBlackColor;
   padding: 32px 0;
   @include tablet {
@@ -87,11 +87,13 @@ table {
       font-size: 16px; 
       }
   }
-  .food-order-button {display: block;
+  .food-order-button {
+    display: block;
     @extend .disabled-button;
     margin-top: 32px;
     margin-left:auto;
     margin-right: auto;
+    transition:all $transition;
 
     &:hover, &:focus, &:active {
       @extend .hover-and-clik-button;
