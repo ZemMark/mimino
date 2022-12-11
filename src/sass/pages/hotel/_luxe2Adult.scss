@@ -18,7 +18,9 @@
 }
 
 .section {
-  background: #fffdee;
+  outline: solid 1px blue;
+
+  background: $primaryBackgroundColor;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -303,4 +305,8 @@
 
 .lux-room-slider__buttons {
   margin-top: 27px;
+    @include tablet {
+    margin-left: auto;
+    text-align: end;
+  }
 }
