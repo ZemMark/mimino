@@ -3,7 +3,7 @@
     padding-left: 10px;
     padding-right: 10px;
   }
-  border: solid 1px red;
+  // border: solid 1px red;
 }
 
 .wrap-discribe {
@@ -173,6 +173,25 @@
 
 // СЛАЙДЕР
 
+.lux-room-slider__container {
+  margin-left: -135px;
+  width: 404px;
+  @include tablet {
+    margin-left: 0;
+  }
+  @include desktop {
+    width: 548px;
+  }
+}
+
+.lux-room-slider__wrapper {
+  overflow: hidden;
+  margin-left: -15px;
+  @include tablet {
+    margin-left: 0;
+  }
+}
+
 ​.lux-room-slider {
   &__wrapper {
     position: relative;
@@ -188,7 +207,7 @@
   &__container {
     width: 404px;
     margin-left: -100px;
-    
+
     @media screen and (min-width: 1024px) {
       width: 413px;
       margin-left: auto;
@@ -269,6 +288,9 @@
 }
 .slick-slide {
   margin-right: 16px;
+  @include tablet {
+    margin-right: 40px;
+  }
 }
 
 .slick-prev {
@@ -277,4 +299,13 @@
 .slick-prev:before,
 .slick-next:before {
   color: transparent !important;
+}
+
+.lux-room-slider__arrow-left,
+.lux-room-slider__arrow-right {
+  background-color: transparent;
+}
+
+.lux-room-slider__buttons {
+  margin-top: 27px;
 }

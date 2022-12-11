@@ -717,9 +717,6 @@ p {
   color: transparent !important;
 }
 
-.container {
-  border: solid 1px red;
-}
 @media screen and (max-width: 413px) {
   .container {
     padding-left: 10px;
@@ -913,6 +910,31 @@ p {
   color: #f3c653;
 }
 
+.lux-room-slider__container {
+  margin-left: -135px;
+  width: 404px;
+}
+@media screen and (min-width: 1024px) {
+  .lux-room-slider__container {
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .lux-room-slider__container {
+    width: 548px;
+  }
+}
+
+.lux-room-slider__wrapper {
+  overflow: hidden;
+  margin-left: -15px;
+}
+@media screen and (min-width: 1024px) {
+  .lux-room-slider__wrapper {
+    margin-left: 0;
+  }
+}
+
 ​.lux-room-slider__wrapper {
   position: relative;
   left: 68px;
@@ -1022,6 +1044,11 @@ p {
 .slick-slide {
   margin-right: 16px;
 }
+@media screen and (min-width: 1024px) {
+  .slick-slide {
+    margin-right: 40px;
+  }
+}
 
 .slick-prev {
   left: -15px !important;
@@ -1030,4 +1057,13 @@ p {
 .slick-prev:before,
 .slick-next:before {
   color: transparent !important;
+}
+
+.lux-room-slider__arrow-left,
+.lux-room-slider__arrow-right {
+  background-color: transparent;
+}
+
+.lux-room-slider__buttons {
+  margin-top: 27px;
 }/*# sourceMappingURL=index.css.map */
