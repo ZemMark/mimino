@@ -3,7 +3,7 @@
     padding-left: 10px;
     padding-right: 10px;
   }
-  // border: solid 1px red;
+  outline: solid 1px red;
 }
 
 .wrap-discribe {
@@ -40,7 +40,7 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 1.15;
-  color: #b4b4b4;
+  color: $textPreTitleColor;
 
   @include tablet {
     margin-bottom: 4px;
@@ -56,7 +56,7 @@
   font-size: 40px;
   line-height: 1.08;
   letter-spacing: 0.3em;
-  color: #494848;
+  color: $textTitleColor;
   text-transform: uppercase;
 
   @include tablet {
@@ -77,7 +77,7 @@
   font-size: 24px;
   line-height: 1.17;
   letter-spacing: 0.05em;
-  color: #000000;
+  color: $textBlackColor;
   & > span {
     text-transform: uppercase;
   }
@@ -101,7 +101,8 @@
   font-size: 12px;
   line-height: 1.25;
   letter-spacing: 0.02em;
-  color: #5f5f5f;
+  color: $textPostTitleColor;
+
   @include tablet {
     font-size: 16px;
     width: 439px;
@@ -158,8 +159,9 @@
 
 .disabled-button:hover,
 .disabled-button:focus {
-  color: #f3c653;
-  background: white;
+  color: $modalBackgroundColor;
+  background: $whiteColor;
+  border: 1px solid $modalBackgroundColor;
 }
 
 // СЛАЙДЕР
@@ -288,6 +290,7 @@
 .slick-prev {
   left: -15px !important;
 }
+
 .slick-prev:before,
 .slick-next:before {
   color: transparent !important;
