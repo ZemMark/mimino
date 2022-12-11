@@ -7,11 +7,11 @@
 // });
 
 $(document).ready(function () {
-  $('.restaurant-about-slider').slick({
+  $('.about-restaurant-slider').slick({
     arrows: true,
     slidesToShow: 2,
     variableWidth: true,
-    appendArrows: $('.restaurant-about__slider-nav'),
+    appendArrows: $('.lux-room__slider-nav'),
     speed: 300,
     autoplay: true,
   });
