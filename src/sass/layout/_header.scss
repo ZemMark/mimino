@@ -1,7 +1,100 @@
-.header{
+.header {
+  display: flex;
+  width: 414px;
+  height: 64px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: transparent;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  justify-content: space-between;
+}
+
+.header-logo {
   font-family: 'Film P3 Wide Light';
-  // font-family: 'Monserrat', sans-serif;
-  color: palevioletred;
-  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 700;
+  /*---font-size змінити на : 36px;---*/
+  font-size: 24px;
+  line-height: 39px;
   letter-spacing: 0.3em;
+  padding-top: 16px;
+  color: darkred;
+  text-decoration: none;
+}
+
+.contacts-nav {
+  display: flex;
+}
+
+.contacts-list {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin: 0;
+}
+
+.contacts-link {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.contacts-item {
+  display: flexbox;
+  padding-top: 28px;
+}
+
+.contacts-title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: #f3c653;
+  text-decoration: none;
+}
+
+.contacts-icon {
+  vertical-align: middle;
+  fill: #f3c653;
+}
+
+.soc-icon {
+  display: none;
+}
+
+.soc-link {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.soc-icon {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
