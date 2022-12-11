@@ -193,5 +193,39 @@
   &__input-item{
     max-width: 288px;
     height: 64px;
+    @include tablet{
+      margin-bottom: 0;
+    }
+  }
+}
+
+.modal.price{
+  width: 414px;
+  height: 572px;
+  @include tablet{
+    width: 712px;
+    height: 638px;
+  }
+  @include tablet{
+    width: 712px;
+      height: 489px;
+  }
+}
+
+.room-type__output{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+  & .room-type{
+    font-family: 'Times New Roman';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+    color: #808080;
+    margin-bottom: 28px;
+  }
+  & .modal__title{
+    font-size: 32px;
   }
 }

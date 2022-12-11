@@ -16,3 +16,14 @@ $('.js-modal-overlay').click(function () {
   $('.js-modal.is-shown').removeClass('is-shown');
   $(this).removeClass('is-shown');
 });
+
+const name = document.getElementById('nights');
+const price = document.getElementById('price');
+const form = document.getElementById('form');
+const error = document.getElementById('error');
+
+// form.addEventListener('submit', e => {
+//   let Number = nights.value;
+//   return Number;
+// });
+// console.log(alert(number));
