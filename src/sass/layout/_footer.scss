@@ -21,7 +21,11 @@
   color: $modalBackgroundColor;
   font-family: 'Film P3 Wide Light';
 }
-
+@include tablet {
+  .footer-menu {
+    display: flex;
+  }
+}
 .footer-nav__item:not(:last-child) {
   margin-bottom: 16px;
 }
@@ -40,10 +44,25 @@
   flex-direction: row;
   gap: 20px;
   margin-top: 32px;
+
+  @include tablet {
+    flex-direction: column-reverse;
+  }
 }
+
 .footer-socials__link {
   fill: $modalBackgroundColor;
 }
 .footer-socials__text {
   display: none;
+
+  @include tablet {
+    display: flex;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: $modalBackgroundColor;
+  }
 }
