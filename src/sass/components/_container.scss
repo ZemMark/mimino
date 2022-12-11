@@ -2,6 +2,11 @@
   width: 100%;
   margin: 0 auto;
 
+  @media screen and (max-width: 414px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   @include phone {
     width: 414px;
     padding-left: 15px;
@@ -15,10 +20,8 @@
   }
 
   @include desktop {
-
     padding-left: 85px;
     padding-right: 85px;
     width: 1280px;
   }
-
 }
