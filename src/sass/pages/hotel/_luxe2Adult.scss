@@ -152,23 +152,14 @@
   }
 }
 
-.btn {
-  min-width: 236px;
-  padding-top: 14px;
-  padding-bottom: 14px;
+.disabled-button {
   margin-top: 16px;
-  margin-left: auto;
-  margin-right: auto;
-  background: #000000;
-  border: 2px solid #fffdee;
-  border-radius: 25px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.02em;
+}
+
+.disabled-button:hover,
+.disabled-button:focus {
   color: #f3c653;
+  background: white;
 }
 
 // СЛАЙДЕР
@@ -177,6 +168,7 @@
   margin-left: -135px;
   width: 404px;
   @include tablet {
+    width: 428px;
     margin-left: 0;
   }
   @include desktop {
