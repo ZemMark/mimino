@@ -25,12 +25,9 @@
   height: 64px;
   background-color: transparent;
   align-items: center;
-  justify-content: center;
-  @include phone {
-    justify-content: space-around;
-  }
+  justify-content: space-between;
   @include tablet {
-    justify-content: space-between;
+    height: 100px;
   }
 }
 
@@ -38,12 +35,16 @@
   font-family: 'Film P3 Wide Light';
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 36px;
   line-height: 39px;
   letter-spacing: 0.3em;
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
+  @include tablet {
+    font-size: 40px;
+    line-height: 43px;
+  }
 }
 
 .contacts-nav {
@@ -106,6 +107,8 @@
     height: 40px;
     border: 1px solid rgba(243, 198, 83, 0.7);
     border-radius: 2px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
 
