@@ -1,9 +1,9 @@
 .container {
-    @media screen and (max-width: 413px){
-      padding-left: 10px;
-      padding-right: 10px;  
-    }
-  //   border: solid 1px red;
+  @media screen and (max-width: 413px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  border: solid 1px red;
 }
 
 .wrap-discribe {
@@ -145,6 +145,7 @@
 
 .wrap-info {
   display: block;
+  text-align: center;
   @include tablet {
     display: flex;
     justify-content: space-between;
@@ -172,7 +173,7 @@
 
 // СЛАЙДЕР
 
-​ .lux-room-slider {
+​.lux-room-slider {
   &__wrapper {
     position: relative;
     left: 68px;
@@ -185,7 +186,9 @@
     }
   }
   &__container {
-    width: 330px;
+    width: 404px;
+    margin-left: -100px;
+    
     @media screen and (min-width: 1024px) {
       width: 413px;
       margin-left: auto;
@@ -203,10 +206,10 @@
     overflow: hidden;
   }
   ​ &__item {
-    width: 245px;
-    height: 245px;
-    @media screen and (min-width: 1024px) and (max-width: 1279px) {
-      width: 194px;
+    width: 194px;
+    height: 194px;
+    @include desktop {
+      width: 254px;
     }
   }
   &__image {
@@ -264,6 +267,10 @@
     }
   }
 }
+.slick-slide {
+  margin-right: 16px;
+}
+
 .slick-prev {
   left: -15px !important;
 }
