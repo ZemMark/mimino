@@ -717,8 +717,11 @@ p {
   color: transparent !important;
 }
 
-.container {
-  border: solid 1px red;
+@media screen and (max-width: 413px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 .wrap-discribe {
@@ -862,10 +865,13 @@ p {
   width: 246px;
   margin-left: auto;
   margin-bottom: 32px;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
 }
 @media screen and (min-width: 1024px) {
   .room-img {
     width: 400px;
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
   }
 }
 @media screen and (min-width: 1280px) {
@@ -880,6 +886,7 @@ p {
 @media screen and (min-width: 1024px) {
   .wrap-info {
     display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -1006,6 +1013,7 @@ p {
     top: 270px;
   }
 }
+
 .slick-prev {
   left: -15px !important;
 }
