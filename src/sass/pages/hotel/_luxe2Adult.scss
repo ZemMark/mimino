@@ -211,7 +211,7 @@
   & .slick-list {
     overflow: hidden;
   }
-  ​ &__item {
+  &__item {
     width: 194px;
     height: 194px;
     @include desktop {
@@ -273,21 +273,22 @@
     }
   }
 }
-.slick-slide {
+
+.lux-room-slider__container .slick-slide {
   margin-right: 16px;
   @include tablet {
     margin-right: 40px;
   }
 }
 
-.slick-prev {
-  left: -15px !important;
-}
+// .lux-room-slider__container .slick-prev {
+//   left: -15px !important;
+// }
 
-.slick-prev:before,
-.slick-next:before {
-  color: transparent !important;
-}
+// .lux-room-slider__container .slick-prev:before,
+// .lux-room-slider__container .slick-next:before {
+//   color: transparent !important;
+// }
 
 .lux-room-slider__arrow-left,
 .lux-room-slider__arrow-right {
