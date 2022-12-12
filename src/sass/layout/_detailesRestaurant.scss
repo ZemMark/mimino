@@ -74,6 +74,7 @@
 
   &__prev {
     background: url(../images/icons.svg#arrow-left-min);
+    fill: #FFFFFF;
   }
 
   &__next {
@@ -87,7 +88,6 @@
 }
 
 .img-eat {
-  width: 162px;
   height: 270px;
 }
 
@@ -95,36 +95,47 @@
   height: 270px;
 }
 
+// Слайдер
+
+// .restdet {
+//   &__slaider {
+//     .slick-prev:before,
+//     .slick-next:before {
+//       color: black !important;
+//     }
+//   }
+// }
+
 // tablet
 @include tablet {
-    .restdet {
-        padding-top: 48px;
-        padding-bottom: 96px;
+  .restdet {
+    padding-top: 48px;
+    padding-bottom: 96px;
 
-        &__container {
-            padding-left: 278px;
-        }
+    &__container {
+        padding-left: 278px;
+    }
 
-        &__logo {
-            font-size: 64px;
-            line-height: calc(69/64);
-        }
+    &__logo {
+      font-size: 64px;
+      line-height: calc(69/64);
+    }
 
-        &__title {
-            margin-top: 16px;
-            margin-bottom: 8px;
-            font-size: 24px;
-            line-height: calc(29/24);
-        }
+    &__title {
+      margin-top: 16px;
+      margin-bottom: 8px;
+      font-size: 24px;
+      line-height: calc(29/24);
+    }
 
-        &__text {
-            max-width: 610px;
-            margin-bottom: 40px;
-            font-size: 16px;
-            line-height: calc(20/16);
-        }
+    &__text {
+      max-width: 610px;
+      margin-bottom: 40px;
+      font-size: 16px;
+      line-height: calc(20/16);
     }
   }
+}
 
 // desktop
 

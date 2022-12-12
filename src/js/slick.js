@@ -19,22 +19,13 @@ $(document).ready(function () {
 
 // details-restaurant js slaider
 
-// $('.restdet__slaider').slick({
-//   dots: false,
-//   infinite: true,
-//   speed: 300,
-//   slidesToShow: 1,
-//   centerMode: false,
-//   variableWidth: true,
-//   prevArrow: $(".restdet__prev"),
-//   // nextArrow: $(".restdet__next")
-// });
-
-$('.variable-width').slick({
-  dots: true,
+$('.restdet__slaider').slick({
+  dots: false,
   infinite: true,
   speed: 300,
   slidesToShow: 1,
-  centerMode: true,
-  variableWidth: true
+  centerMode: false,
+  variableWidth: true,
+  prevArrow: $(".restdet__prev"),
+  nextArrow: $(".restdet__next")
 });
