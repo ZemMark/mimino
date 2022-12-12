@@ -47,29 +47,22 @@
   position: relative;
   z-index: 2;
 
-  /* тимчасово */
-  /* padding-top: 8px; */
   padding-top: 64px;
   padding-bottom: 40px;
 
-  /* градієнт на хедері? */
-
-  /* background: linear-gradient(
+  background: linear-gradient(
     180deg,
     #000000 0%,
-    rgba(0, 0, 0, 0.55) 54.17%,
+    rgba(0, 0, 0, 0.55) 10%,
     rgba(0, 0, 0, 0) 100%
-  ); */
+  );
+
   @include tablet {
-    /* тимчасово */
-    /* padding-top: 368px; */
     padding-top: 468px;
     padding-bottom: 64px;
   }
 
   @include desktop {
-    //тимчасово
-    /* padding-top: 424px; */
     padding-top: 524px;
     padding-bottom: 48px;
   }
@@ -193,7 +186,7 @@
   width: 325px;
 
   @media screen and (max-width: 413px) {
-    max-width: 325px;
+    width: 100%;
   }
   @include tablet {
     width: 100%;
