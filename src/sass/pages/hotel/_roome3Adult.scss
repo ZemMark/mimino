@@ -1,0 +1,103 @@
+.wrap-discribe.room-3-adult {
+  display: block;
+
+  @include tablet {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 26px;
+    margin-bottom: 176px;
+  }
+}
+
+.room-3-adult {
+  background: $secondaryBackgroundColor;
+}
+
+.text-pre-title.room-3-adult {
+  text-align: end;
+}
+
+.text-logo.room-3-adult {
+  text-align: end;
+}
+
+.text-title.room-3-adult {
+  margin-left: 80px;
+
+  @include tablet {
+    margin-bottom: 16px;
+    font-size: 30px;
+    margin-left: 100px;
+  }
+
+  @include desktop {
+    margin-bottom: 24px;
+    font-size: 36px;
+  }
+}
+
+.text-after-title.room-3-adult {
+  margin-left: 80px;
+
+  @include tablet {
+    font-size: 16px;
+    width: 439px;
+    margin-left: 100px;
+  }
+
+  @include desktop {
+    font-weight: 700;
+    width: 400px;
+  }
+}
+
+.thumb.room-3-adult {
+  position: relative;
+  @include tablet {
+    position: absolute;
+    top: -94px;
+    right: 465px;
+  }
+  @include desktop {
+    position: absolute;
+    top: -105px;
+    right: 555px;
+  }
+}
+
+.room-img.room-3-adult {
+  margin-left: 0;
+}
+
+.wrap-info.room-3-adult {
+  display: block;
+  text-align: center;
+  @include tablet {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+
+// СЛАЙДЕР
+
+.lux-room-slider__container.room-3-adult {
+  margin-left: 130px;
+  width: 404px;
+  @include tablet {
+    width: 428px;
+    margin-left: 0;
+  }
+  @include desktop {
+    width: 548px;
+  }
+}
+
+.lux-room-slider__wrapper.room-3-adult {
+  overflow: hidden;
+  margin-right: -15px;
+  @include tablet {
+    margin-right: 0;
+  }
+}
