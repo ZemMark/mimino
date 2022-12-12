@@ -6,7 +6,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     column-gap: 10px;
-    // justify-content: center;
+    justify-content: center;
     
     & .input-item{
       width: 288px;
@@ -17,15 +17,10 @@
   @include desktop{
     flex-wrap: wrap;
       flex-direction: row;
-      // column-gap: 10px;
+      column-gap: 10px;
       justify-content: center;
   }
 
-}
-.input-item:not(:last-child){
-  @media screen and (max-width: 1023px) {
-    margin-bottom: 24px;
-  }
 }
 // .modal.table{
 //   @include desktop{
@@ -51,6 +46,7 @@
   @include tablet{
     width: 712px;
     height: 522px;
+    overflow-y: scroll;
   }
 
   &__title {
@@ -98,7 +94,6 @@
   }
 
   &__label {
-    display: block;
     font-family: 'Montserrat';
     font-weight: 500;
     font-size: 14px;
@@ -153,16 +148,13 @@
   right: 0;
   margin-right: 10px;
   width: 30px;
-  height: 20px;
+  height: 54px;
   background-color: transparent;
   padding: 0;
 }
 
-.input-item:nth-child(-n+2){
-  @include tablet{
-    margin-bottom: 24px;
-
-  }
+.inputs li:not(:last-child) {
+  margin-bottom: 24px;
 }
 
 .button-submit {
@@ -201,34 +193,23 @@
 }
 
 .modal.restaurant{
+  height: 100vh;
   z-index: 20;
   overflow: hidden;
-  @include phone{
-    height: 668px;
 
-  }
   @include tablet{
     max-width: 712px;
     height: 638px;
   }
   
-  // &__input-item{
-  //   max-width: 288px;
-  //   height: 64px;
-  //   @include tablet{
-  //     margin-bottom: 0;
-  //   }
-  // }
-}
-.modal.room{
-  @include phone{
-    height: 100%;
-  }
-  @include tablet{
-    height: 638px;
+  &__input-item{
+    max-width: 288px;
+    height: 64px;
+    @include tablet{
+      margin-bottom: 0;
+    }
   }
 }
-
 
 .modal.price{
   width: 414px;
@@ -260,13 +241,3 @@
     font-size: 32px;
   }
 }
-
-.set-3rdli{
-  @include tablet{
-
-    margin-left: 298px;
-    margin-bottom: 24px;
-  }
-
-}
-
