@@ -1,9 +1,52 @@
 .restdet {
   padding-top: 24px;
   padding-bottom: 40px;
+  max-width: 1600px;
+  background-size: cover;
+
+  @media screen and (min-width:320px) and (max-width:1023px) {
+    background-image: linear-gradient(to right,
+    rgba(0, 0, 0, 0.76),
+    rgba(0, 0, 0, 0.76)),
+    url("../images/restaurant-details/mobrestdet-backgr-414.jpg");
+  
+  @include retina {
+    background-image: linear-gradient(to right,
+    rgba(0, 0, 0, 0.76),
+    rgba(0, 0, 0, 0.76)),
+    url('../images/restaurant-details/mobrestdet-backgr-828.jpg');
+  }
+  }
+
+  @media screen and (min-width:1024px) and (max-width:1279px) {
+    background-image: linear-gradient(to right,
+    rgba(0, 0, 0, 0.76),
+    rgba(0, 0, 0, 0.76)),
+    url("../images/restaurant-details/tabrestdet-backgr-1024.jpg");
+  
+  @include retina {
+    background-image: linear-gradient(to right,
+    rgba(0, 0, 0, 0.76),
+    rgba(0, 0, 0, 0.76)),
+    url('../images/restaurant-details/tabrestdet-backgr-2048.jpg');
+  }
+  }
+
+  @media screen and (min-width:1280px) {
+    background-image: linear-gradient(to right,
+    rgba(0, 0, 0, 0.76),
+    rgba(0, 0, 0, 0.76)),
+    url("../images/restaurant-details/deskrestdet-backgr-1280.jpg");
+  
+  @include retina {
+    background-image: linear-gradient(to right,
+    rgba(0, 0, 0, 0.76),
+    rgba(0, 0, 0, 0.76)),
+    url('../images/restaurant-details/deskrestdet-backgr-2560.jpg');
+  }
+  }
 
     // прибрати потім
-  background-color: darkslateblue;
   position: relative;
   z-index: 20;
 
@@ -72,14 +115,14 @@
     line-height: calc(20/16);
   }
 
-  &__prev {
-    background: url(../images/icons.svg#arrow-left-min);
-    fill: #FFFFFF;
-  }
+  // &__prev {
+  //   background: url(../images/icons.svg#arrow-left-min);
+  //   fill: #FFFFFF;
+  // }
 
-  &__next {
-    background: url(../images/icons.svg#arrow-right-min);
-  }
+  // &__next {
+  //   background: url(../images/icons.svg#arrow-right-min);
+  // }
 }
 
 // Слайдер
@@ -88,14 +131,11 @@
   &__images {
     margin-right: 20px;
   }
+
   &__img {
     height: 270px;
   }
 
-  &__slaider .slick-prev:before,
-  &__slaider .slick-next:before {
-    color: black !important;
-  }
 }
 
 // tablet
@@ -126,6 +166,20 @@
       font-size: 16px;
       line-height: calc(20/16);
     }
+
+    // слайдер
+
+    &__slaider {
+      max-width: 650px;
+      margin-left: 29px;
+    }
+
+    &__slaidercontainer {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
   }
 }
 
@@ -135,6 +189,15 @@
   .restdet {
     &__container {
       padding-left: 338px;
+    }
+
+    &__images {
+      margin-right: 86px;
+    }
+
+    &__slaider {
+      max-width: 840px;
+      margin-left: 32px;
     }
   }
 }
