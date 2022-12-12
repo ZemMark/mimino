@@ -1,0 +1,138 @@
+.contacts-main {
+  position: relative;
+  padding-top: 37px;
+}
+.contacts__logo {
+  font-family: 'Film P3 Wide Light';
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.07;
+  letter-spacing: 0.3em;
+
+  display: block;
+  text-transform: uppercase;
+  color: #494848;
+  margin-bottom: 12px;
+}
+.contacts__wrap {
+  display: flex;
+}
+.contacts-adress {
+}
+.contacts__text {
+  display: inline-block;
+  margin-bottom: 24px;
+}
+.contacts-nav {
+}
+.contacts-nav__list {
+}
+
+.contacts-nav__item {
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+.contacts__link {
+  display: block;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+
+  color: #c79002;
+}
+
+.contacts-adress__list {
+  margin-left: 22px;
+}
+
+.contacts-adress__item {
+  background-color: #ffffff;
+  padding: 8px 12px 8px 12px;
+  border: 0.5px solid #f3c653;
+  border-radius: 2px;
+}
+.contacts-phone__num-single {
+  font-family: 'Montserrat';
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+
+  letter-spacing: 0.02em;
+
+  color: #494848;
+
+  text-decoration: none;
+}
+
+.contacts-phone__num {
+  font-family: 'Montserrat';
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+
+  letter-spacing: 0.02em;
+
+  color: #494848;
+
+  text-decoration: none;
+}
+.contacts__icon {
+}
+.contacts__phone {
+  display: flex;
+}
+
+.contacts-phone__list {
+  display: flex;
+  gap: 12px;
+}
+
+.contacts-adress-pin__link {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  fill: #f3c653;
+  font-family: 'Montserrat';
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+
+  letter-spacing: 0.02em;
+
+  color: #494848;
+
+  text-decoration: none;
+
+  &.span {
+    fill: currentColor;
+  }
+}
+
+.contacts__map {
+  width: 100%;
+  height: 220px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+// <span>
+//                     <svg>
+//                       <use
+//                         href="./images/icons.svg#smartphone-min"
+//                       ></use></svg></span
+//                   >
+
+// <svg class="contacts__icon" width="24" height="24">
+//                   <use
+//                     href="./images/icons.svg#smartphone-min"
+//                   ></use></svg></span
+//               >

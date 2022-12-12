@@ -41,6 +41,28 @@
     max-width: 414px;
   }
 
+  @media screen and (min-width: 600px) {
+    max-width: 1025px;
+    height: 740px;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(../images/hero-index/hero-main-tab.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/hero-index/hero-main-tab-2x.jpg);
+    }
+  }
+
   @include tablet {
     min-width: 1024px;
     height: 740px;
