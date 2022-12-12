@@ -33,8 +33,8 @@
 </symbol>
 
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="close-button">
-    <path d="M20.5715 2.57129L2.57153 20.5713" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-    <path d="M2.57153 2.57129L20.5715 20.5713" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M20.5715 2.57129L2.57153 20.5713"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M2.57153 2.57129L20.5715 20.5713"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
   </symbol>
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="modal-arrow">
     <path d="M2.45407 7.93918C2.73536 7.65797 3.11683 7.5 3.51457 7.5C3.91232 7.5 4.29378 7.65797 4.57507 7.93918L12.0001 15.3642L19.4251 7.93918C19.708 7.66594 20.0869 7.51475 20.4802 7.51817C20.8735 7.52159 21.2497 7.67934 21.5278 7.95745C21.8059 8.23556 21.9637 8.61178 21.9671 9.00508C21.9705 9.39837 21.8193 9.77728 21.5461 10.0602L13.0606 18.5457C12.7793 18.8269 12.3978 18.9849 12.0001 18.9849C11.6023 18.9849 11.2209 18.8269 10.9396 18.5457L2.45407 10.0602C2.17287 9.77889 2.01489 9.39743 2.01489 8.99968C2.01489 8.60193 2.17287 8.22047 2.45407 7.93918V7.93918Z" fill="#C79002"></path></symbol>
