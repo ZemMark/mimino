@@ -21,11 +21,11 @@
     width: 1280px;
   }
 
-  // @include small-phone{
-  //   min-width: 300px;
-  //   padding-left: 10px;
-  //   padding-right: 10px;
-  // }
+  @include small-phone{
+    min-width: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 
 }
 
