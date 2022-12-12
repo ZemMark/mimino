@@ -6,7 +6,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     column-gap: 10px;
-    justify-content: center;
+    // justify-content: center;
     
     & .input-item{
       width: 288px;
@@ -17,7 +17,7 @@
   @include desktop{
     flex-wrap: wrap;
       flex-direction: row;
-      column-gap: 10px;
+      // column-gap: 10px;
       justify-content: center;
   }
 
@@ -93,6 +93,7 @@
   }
 
   &__label {
+    display: block;
     font-family: 'Montserrat';
     font-weight: 500;
     font-size: 14px;
@@ -239,4 +240,9 @@
   & .modal__title{
     font-size: 32px;
   }
+}
+
+.set-3rdli{
+  margin-left: 298px;
+
 }
