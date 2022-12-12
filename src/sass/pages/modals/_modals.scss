@@ -22,6 +22,11 @@
   }
 
 }
+.input-item:not(:last-child){
+  @media screen and (max-width: 1023px) {
+    margin-bottom: 24px;
+  }
+}
 // .modal.table{
 //   @include desktop{
 
@@ -148,13 +153,16 @@
   right: 0;
   margin-right: 10px;
   width: 30px;
-  height: 54px;
+  height: 20px;
   background-color: transparent;
   padding: 0;
 }
 
-.inputs li:not(:last-child) {
-  margin-bottom: 24px;
+.input-item:nth-child(-n+2){
+  @include tablet{
+    margin-bottom: 24px;
+
+  }
 }
 
 .button-submit {
@@ -193,23 +201,34 @@
 }
 
 .modal.restaurant{
-  height: 100vh;
   z-index: 20;
   overflow: hidden;
+  @include phone{
+    height: 668px;
 
+  }
   @include tablet{
     max-width: 712px;
     height: 638px;
   }
   
-  &__input-item{
-    max-width: 288px;
-    height: 64px;
-    @include tablet{
-      margin-bottom: 0;
-    }
+  // &__input-item{
+  //   max-width: 288px;
+  //   height: 64px;
+  //   @include tablet{
+  //     margin-bottom: 0;
+  //   }
+  // }
+}
+.modal.room{
+  @include phone{
+    height: 100%;
+  }
+  @include tablet{
+    height: 638px;
   }
 }
+
 
 .modal.price{
   width: 414px;
@@ -243,6 +262,11 @@
 }
 
 .set-3rdli{
-  margin-left: 298px;
+  @include tablet{
+
+    margin-left: 298px;
+    margin-bottom: 24px;
+  }
 
 }
+
