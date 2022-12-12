@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -17,13 +18,18 @@
 
 <body>
   <include src="./partials/header.html"></include>
+  <include src="./partials/pages/modals/modals.html"></include>
   <main>
     <include src="./partials/pages/restaurant/hero.html"></include>
     <include src="./partials/pages/restaurant/aboutKitchen.html"></include>
     <include src="./partials/pages/restaurant/menu.html"></include>
   </main>
 
-  <include src="./partials/footer.html"></include>
+  <include src="./partials/footer.html"></include><!--SLICK-JQUERY-LIBRARY-->
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <!-- modalWindow script -->
+  <script type="module" src="./js/modal.js"></script>
 </body>
 
 </html>
