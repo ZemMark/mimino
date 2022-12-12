@@ -82,25 +82,19 @@
   }
 }
 
-.img-meat {
-  width: 270px;
-  height: 270px;
-}
-
-.img-eat {
-  height: 270px;
-}
-
-.img-dish {
-  height: 270px;
-}
-
 // Слайдер
 
 .restdet {
+  &__images {
+    margin-right: 20px;
+  }
+  &__img {
+    height: 270px;
+  }
+
   &__slaider .slick-prev:before,
   &__slaider .slick-next:before {
-      color: black !important;
+    color: black !important;
   }
 }
 
