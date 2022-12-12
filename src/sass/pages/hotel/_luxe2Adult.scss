@@ -1,11 +1,3 @@
-.container {
-  @media screen and (max-width: 413px) {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  // border: solid 1px red;
-}
-
 .wrap-discribe {
   display: block;
 
@@ -17,8 +9,8 @@
   }
 }
 
-.section {
-  background: #fffdee;
+.section-room {
+  background: $primaryBackgroundColor;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -40,7 +32,7 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 1.15;
-  color: #b4b4b4;
+  color: $textPreTitleColor;
 
   @include tablet {
     margin-bottom: 4px;
@@ -56,7 +48,7 @@
   font-size: 40px;
   line-height: 1.08;
   letter-spacing: 0.3em;
-  color: #494848;
+  color: $textTitleColor;
   text-transform: uppercase;
 
   @include tablet {
@@ -77,7 +69,7 @@
   font-size: 24px;
   line-height: 1.17;
   letter-spacing: 0.05em;
-  color: #000000;
+  color: $textBlackColor;
   & > span {
     text-transform: uppercase;
   }
@@ -101,7 +93,8 @@
   font-size: 12px;
   line-height: 1.25;
   letter-spacing: 0.02em;
-  color: #5f5f5f;
+  color: $textPostTitleColor;
+
   @include tablet {
     font-size: 16px;
     width: 439px;
@@ -123,7 +116,7 @@
   @include desktop {
     position: absolute;
     top: -105px;
-    lright: 95px;
+    right: 95px;
   }
 }
 
@@ -152,14 +145,16 @@
   }
 }
 
-.disabled-button {
+.btn {
   margin-top: 16px;
+  transition: color $transition, background $transition, border $transition;
 }
 
-.disabled-button:hover,
-.disabled-button:focus {
-  color: #f3c653;
-  background: white;
+.btn:hover,
+.btn:focus {
+  color: $modalBackgroundColor;
+  background: $whiteColor;
+  border: 1px solid $modalBackgroundColor;
 }
 
 // СЛАЙДЕР
@@ -288,6 +283,7 @@
 .slick-prev {
   left: -15px !important;
 }
+
 .slick-prev:before,
 .slick-next:before {
   color: transparent !important;
@@ -300,4 +296,8 @@
 
 .lux-room-slider__buttons {
   margin-top: 27px;
+  @include tablet {
+    margin-left: auto;
+    text-align: end;
+  }
 }
