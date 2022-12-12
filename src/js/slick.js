@@ -5,7 +5,7 @@
 //   slidesToShow: 2,
 //   slidesToScroll: 1,
 // });
-
+//  ABOUT RESTOURANT SLAIDER DONT TACH!!!!!
 $(document).ready(function () {
   $('.restaurant-about-slider').slick({
     arrows: true,
