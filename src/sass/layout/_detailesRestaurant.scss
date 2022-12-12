@@ -97,14 +97,12 @@
 
 // Слайдер
 
-// .restdet {
-//   &__slaider {
-//     .slick-prev:before,
-//     .slick-next:before {
-//       color: black !important;
-//     }
-//   }
-// }
+.restdet {
+  &__slaider .slick-prev:before,
+  &__slaider .slick-next:before {
+      color: black !important;
+  }
+}
 
 // tablet
 @include tablet {
