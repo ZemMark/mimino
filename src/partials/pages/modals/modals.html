@@ -1,0 +1,204 @@
+<!-- modal book table -->
+<div class="modal table js-modal" data-modal="table">
+  <button type="modal__button-close" class="modal__close js-modal-close">
+    <svg class="modal__icon-close" width="24" height="24">
+      <use href="./images/icons.svg#close-button"></use>
+    </svg>
+  </button>
+
+  <form action="" class="modal__form">
+    <p class="modal__title">ЗАБРОНЮВАТИ СТОЛИК</p>
+
+    <ul class="inputs modal-container">
+      <li class="input-item">
+        <input class="modal__input" type="name" name="name" id="name" autofocus required placeholder="Ваше ім’я"
+          required>
+        <label class="modal__label" for="name">На кого забронювати столик?</label>
+
+
+      </li>
+
+      <li class="input-item modal-container">
+
+        <input class="modal__input" type="text" required name="name" value="+38 (___) ___-__-__" id="number" autofocus
+          required>
+        <label class="modal__label" for="number">Номер телефону</label>
+
+
+      </li>
+
+      <li class="input-item setting modal-container">
+
+        <select class="modal__input select" name="people" id="people" required>
+          <option value="1">1</option>
+          <option value="2" selected>2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+        <span class="select__arrow"><svg class="modal__arrow" width="24" height="24">
+            <use href="./images/icons.svg#modal-arrow"></use>
+          </svg></span>
+        <label class="modal__label" for="people">Столик на яку кількість осіб?</label>
+
+
+      </li>
+
+      <li class="input-item setting modal-container">
+
+        <select class="modal__input select" name="date" id="date" required>
+          <option value="today">Сьогодні</option>
+          <option value="tomorow">Завтра</option>
+          <option value="afretTomorow">Післязавтра</option>
+        </select>
+        <span class="select__arrow"><svg class="modal__arrow" width="24" height="24">
+            <use href="./images/icons.svg#modal-arrow"></use>
+          </svg></span>
+        <label class="modal__label" for="date">На яку дату бронювати?</label>
+
+
+      </li>
+
+    </ul>
+
+    <button type="submit" class="button-submit">ОФОРМИТИ БРОНЮВАННЯ</button>
+
+
+
+  </form>
+</div>
+
+<!-- overlay -->
+<div class="overlay js-modal-overlay"></div>
+
+<!-- modal book room -->
+
+<div class="modal restaurant js-modal" data-modal="room">
+  <button type="modal__button-close" class="modal__close js-modal-close">
+    <svg class="modal__icon-close" width="24" height="24">
+      <use href="./images/icons.svg#close-button"></use>
+    </svg>
+  </button>
+
+  <form action="" class="modal__form">
+    <p class="modal__title">ЗАБРОНЮВАТИ НОМЕР</p>
+
+    <ul class="inputs modal-container">
+      <li class="input-item">
+
+        <input class="modal__input" type="name" name="name" id="name" autofocus required placeholder="Ваше ім’я">
+        <label class="modal__label" for="name">На кого забронювати номер?</label>
+
+
+      </li>
+
+      <li class="input-item ">
+
+        <input class="modal__input" type="text" name="name" value="+38 (___) ___-__-__" id="number" autofocus required>
+        <label class="modal__label" for="number">Номер телефону</label>
+
+
+      </li>
+
+      <li class="input-item setting ">
+
+        <select class="modal__input select" name="people" id="people">
+          <option value="Двомісний люкс" selected>Двомісний люкс</option>
+          <option value="Двомісний стандарт">Двомісний стандарт</option>
+          <option value="Трьохмісний">Трьохмісний</option>
+        </select>
+        <span class="select__arrow"><svg class="modal__arrow" width="24" height="24">
+            <use href="./images/icons.svg#modal-arrow"></use>
+          </svg></span>
+        <label class="modal__label" for="people">Категорія номеру</label>
+
+
+      </li>
+
+      <li class="input-item setting ">
+
+        <select class="modal__input select" name="people" id="people">
+          <option value="today">Сьогодні</option>
+          <option value="today">скажіть дату по телефону</option>
+          <option value="tomorow">Бо я не знаюй</option>
+          <option value="tomorow">Як це тут ОФОРМИТИ</option>
+          <option value="afretTomorow">Післязавтра</option>
+        </select>
+        <span class="select__arrow"><svg class="modal__arrow" width="24" height="24">
+            <use href="./images/icons.svg#modal-arrow"></use>
+          </svg></span>
+        <label class="modal__label" for="people">Дата заїзду</label>
+
+
+      </li>
+
+      <li class="input-item setting ">
+
+        <select class="modal__input select" name="date" id="date">
+          <option value="today">Сьогодні</option>
+          <option value="tomorow">Завтра</option>
+          <option value="afretTomorow">Післязавтра</option>
+        </select>
+        <span class="select__arrow"><svg class="modal__arrow" width="24" height="24">
+            <use href="./images/icons.svg#modal-arrow"></use>
+          </svg></span>
+        <label class="modal__label" for="date">На яку дату бронювати?</label>
+
+
+      </li>
+
+    </ul>
+
+    <button type="submit" class="button-submit">ОФОРМИТИ БРОНЮВАННЯ</button>
+
+
+
+  </form>
+</div>
+
+
+<!-- modal price -->
+
+
+<div class="modal price js-modal" data-modal="price">
+  <button type="modal__button-close" class="modal__close js-modal-close">
+    <svg class="modal__icon-close" width="24" height="24">
+      <use href="./images/icons.svg#close-button"></use>
+    </svg>
+  </button>
+
+  <form action="" class="modal__form" id="form">
+    <p class="modal__title">ЦІНИ НА НОМЕР</p>
+    <div class="room-type__output">
+
+      <output class="room-type">Двомісний люкс</output>
+
+      <label class="modal__label" for="room-type">Категорія номеру</label>
+    </div>
+
+
+    <ul class="inputs modal-container">
+
+      <li class="input-item">
+
+        <input class="modal__input" required type="number" name="nights" id="nights" autofocus required value="1">
+        <label class="modal__label" for="nights">Кількість ночей</label>
+
+
+      </li>
+
+      <li class="input-item modal-container">
+
+        <input class="modal__input" type="number" name="name" value="1000" id="price" autofocus required>
+        <label class="modal__label" for="price">грн</label>
+
+
+      </li>
+
+    </ul>
+
+    <button type="submit" class="button-submit">ЗАБРОНЮВАТИ НОМЕР</button>
+
+
+
+  </form>
+</div>

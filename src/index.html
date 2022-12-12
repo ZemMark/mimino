@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Page title</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./sass/index.scss" />
-   <!-- Favicon -->
+  <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
@@ -22,7 +23,7 @@
 <body>
   <!-- ❗️❗️❗️ Add partials like so for every page -->
   <include src="./partials/header.html"></include>
-
+  <include src="./partials/pages/modals/modals.html"></include>
   <main>
     <include src="./partials/hero.html"></include>
     <include src="./partials/aboutRestorant.html"></include>
@@ -39,6 +40,8 @@
   <!-- SCRIPT-SLICK-JS -->
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <!-- BASE JS -->
+  <script type="module" src="./js/modal.js"></script>
+  <script type="module" src="./js/slick.js"></script>
 </body>
 
 </html>
