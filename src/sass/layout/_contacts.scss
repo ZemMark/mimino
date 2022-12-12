@@ -132,8 +132,18 @@
 }
 
 .contacts__map {
+  display: block;
   width: 100%;
   height: 220px;
+
+  @include tablet {
+    // position: absolute;
+    // margin-left: auto;
+    height: 412px;
+    width: 535px;
+    top: 0;
+    right: 0;
+  }
 }
 
 // <span>
