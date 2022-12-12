@@ -1,0 +1,2 @@
+$(document).ready((function(){$(".about-restaurant-slider").slick({arrows:!0,slidesToShow:2,variableWidth:!0,appendArrows:$(".about-restaurant__slider-nav"),speed:300,autoplay:!0})})),$(".hero-slider").slick({slidesToShow:1,infinite:!0,speed:500,fade:!0,cssEase:"linear",appendArrows:$(".hero-slider"),prevArrow:$(".hero-slider__prev"),nextArrow:$(".hero-slider__next"),zIndex:1});
+//# sourceMappingURL=luxeFor2Adult.1301936d.js.map
