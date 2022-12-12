@@ -1,0 +1,131 @@
+<section class="hero">
+  <!-- СЛАЙДЕР -->
+  <div class="hero-slider">
+    <div class="hero-slider__item">
+      <picture class="hero-slider__pic">
+        <source
+          srcset="
+            ./images/luxe-for-2-adult/hero-slider1.jpg    1x,
+            ./images/luxe-for-2-adult/hero-slider1-2x.jpg 2x
+          "
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ./images/luxe-for-2-adult/hero-slider1-tab.jpg    1x,
+            ./images/luxe-for-2-adult/hero-slider1-tab-2x.jpg 2x
+          "
+          media="(min-width: 1024px)"
+        />
+        <source
+          srcset="
+            ./images/luxe-for-2-adult/hero-slider1-mob.jpg    1x,
+            ./images/luxe-for-2-adult/hero-slider1-mob-2x.jpg 2x
+          "
+          media="(max-width: 1023px)"
+        />
+        <img
+          src="./images/luxe-for-2-adult/hero-slider1-mob.jpg"
+          alt="Вітальня"
+        />
+      </picture>
+    </div>
+    <div class="hero-slider__item">
+      <picture>
+        <source
+          srcset="
+            ./images/luxe-for-2-adult/hero-slider2.jpg    1x,
+            ./images/luxe-for-2-adult/hero-slider2-2x.jpg 2x
+          "
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ./images/luxe-for-2-adult/hero-slider2-tab.jpg    1x,
+            ./images/luxe-for-2-adult/hero-slider2-tab-2x.jpg 2x
+          "
+          media="(min-width: 1024px)"
+        />
+        <source
+          srcset="
+            ./images/luxe-for-2-adult/hero-slider2-mob.jpg    1x,
+            ./images/luxe-for-2-adult/hero-slider2-mob-2x.jpg 2x
+          "
+          media="(max-width: 1023px)"
+        />
+        <img
+          src="./images/luxe-for-2-adult/hero-slider2-mob.jpg"
+          alt="Ванна кімната"
+        />
+      </picture>
+    </div>
+    <div class="hero-slider__item">
+      <picture>
+        <source
+          srcset="
+            ./images/luxe-for-2-adult/hero-slider3.jpg    1x,
+            ./images/luxe-for-2-adult/hero-slider3-2x.jpg 2x
+          "
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ./images/luxe-for-2-adult/hero-slider3-tab.jpg    1x,
+            ./images/luxe-for-2-adult/hero-slider3-tab-2x.jpg 2x
+          "
+          media="(min-width: 1024px)"
+        />
+        <source
+          srcset="
+            ./images/luxe-for-2-adult/hero-slider3-mob.jpg    1x,
+            ./images/luxe-for-2-adult/hero-slider3-mob-2x.jpg 2x
+          "
+          media="(max-width: 1023px)"
+        />
+        <img src="./images/luxe-for-2-adult/hero-slider3-mob.jpg" alt="Ліжко" />
+      </picture>
+    </div>
+  </div>
+  <!-- КОНТЕНТ -->
+  <div class="container room-hero__container">
+    <!-- КНОПКИ СЛАЙДЕРА-->
+    <button type="button" class="hero-slider__button hero-slider__prev">
+      <svg class="hero-slider__icon" width="40" height="40">
+        <use href="../src/images/icons.svg#arrow-left-min"></use>
+      </svg>
+    </button>
+    <button type="button" class="hero-slider__button hero-slider__next">
+      <svg class="hero-slider__icon" width="40" height="40">
+        <use href="../src/images/icons.svg#arrow-right-min"></use>
+      </svg>
+    </button>
+    <!-- АДРЕСА -->
+    <address class="room-hero__address">
+      <svg class="room-hero__icon" width="26" height="26">
+        <use href="../src/images/icons.svg#location-min"></use>
+      </svg>
+      <a href="https://goo.gl/maps/KcKusGLQ6vPyFq8k6" class="room-hero__link">
+        Україна, м. Полтава, вул. Маршала Бірюзова, 15
+      </a>
+    </address>
+    <!-- ЗАГОЛОВОК ТА ОПИС -->
+    <h1 class="room-hero__title">
+      <span class="room-hero__title-wrap">Двомісний номер</span> люкс
+    </h1>
+    <div class="room-hero__wrap">
+      <p class="room-hero__text">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit. Exercitation
+        veniam consequat sunt nostrud amet.
+      </p>
+      <!-- КНОПКА "ПЕРЕГЛЯНУТИ ЦІНИ" -->
+      <button
+        type="button"
+        class="room-hero__button js-open-modal"
+        data-modal="price"
+      >
+        Переглянути ціни
+      </button>
+    </div>
+  </div>
+</section>
