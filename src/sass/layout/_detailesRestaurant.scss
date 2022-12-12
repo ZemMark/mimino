@@ -102,6 +102,15 @@
     border-radius: 25px;
     font-weight: 700;
     line-height: calc(20/16);
+    transition: background-color 300ms ease-in-out,
+    color 300ms ease-in-out, border-color 300ms ease-in-out;
+
+    &:hover,
+    &:focus {
+      background-color: #ffffff;
+      color: #F3C653;
+      border-color: #F3C653;
+    }
   }
 
   &__menu {
@@ -113,6 +122,15 @@
     border-radius: 25px;
     font-weight: 700;
     line-height: calc(20/16);
+    transition: background-color 300ms ease-in-out,
+    color 300ms ease-in-out, border-color 300ms ease-in-out;
+
+    &:hover,
+    &:focus {
+      background-color: #ffffff;
+      color: #F3C653;
+      border-color: #F3C653;
+    }
   }
 
   // &__prev {
