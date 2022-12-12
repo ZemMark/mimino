@@ -11,7 +11,7 @@ $(document).ready(function () {
     arrows: true,
     slidesToShow: 2,
     variableWidth: true,
-    appendArrows: $('.lux-room__slider-nav'),
+    appendArrows: $('.about-restaurant__slider-nav'),
     speed: 300,
     autoplay: true,
   });
