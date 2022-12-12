@@ -7,12 +7,11 @@
 // });
 
 $(document).ready(function () {
-  $('.about-restaurant-slider').slick({
+  $('.restaurant-about-slider').slick({
     arrows: true,
     slidesToShow: 2,
     variableWidth: true,
-    appendArrows: $('.about-restaurant__slider-nav'),
-    speed: 300,
+    appendArrows: $('.restaurant-about__slider-nav'),
     autoplay: true,
   });
 });
