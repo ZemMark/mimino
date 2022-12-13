@@ -47,6 +47,7 @@
   text-transform: uppercase;
   text-decoration: none;
   transition: color $transition;
+  transition: text-shadow $transition;
 
   @include tablet {
     font-size: 40px;
@@ -56,7 +57,12 @@
 .header-logo:hover,
 .header-logo:active,
 .header-logo:focus{
-  color: $modalBackgroundColor;
+  // color: $modalBackgroundColor;
+  // text-shadow:  0 0 10px 5px rgba(0, 0, 0, 0.3);
+  text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.8);
+    // -webkit-background-clip: text;
+    // -moz-background-clip: text;
+    background-clip: text;
 }
 
 .contacts-nav {
@@ -90,13 +96,16 @@
     letter-spacing: 0.02em;
     color: $whiteColor;
     padding: 11px 8px 12px 8px;
+    transition: color $transition;
+    transition: text-shadow $transition;
   }
 }
 
 .contacts-link:focus,
-.contacts-link:hover {
+.contacts-link:hover,
+.contacts-link:active{
   color: $modalBackgroundColor;
-  transition: color $transition
+  text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.8);
 }
 
 .contacts-item {
@@ -123,6 +132,7 @@
 .contacts-title:active,
 .contacts-title:focus{
   color: $primaryBackgroundColor;
+  text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.8);
 }
 
 .contacts-border {
@@ -134,14 +144,24 @@
     margin-bottom: 30px;
   }
 }
+.contacts-border:hover{
+  box-shadow: inset 0px 0px 3px rgba(255, 255, 255, 0.8);
+}
 
 .contacts-icon {
   vertical-align: middle;
   fill: $modalBackgroundColor;
+  padding: 4px;
+  transition: box-shadow $transition;
+  border: 1px solid transparent;
+  border-radius: 50%;
 
   @include tablet {
     margin-left: 8px;
   }
+}
+.contacts-icon:hover{
+  box-shadow: inset 0px 0px 3px rgba(255, 255, 255, 0.8);
 }
 
 .soc-box {
@@ -159,18 +179,31 @@
 
 .soc-link {
   gap: 20px;
+  border: 1px solid transparent;
+    border-radius: 50%;
+    transition: box-shadow $transition;
+    transition: fill $transition;
+    padding: 5px;
+    &:hover,
+    &:focus 
+    &:active {
+      box-shadow: inset 0px 0px 3px rgba(255, 255, 255, 0.8);
+
+    }
+    
 }
 
 .soc-icon {
   display: none;
-
+  
   @include desktop {
     display: inline-block;
     fill: $modalBackgroundColor;
     &:hover, 
-    &:focus {
+    &:focus
+    &:active{
+      // box-shadow: 0px 2px 3px rgba(255, 255, 255, 0.8);
       fill: $whiteColor;
-      transition: fill $transition
     }
   }
 }
