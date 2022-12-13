@@ -1,5 +1,7 @@
 .footer {
   position: relative;
+  margin: auto;
+  max-width: 1280px;
   background-color: $footerColor;
 
   @include tablet {
@@ -8,35 +10,47 @@
 }
 .footer-grad {
   @include tablet {
+    width: 1024px;
+    margin: 0 auto;
     background-image: linear-gradient(
       to right,
-      $footerColor 508px,
-      rgba(122, 122, 122, 0.4) 509px,
-      $footerColor 510px,
-      $footerColor 743px,
-      rgba(122, 122, 122, 0.4) 744px,
-      $footerColor 745px
+      $footerColor 499px,
+      rgba(122, 122, 122, 0.4) 500px,
+      $footerColor 501px,
+      $footerColor 736px,
+      rgba(122, 122, 122, 0.4) 737px,
+      $footerColor 738px
     );
   }
   @include desktop {
+    width: 1280px;
     background-image: linear-gradient(
       to right,
-      $footerColor 639px,
-      rgba(122, 122, 122, 0.4) 640px,
-      $footerColor 641px,
-      $footerColor 941px,
-      rgba(122, 122, 122, 0.4) 942px,
-      $footerColor 943px
+      $footerColor 625px,
+      rgba(122, 122, 122, 0.4) 626px,
+      $footerColor 627px,
+      $footerColor 926px,
+      rgba(122, 122, 122, 0.4) 927px,
+      $footerColor 928px
     );
   }
 }
 .footer__container {
   display: flex;
-  width: 100%;
+
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  margin: 0 auto;
+
+  @include phone {
+    max-width: 414px;
+  }
+  @include tablet {
+    max-width: 1024px;
+  }
+  @include desktop {
+    max-width: 1280px;
+  }
 }
 .logo {
   display: inline-block;
@@ -48,6 +62,7 @@
   letter-spacing: 0.3em;
   color: $modalBackgroundColor;
   font-family: 'Film P3 Wide Light';
+
   @include tablet {
     font-size: 64px;
     line-height: 1.08;
