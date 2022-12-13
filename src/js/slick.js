@@ -26,8 +26,8 @@ $('.restdet-slaider').slick({
   slidesToShow: 1,
   centerMode: false,
   variableWidth: true,
-  // prevArrow: $(".restdet__prev"),
-  // nextArrow: $(".restdet__next")
+  prevArrow: $(".restdet-slaider__arrow-left"),
+  nextArrow: $(".restdet-slaider__arrow-right")
 });
 
 /* room-page slider */
