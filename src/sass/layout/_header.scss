@@ -1,50 +1,47 @@
 .header {
-  display: block;
+  display: flex;
   position: absolute;
-  left: 50%;
-  margin-left: -50%;
-  top: 0px;
+  left: 0;
+  top: 0;
+  width: 100%;
   z-index: 8;
+}
+
+
+.header-box {
+  width: 100%;
+  height: 64px;
+  background-color: #0000;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
 
   @include phone {
+  
     max-width: 414px;
-    margin-left: -207px;
+    margin: 0 auto;
+  
   }
-
+    
   @include tablet {
     max-width: 1024px;
-    margin-left: -512px;
-  }
+    height: 100px;
+    margin: 0 auto;
+    }
 
   @include desktop {
     max-width: 1280px;
-    margin-left: -640px;
+    margin: 0 auto;
   }
 }
-
-.header-box {
-  display: flex;
-  width: 100%;
-  height: 64px;
-  background-color: transparent;
-  align-items: center;
-  justify-content: space-around;
-
-  @include phone {
-    justify-content: space-between;
-  }
-
-  @include tablet {
-    height: 100px;
-  }
-}
-
 .header-logo {
   font-family: 'Film P3 Wide Light';
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 39px;
+  line-height: 1.14;
   letter-spacing: 0.3em;
   color: $whiteColor;
   text-transform: uppercase;
@@ -52,7 +49,7 @@
 
   @include tablet {
     font-size: 40px;
-    line-height: 43px;
+    line-height: 1.07;
   }
 }
 
@@ -83,7 +80,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 17px;
+    line-height: 1.2;
     letter-spacing: 0.02em;
     color: $whiteColor;
     padding: 11px 8px 12px 8px;
@@ -93,6 +90,7 @@
 .contacts-link:focus,
 .contacts-link:hover {
   color: $modalBackgroundColor;
+  transition: color $transition
 }
 
 .contacts-item {
@@ -109,7 +107,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
   letter-spacing: 0.02em;
   color: $modalBackgroundColor;
   text-decoration: none;
@@ -157,5 +155,10 @@
   @include desktop {
     display: inline-block;
     fill: $modalBackgroundColor;
+    &:hover, 
+    &:focus {
+      fill: $whiteColor;
+      transition: fill $transition
+    }
   }
 }
