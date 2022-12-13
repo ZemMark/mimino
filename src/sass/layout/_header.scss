@@ -46,11 +46,17 @@
   color: $whiteColor;
   text-transform: uppercase;
   text-decoration: none;
+  transition: color $transition;
 
   @include tablet {
     font-size: 40px;
     line-height: 1.07;
   }
+}
+.header-logo:hover,
+.header-logo:active,
+.header-logo:focus{
+  color: $modalBackgroundColor;
 }
 
 .contacts-nav {
@@ -111,6 +117,12 @@
   letter-spacing: 0.02em;
   color: $modalBackgroundColor;
   text-decoration: none;
+  transition: color $transition
+}
+.contacts-title:hover,
+.contacts-title:active,
+.contacts-title:focus{
+  color: $primaryBackgroundColor;
 }
 
 .contacts-border {
