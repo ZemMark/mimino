@@ -47,8 +47,8 @@
   }
 
     // прибрати потім
-  position: relative;
-  z-index: 20;
+  // position: relative;
+  // z-index: 20;
 
   &__container {
     padding-left: 140px;
@@ -115,7 +115,7 @@
 
   &__menu {
     max-width: 236px;
-    padding: 14px 31px;
+    padding: 14px 29px;
     color: #F3C653;
     background-color: rgba(0, 0, 0, 0.4);
     border: 2px solid #FFFFFF;
