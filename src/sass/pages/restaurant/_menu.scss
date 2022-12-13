@@ -5,12 +5,49 @@
   @include tablet {
   padding: 60px 0;
    }
+    }
+ .container.container-memu{
+  position: relative;
+    &:before {
+     display: block;
+    content: '';
+    @include tablet {
+      width: 530px;
+      height: 1px;
+      background-color: rgba(186, 186, 186, 0.4);
+      transform: rotate(-90deg) translate(-205px, 450px);
+            }
+    @include desktop {
+      width: 500px;
+      // height: 1px;
+      background-color: rgba(186, 186, 186, 0.4);
+      transform: rotate(-90deg) translate(-194px, 618px);
+                    }
+   } 
+
+   &:after {
+    display: block;
+   content: '';
+   @include tablet {
+    
+           }
+   @include desktop {
+    position: absolute;
+    top:30px;
+    left: 235px;
+    width: 500px;
+    height: 325px;
+    border-top:solid 1px rgba(186, 186, 186, 0.4);
+    border-bottom:solid 1px rgba(186, 186, 186, 0.4);
+    background-color: transparent;
+    transform: rotate(-90deg);
+                   }
+  }
  }
 
 .title {
-  text-transform:uppercase;
-  font-family: 'Times New Roman';
-font-style: normal;
+text-transform:uppercase;
+font-family: 'Times New Roman';
 font-weight: 700;
 font-size: 32px;
 line-height: 37px;
@@ -22,7 +59,7 @@ line-height: 37px;
    flex-direction: column;
    flex-wrap: wrap;
     align-content: space-between;
-   height: 620px;
+   height: 630px;
   }
 }
 table {
@@ -32,29 +69,35 @@ table {
     width: 100%;
     @include tablet {
       width: 412px;
-       }
-       @include desktop {
-        width: 485px;
-         }
+        }
+    @include desktop {
+      width: 485px;
+      }
   }
+  @media screen and (min-width: 1024px) and (max-width: 1279px)  {
+    .expand {
+      width: 430px;
+      }
+     }
+   
   table caption {
     text-align: left;
-    padding: 10px 0;
+    padding: 8px 0;
     font-family: 'Times New Roman';
     font-weight: 700;
     font-size: 20px;
      }
 
     .collumn-head {
-    width: 60%;
+    width: 58%;
     font-weight: 500;
     font-size: 14px;
     @include tablet {
-           width: 56%;
+      width: 54.5%;
       }
       }
   .collumn1 { 
-       padding-bottom:  4px;
+    padding-bottom:  2px;
     font-weight: 400;
     font-size: 10px;
   }
@@ -65,22 +108,23 @@ table {
     font-size: 14px;
       
     @include tablet {
-      width: 22%;
+      width: 23%;
       }
     @include desktop {
       font-size: 16px; 
             }
     }
-    .collumn2 {
-      padding-left: 20px;
-      @include tablet {
-        padding-left: 35px;
+  .collumn2 {
+    padding-left: 20px;
+    @include tablet {
+     padding-left: 35px;
         }
-      @include desktop {
+     @include desktop {
         
               }
     }
   .collumn3 {
+    text-align: right;
        font-weight: 700;
       @include desktop {
       font-size: 16px; 
