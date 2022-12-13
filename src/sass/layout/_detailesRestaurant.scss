@@ -169,20 +169,11 @@
       border-color: #F3C653;
     }
   }
-
-  // &__prev {
-  //   background: url(../images/icons.svg#arrow-left-min);
-  //   fill: #FFFFFF;
-  // }
-
-  // &__next {
-  //   background: url(../images/icons.svg#arrow-right-min);
-  // }
 }
 
 // Слайдер
 
-.restdet {
+.restdet-slaider {
   &__images {
     margin-right: 20px;
   }
@@ -225,6 +216,151 @@
     }
   }
 }
+// КОД ДМИТРА
+
+// .lux-room-slider__container {
+//   margin-left: -135px;
+//   width: 404px;
+//   @include tablet {
+//     width: 428px;
+//     margin-left: 0;
+//   }
+//   @include desktop {
+//     width: 548px;
+//   }
+// }
+
+// .lux-room-slider__wrapper {
+//   overflow: hidden;
+//   margin-left: -15px;
+//   @include tablet {
+//     margin-left: 0;
+//   }
+// }
+
+// ​.lux-room-slider {
+//   &__wrapper {
+//     position: relative;
+//     left: 68px;
+//     margin: 0;
+//     margin-top: 32px;
+//     @media screen and (min-width: 1024px) {
+//       left: 0px;
+//       margin-top: 0px;
+//       top: -80px;
+//     }
+//   }
+//   &__container {
+//     width: 404px;
+//     margin-left: -100px;
+
+//     @media screen and (min-width: 1024px) {
+//       width: 413px;
+//       margin-left: auto;
+//     }
+//     @media screen and (min-width: 1280px) {
+//       width: 515px;
+//     }
+//   }
+//   & .slick-track {
+//     position: relative;
+//     display: flex;
+//     gap: 25px;
+//   }
+//   & .slick-list {
+//     overflow: hidden;
+//   }
+//   &__item {
+//     width: 194px;
+//     height: 194px;
+//     @include desktop {
+//       width: 254px;
+//     }
+//   }
+//   &__image {
+//     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.08);
+//   }
+//   &__img {
+//     width: 245px;
+//     height: 245px;
+//   }
+//   &__wrapper .slick-prev {
+//     position: absolute;
+//     background-color: transparent;
+//     font-size: 0;
+//     z-index: 10;
+//     width: 45px;
+//     height: 25px;
+//     border: none;
+//     cursor: pointer;
+//   }
+//   &__wrapper .slick-next {
+//     position: absolute;
+//     background-color: transparent;
+//     font-size: 0;
+//     width: 45px;
+//     height: 25px;
+//     left: 55px;
+//     border: none;
+//     cursor: pointer;
+//   }
+//   &__arrow-left {
+//     padding: 0;
+//     border: none;
+//     margin-right: 30px;
+//     background-color: transparent;
+//   }
+//   &__arrow-right {
+//     padding: 0;
+//     border: none;
+//     background-color: transparent;
+//   }
+//   &__buttons {
+//     position: absolute;
+//     top: 265px;
+//     right: 90px;
+//     width: 108px;
+//     @media screen and (max-width: 320px) {
+//       left: 145px;
+//     }
+//     @media screen and (min-width: 1024px) {
+//       right: -15px;
+//       top: 228px;
+//     }
+//     @media screen and (min-width: 1280px) {
+//       top: 270px;
+//     }
+//   }
+// }
+
+// .lux-room-slider__container .slick-slide {
+//   margin-right: 16px;
+//   @include tablet {
+//     margin-right: 40px;
+//   }
+// }
+
+// // .lux-room-slider__container .slick-prev {
+// //   left: -15px !important;
+// // }
+
+// // .lux-room-slider__container .slick-prev:before,
+// // .lux-room-slider__container .slick-next:before {
+// //   color: transparent !important;
+// // }
+
+// .lux-room-slider__arrow-left,
+// .lux-room-slider__arrow-right {
+//   background-color: transparent;
+// }
+
+// .lux-room-slider__buttons {
+//   margin-top: 27px;
+//   @include tablet {
+//     margin-left: auto;
+//     text-align: end;
+//   }
+// }
 
 // tablet
 @include tablet {

@@ -19,7 +19,7 @@ $(document).ready(function () {
 
 // details-restaurant js slaider
 
-$('.restdet__slaider').slick({
+$('.restdet-slaider').slick({
   dots: false,
   infinite: true,
   speed: 300,
