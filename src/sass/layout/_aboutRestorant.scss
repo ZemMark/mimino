@@ -165,11 +165,11 @@
 // КАРТИНКИ РЕСТОРАНА
 .restaurant-about_photo-first,
 .restaurant-about_photo-second {
-  box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
   @media screen and (min-width: 320px) {
     height: 322px;
   }
   @media screen and (min-width: 1024px) {
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
     height: 524px;
   }
   @media screen and (min-width: 1280px) {
