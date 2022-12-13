@@ -128,6 +128,12 @@
     width: 144px;
   }
 }
+.footer-socials__text {
+  display: none;
+  @include tablet {
+    display: flex;
+  }
+}
 .footer-socials__link {
   @include tablet {
     color: $modalBackgroundColor;
@@ -137,17 +143,6 @@
     border: 0.5px solid $modalBackgroundColor;
     border-radius: 2px;
     padding: 10px 12px;
-    transition: $transition;
-    &:hover,
-    &:focus {
-      border-color: $whiteColor;
-    }
-  }
-}
-.footer-socials__text {
-  display: none;
-
-  @include tablet {
     display: flex;
     font-weight: 400;
     font-size: 16px;
@@ -155,8 +150,11 @@
     align-items: center;
     letter-spacing: 0.02em;
     color: $modalBackgroundColor;
+    transition: $transition;
+
     &:hover,
     &:focus {
+      border-color: $whiteColor;
       color: $whiteColor;
     }
   }
