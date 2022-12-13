@@ -34,17 +34,21 @@
 // }
 
 .modal {
-  display: none;
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  // display: none;
   position: fixed;
   z-index: 20;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: opacity $transition;
   
+  background-color: $primaryBackgroundColor;
   @include phone {
     width: 414px;
     height: 668px;
-    background-color: $primaryBackgroundColor;
 
 
   }
@@ -184,7 +188,10 @@
 
 
 .overlay {
-  display: none;
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  // display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -193,11 +200,15 @@
   background-color: rgba(0, 0, 0, .4);
 
   z-index: 10;
+  transition: opacity $transition;
 }
 
 .modal.is-shown,
 .overlay.is-shown {
-  display: block;
+  opacity: 1;
+  pointer-events: all;
+  visibility:visible;
+  transition: opacity $transition;
 }
 
 .modal.restaurant{
