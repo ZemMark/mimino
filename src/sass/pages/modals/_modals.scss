@@ -59,6 +59,7 @@
   background-color: $primaryBackgroundColor;
   @include phone {
     width: 414px;
+    // width: 390px;
     height: 668px;
 
 
@@ -98,14 +99,22 @@
 
   &__input {
     outline: none;
-    height: 54px;
+    height: 45px;
     width: 100%;
     border: 2px solid $borderColor;
     border-radius: 2px;
     background-color: $primaryBackgroundColor;
     padding-left: 12px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    font-size: 13px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    @include phone{
+      padding-top: 15px;
+      padding-bottom: 15px;
+      height: 54px;
+      font-size: 16px;
+    }
+
     @include tablet{
       height: 64px;
     }
@@ -182,18 +191,22 @@
 
 
 .button-submit {
-  padding: 20px 43px;
-  background-color: #000;
+  margin-top: 10px;
+  width: 100%;
+  display: block;
   color: #fff;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
-  font-size: 20px;
+  background-color: #000;
   line-height: 1.2;
-  margin-top: 40px;
-  margin-left: auto;
+  font-size: 20px;
   margin-right: auto;
-  display: block;
-  width: 100%;
+  margin-left: auto;
+  @include phone{
+    margin-top: 40px;
+    padding: 20px 43px;
+  }
+
 
 }
 
@@ -225,6 +238,9 @@
 
 
 .modal.room{
+  @media screen and (max-width: 413px){
+    height: 680px;
+  }
   @include phone{
     height: 780px;
   }
@@ -274,3 +290,16 @@
 // 
 // }
 
+// @media screen and (max-width: 413px){
+//   .modal{
+//     width: 350px;
+//     height: 690px;
+//     &__title{
+//       font-size: 20px;
+//     }
+    
+//   }
+//   .modal__input{
+//     height: 45px;
+//     font-size: 14px;
+//   }}
