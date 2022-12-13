@@ -4,13 +4,13 @@
 
   @media screen and (min-width: 320px) {
     overflow: hidden;
-    height: 1260px;
+    height: 1191px;
   }
   @media screen and (min-width: 1024px) {
-    height: 1220px;
+    height: 1238px;
   }
-  @media screen and (min-width: 1240px) {
-    height: 1380px;
+  @media screen and (min-width: 1280px) {
+    height: 1275px;
   }
 }
 .about-rest-grey-lain {
@@ -21,6 +21,8 @@
   width: 1px;
   background-color: rgba(186, 186, 186, 0.4);
   position: absolute;
+  filter: blur(0.5px);
+
   top: 0;
   left: 140px;
   @media screen and (min-width: 1024px) {
@@ -92,6 +94,10 @@
     max-width: 312px;
   }
 }
+.restaurant-wrap-accent {
+  display: flex;
+  align-items: center;
+}
 // ОФОРМЛЕНИЕ ТЕКСТА
 .restaurant__slogan {
   font-family: 'Times New Roman';
@@ -151,12 +157,29 @@
 .accent_description {
   color: #c79002;
   margin-left: 15px;
+  @media screen and (min-width: 1280px) {
+    margin-top: -100px;
+  }
 }
 
 // КАРТИНКИ РЕСТОРАНА
-
-.restaurant-container-img-right {
+.restaurant-about_photo-first,
+.restaurant-about_photo-second {
+  @media screen and (min-width: 320px) {
+    height: 322px;
+  }
+  @media screen and (min-width: 1024px) {
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+    height: 524px;
+  }
+  @media screen and (min-width: 1280px) {
+    height: 574px;
+  }
+}
+.restaurant-container-img-right-wrap {
   margin-top: 28px;
+}
+.restaurant-container-img-right {
   margin-left: auto;
   z-index: 999;
   position: relative;
@@ -168,7 +191,7 @@
   }
 }
 .restaurant-container-img-left {
-  margin-top: 32px;
+  margin-top: 16px;
   // margin-left: auto;
   @media screen and (max-width: 1023px) {
     max-width: 200px;
@@ -176,7 +199,7 @@
   @media screen and (min-width: 1024px) {
     margin: 0;
     position: relative;
-    top: -40px;
+    top: -60px;
     width: 350px;
   }
   @media screen and (min-width: 1280px) {
@@ -204,11 +227,14 @@
     position: relative;
     left: 68px;
     margin: 0;
-    margin-top: 32px;
+    margin-top: 25px;
     @media screen and (min-width: 1024px) {
       left: -7px;
       margin-top: 0px;
-      top: -80px;
+      top: -95px;
+    }
+    @media screen and (min-width: 1280px) {
+      top: -200px;
     }
   }
   &__container {
@@ -290,10 +316,10 @@
     }
     @media screen and (min-width: 1024px) {
       right: -15px;
-      top: 228px;
+      top: 218px;
     }
     @media screen and (min-width: 1280px) {
-      top: 270px;
+      top: 260px;
     }
   }
   &__arrow-left-svg {
