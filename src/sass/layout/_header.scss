@@ -28,10 +28,14 @@
   height: 64px;
   background-color: transparent;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
 
   @include phone {
     justify-content: space-between;
+    padding-right: 0px;
+    padding: 0px;
   }
 
   @include tablet {
@@ -93,6 +97,7 @@
 .contacts-link:focus,
 .contacts-link:hover {
   color: $modalBackgroundColor;
+  transition: color $transition
 }
 
 .contacts-item {
@@ -157,5 +162,10 @@
   @include desktop {
     display: inline-block;
     fill: $modalBackgroundColor;
+    &:hover, 
+    &:focus {
+      fill: $whiteColor;
+      transition: fill $transition
+    }
   }
 }
