@@ -1,9 +1,26 @@
 .contacts-main {
-  position: relative;
   padding-top: 37px;
   background-color: #fffdee;
+  padding-bottom: 15px;
+
+  @include tablet {
+    height: 521px;
+    padding-top: 56px;
+    // position: relative;
+  }
+}
+
+.contacts-adress {
+  @include tablet {
+    position: relative;
+  }
+}
+.logo__wrap {
+  display: block;
 }
 .contacts__logo {
+  display: inline-block;
+
   font-family: 'Film P3 Wide Light';
   font-size: 40px;
   font-style: normal;
@@ -11,29 +28,77 @@
   line-height: 1.07;
   letter-spacing: 0.3em;
 
-  display: block;
   text-transform: uppercase;
   color: #494848;
   margin-bottom: 12px;
+
+  @include tablet {
+    font-size: 64px;
+    line-height: 1.07;
+  }
 }
 
 .contacts__wrap {
   display: flex;
 }
-.contacts-adress {
+.contacts-adress__wrap {
+  display: flex;
+  align-items: baseline;
+
+  @include tablet {
+    // position: relative;
+  }
 }
+
+// .contacts-rest__list {
+//   display: flex;
+//   gap: 50px;
+// }
+
+// .contacts-hotel__list {
+//   display: flex;
+//   gap: 50px;
+// }
+
+// .contacts-rest__item {
+//   background-color: #ffffff;
+//   padding: 8px 8px 8px 8px;
+//   border: 0.5px solid #f3c653;
+//   border-radius: 2px;
+// }
+
+// .contacts-hotel-phone__list {
+//   display: flex;
+//   align-items: center;
+//   gap: 8px;
+
+//   background-color: #ffffff;
+//   padding: 8px 8px 8px 8px;
+//   border: 0.5px solid #f3c653;
+//   border-radius: 2px;
+// }
+
 .contacts__text {
   display: inline-block;
   margin-bottom: 24px;
-}
-.contacts-nav {
-}
-.contacts-nav__list {
+
+  font-size: 16px;
+  line-height: 1.25;
+
+  @include tablet {
+    margin-bottom: 52px;
+  }
 }
 
 .contacts-nav__item {
   &:not(:last-child) {
     margin-bottom: 32px;
+  }
+
+  @include tablet {
+    &:not(:last-child) {
+      margin-bottom: 72px;
+    }
   }
 }
 
@@ -47,13 +112,40 @@
   letter-spacing: 0.02em;
 
   color: #c79002;
+
+  @include tablet {
+  }
 }
 
 .contacts-adress__list {
   margin-left: 22px;
+  margin-right: auto;
   margin-bottom: 32px;
-}
 
+  @include tablet {
+    margin-left: 0;
+    margin-bottom: 0;
+    position: absolute;
+    left: 0;
+    bottom: -170px;
+    max-width: 285px;
+  }
+
+  @include desktop {
+    left: 0;
+  }
+}
+// .contacts-adress__list {
+//   &:not(:last-child) {
+//     margin-bottom: 16px;
+//   }
+
+//   @include tablet {
+//     &:not(:last-child) {
+//       margin-bottom: 56px;
+//     }
+//   }
+// }
 .contacts-adress__item {
   background-color: #ffffff;
   padding: 8px 8px 8px 8px;
@@ -63,8 +155,22 @@
   &:not(:last-child) {
     margin-bottom: 16px;
   }
+
+  @include tablet {
+    &:nth-child(1) {
+      margin-bottom: 56px;
+    }
+    &:nth-child(2) {
+      margin-bottom: 46px;
+    }
+  }
 }
 
+.contacts-phone__last {
+  @include tablet {
+    margin-bottom: 46px;
+  }
+}
 .contacts-adress__item-single {
   display: inline-block;
 }
@@ -133,29 +239,14 @@
 }
 
 .contacts__map {
-  display: block;
   width: 100%;
   height: 220px;
 
   @include tablet {
-    // position: absolute;
-    // margin-left: auto;
-    height: 412px;
-    width: 535px;
+    position: absolute;
     top: 0;
     right: 0;
+    height: 412px;
+    width: 535px;
   }
 }
-
-// <span>
-//                     <svg>
-//                       <use
-//                         href="./images/icons.svg#smartphone-min"
-//                       ></use></svg></span
-//                   >
-
-// <svg class="contacts__icon" width="24" height="24">
-//                   <use
-//                     href="./images/icons.svg#smartphone-min"
-//                   ></use></svg></span
-//               >
