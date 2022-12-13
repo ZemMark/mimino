@@ -26,17 +26,17 @@
   }
   }
 
-  @media screen and (min-width:1024px) and (max-width:1279px) {
+  @include tablet {
     background-image: linear-gradient(to right,
     rgba(0, 0, 0, 0.76) 277px,
     rgba(122, 122, 122, 0.4) 278px,
     rgba(0, 0, 0, 0.76) 279px,
-    rgba(0, 0, 0, 0.76) 511px,
-    rgba(122, 122, 122, 0.4) 512px,
-    rgba(0, 0, 0, 0.76) 513px,
-    rgba(0, 0, 0, 0.76) 745px,
-    rgba(122, 122, 122, 0.4) 746px,
-    rgba(0, 0, 0, 0.76) 747px),
+    rgba(0, 0, 0, 0.76) 508px,
+    rgba(122, 122, 122, 0.4) 509px,
+    rgba(0, 0, 0, 0.76) 510px,
+    rgba(0, 0, 0, 0.76) 743px,
+    rgba(122, 122, 122, 0.4) 744px,
+    rgba(0, 0, 0, 0.76) 745px),
     url("../images/restaurant-details/tabrestdet-backgr-1024.jpg");
   
   @include retina {
@@ -45,12 +45,12 @@
     rgba(0, 0, 0, 0.76) 277px,
     rgba(122, 122, 122, 0.4) 278px,
     rgba(0, 0, 0, 0.76) 279px,
-    rgba(0, 0, 0, 0.76) 511px,
-    rgba(122, 122, 122, 0.4) 512px,
-    rgba(0, 0, 0, 0.76) 513px,
-    rgba(0, 0, 0, 0.76) 745px,
-    rgba(122, 122, 122, 0.4) 746px,
-    rgba(0, 0, 0, 0.76) 747px),
+    rgba(0, 0, 0, 0.76) 508px,
+    rgba(122, 122, 122, 0.4) 509px,
+    rgba(0, 0, 0, 0.76) 510px,
+    rgba(0, 0, 0, 0.76) 743px,
+    rgba(122, 122, 122, 0.4) 744px,
+    rgba(0, 0, 0, 0.76) 745px),
     url('../images/restaurant-details/tabrestdet-backgr-2048.jpg');
   }
   }
