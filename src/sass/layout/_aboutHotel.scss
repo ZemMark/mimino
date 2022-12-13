@@ -1,0 +1,78 @@
+// ОКНТЕЙНЕРЫ
+
+// .container {
+//   background-color: black;
+// }
+
+.restaurant-wrap.hotel-wrap:nth-child(2n) {
+  display: block;
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.restaurant-container-img-right-wrap.hotel-container-img-right-wrap {
+  margin-left: 0px;
+  margin-right: 0px;
+  @media screen and (min-width: 1024px) {
+    order: 1;
+  }
+}
+
+.restaurant-text-container.hotel-text-container {
+  margin-right: 0px;
+  @media screen and (min-width: 1024px) {
+    order: 2;
+  }
+}
+
+.restaurant__slogan.hotel__slogan,
+.restaurant__name.hotel__name,
+.restaurant__description.hotel__description {
+  text-align: right;
+  margin-left: auto;
+}
+
+.restaurant-text-container-right.hotel-text-container-right {
+  margin-left: auto;
+}
+
+.restaurant-container-img-right.hotel-container-img-right {
+  @media screen and (min-width: 320px) {
+    margin-left: 0px;
+  }
+}
+
+.restaurant-container-img-left.hotel-container-img-left {
+  margin-left: auto;
+}
+.hotel-wrap-two {
+  display: flex;
+  align-items: center;
+}
+// СЛАЙДЕР
+
+.restaurant-about-slider__container.hotel-about-slider__container {
+  margin-left: 0;
+}
+
+.restaurant-about-slider__wrapper.hotel-about-slider__wrapper {
+  @media screen and (min-width: 320px) {
+    width: 500px;
+    left: -190px;
+  }
+  @media screen and (min-width: 1024px) {
+    left: -34px;
+  }
+}
+
+.restaurant-about-slider__buttons.hotel-about-slider__buttons {
+  @media screen and (min-width: 320px) {
+    right: 190px;
+  }
+  @media screen and (min-width: 1024px) {
+    right: 0px;
+    left: 0;
+  }
+}
