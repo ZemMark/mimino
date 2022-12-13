@@ -1,48 +1,41 @@
 .header {
-  display: block;
+  display: flex;
   position: absolute;
-  left: 50%;
-  margin-left: -50%;
-  top: 0px;
+  left: 0;
+  top: 0;
+  width: 100%;
   z-index: 8;
+}
+
+
+.header-box {
+  width: 100%;
+  height: 64px;
+  background-color: #0000;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
 
   @include phone {
+  
     max-width: 414px;
-    margin-left: -207px;
+    margin: 0 auto;
+  
   }
-
+    
   @include tablet {
     max-width: 1024px;
-    margin-left: -512px;
-  }
+    height: 100px;
+    margin: 0 auto;
+    }
 
   @include desktop {
     max-width: 1280px;
-    margin-left: -640px;
+    margin: 0 auto;
   }
 }
-
-.header-box {
-  display: flex;
-  width: 100%;
-  height: 64px;
-  background-color: transparent;
-  align-items: center;
-  justify-content: space-between;
-  padding-left: 10px;
-  padding-right: 10px;
-
-  @include phone {
-    justify-content: space-between;
-    padding-right: 0px;
-    padding: 0px;
-  }
-
-  @include tablet {
-    height: 100px;
-  }
-}
-
 .header-logo {
   font-family: 'Film P3 Wide Light';
   font-style: normal;
