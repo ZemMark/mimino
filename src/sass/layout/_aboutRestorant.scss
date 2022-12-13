@@ -59,7 +59,10 @@
   }
 }
 //  КОНТЕЙНЕРІ
-
+.container-slider-overflow-hidden {
+  overflow: hidden;
+  height: 100%;
+}
 .restaurant-wrap {
   @media screen and (min-width: 1024px) {
     display: flex;
@@ -207,7 +210,6 @@
     }
   }
   &__container {
-    width: 330px;
     @media screen and (min-width: 1024px) {
       width: 430px;
       margin-left: auto;
@@ -279,7 +281,7 @@
   &__buttons {
     position: absolute;
     top: 265px;
-    right: 90px;
+    right: 65px;
     width: 108px;
     @media screen and (max-width: 320px) {
       left: 145px;
