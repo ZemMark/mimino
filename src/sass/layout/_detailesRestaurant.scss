@@ -193,6 +193,37 @@
     border-radius: 2px;
   }
 
+  &__arrow-left {
+    padding: 0;
+    border: none;
+    margin-right: 30px;
+    background-color: transparent;
+    fill: $whiteColor;
+  }
+
+  &__arrow-right {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    fill: $whiteColor;
+  }
+
+  &__buttons {
+    position: absolute;
+    top: 265px;
+    right: 90px;
+    width: 108px;
+    @media screen and (max-width: 320px) {
+      left: 145px;
+    }
+    @media screen and (min-width: 1024px) {
+      right: -15px;
+      top: 228px;
+    }
+    @media screen and (min-width: 1280px) {
+      top: 270px;
+    }
+  }
 }
 
 // tablet
