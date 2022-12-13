@@ -64,6 +64,27 @@
   }
 }
 
+.contacts__link {
+  display: block;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+
+  color: $borderColor;
+  transition: color $transition;
+
+  &:hover {
+    color: $textBlackColor;
+  }
+
+  &:focus {
+    color: $textBlackColor;
+  }
+}
+
 .contacts-rest__list {
   max-width: 273px;
   display: flex;
@@ -71,6 +92,7 @@
 
   align-items: baseline;
   justify-content: space-between;
+
   @include tablet {
     flex-direction: column;
     gap: 8px;
@@ -81,7 +103,7 @@
 .contacts-rest__item {
   background-color: #ffffff;
   padding: 8px 8px 8px 8px;
-  border: 0.5px solid #f3c653;
+  border: 0.5px solid $borderColor;
   border-radius: 2px;
 
   & > a {
@@ -95,7 +117,7 @@
     line-height: 17px;
 
     letter-spacing: 0.02em;
-    fill: #c79002;
+    fill: $borderColor;
     color: #494848;
 
     text-decoration: none;
@@ -124,7 +146,7 @@
 
   background-color: #ffffff;
   padding: 8px 8px 8px 8px;
-  border: 0.5px solid #f3c653;
+  border: 0.5px solid $borderColor;
   border-radius: 2px;
 
   @include tablet {
@@ -143,7 +165,7 @@
   line-height: 17px;
 
   letter-spacing: 0.02em;
-  fill: #c79002;
+  fill: $borderColor;
   color: #494848;
 
   text-decoration: none;
@@ -168,7 +190,7 @@
   align-items: center;
 
   gap: 16px;
-  fill: #f3c653;
+  fill: $borderColor;
   font-family: 'Montserrat';
 
   font-weight: 400;
@@ -183,7 +205,7 @@
 
   background-color: #ffffff;
   padding: 8px 8px 8px 8px;
-  border: 0.5px solid #f3c653;
+  border: 0.5px solid $borderColor;
   border-radius: 2px;
   @include tablet {
     width: 100%;
@@ -213,20 +235,5 @@
     &:not(:last-child) {
       margin-bottom: 72px;
     }
-  }
-}
-
-.contacts__link {
-  display: block;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-
-  color: #c79002;
-
-  @include tablet {
   }
 }
