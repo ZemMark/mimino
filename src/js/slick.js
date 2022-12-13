@@ -12,7 +12,7 @@ $(document).ready(function () {
     slidesToShow: 2,
     variableWidth: true,
     appendArrows: $('.restaurant-about__slider-nav'),
-    autoplay: true,
+    autoplay: false,
   });
 });
 
