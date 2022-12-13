@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
   $('.hotel-about-slider').slick({
     arrows: true,
@@ -9,7 +8,6 @@ $(document).ready(function () {
     autoplay: true,
   });
 });
->>>>>>> about-restaurant
 $(document).ready(function () {
   $('.restaurant-about-slider').slick({
     arrows: true,
