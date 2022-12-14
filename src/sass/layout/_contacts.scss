@@ -74,14 +74,14 @@
   letter-spacing: 0.02em;
 
   color: $borderColor;
-  transition: color $transition;
+  // анімація
+
+  transition: $transition;
 
   &:hover {
-    color: $textBlackColor;
   }
 
   &:focus {
-    color: $textBlackColor;
   }
 }
 
@@ -223,17 +223,5 @@
 
     height: 100%;
     width: 535px;
-  }
-}
-
-.contacts-nav__item {
-  &:not(:last-child) {
-    margin-bottom: 32px;
-  }
-
-  @include tablet {
-    &:not(:last-child) {
-      margin-bottom: 72px;
-    }
   }
 }
