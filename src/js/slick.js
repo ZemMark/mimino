@@ -44,3 +44,14 @@ $('.hero-slider').slick({
   nextArrow: $('.hero-slider__next'),
   zIndex: 1,
 });
+
+$(document).ready(function () {
+  $('.kitchen-about-slider').slick({
+    arrows: true,
+    slidesToShow: 2,
+    variableWidth: true,
+    appendArrows: $('.kitchen-about__slider-nav'),
+    speed: 300,
+    autoplay: true,
+  });
+});
