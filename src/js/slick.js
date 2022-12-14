@@ -44,13 +44,16 @@ $('.hero-slider').slick({
   nextArrow: $('.hero-slider__next'),
   zIndex: 1,
 });
-$(document).ready(function () {
-  $('.restaurant-about-slider').slick({
-    arrows: true,
-    slidesToShow: 2,
-    variableWidth: true,
-    appendArrows: $('.restaurant-about__slider-nav'),
-    speed: 300,
-    autoplay: true,
-  });
+/* details-hotel slider */
+$('.details-hotel__slaider').slick({
+  dots: false,
+  infinite: true,
+  autoplay: true,
+  speed: 300,
+  slidesToShow: 1,
+  centerMode: false,
+  variableWidth: true,
+  appendArrows: $('.details-hotel__slider-nav'),
+  prevArrow: $(".details-hotel-slider__arrow-left"),
+  nextArrow: $(".details-hotel-slider__arrow-right")
 });
