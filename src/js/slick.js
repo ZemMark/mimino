@@ -19,6 +19,19 @@ $(document).ready(function () {
   });
 });
 
+// details-restaurant js slaider
+
+$('.restdet-slaider').slick({
+  dots: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  centerMode: false,
+  variableWidth: true,
+  prevArrow: $(".restdet-slaider__arrow-left"),
+  nextArrow: $(".restdet-slaider__arrow-right")
+});
+
 /* room-page slider */
 $('.hero-slider').slick({
   slidesToShow: 1,
