@@ -1,52 +1,71 @@
 .modal-container {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   
   @include tablet{
     flex-wrap: wrap;
     flex-direction: row;
-    column-gap: 10px;
-    justify-content: center;
     
     & .input-item{
       width: 288px;
+      margin-bottom: 24px;
     }
     
+    
   }
+.input-item.bottom-row {
+  @include tablet{
+    margin-bottom: 0;
 
+  }
+}
   @include desktop{
     flex-wrap: wrap;
-      flex-direction: row;
-      column-gap: 10px;
-      justify-content: center;
+    flex-direction: row;
   }
 
 }
-// .modal.table{
-//   @include desktop{
 
-//   }
-// }
+
+.hidden {
+  opacity: 0;
+  display: none;
+
+  @include tablet {
+    display: block;
+  }
+}
+
+.input-item:not(:last-child){
+  @media screen and (max-width: 1023px) {
+    margin-bottom: 24px;
+  }
+}
+
 
 .modal {
-  display: none;
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  // display: none;
   position: fixed;
   z-index: 20;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  
+  transition: opacity $transition;
+  box-shadow: -1px 5px 100px 18px rgba(0, 0, 0, 1);
+  background-color: $primaryBackgroundColor;
   @include phone {
     width: 414px;
     height: 668px;
-    background-color: $primaryBackgroundColor;
 
 
   }
   @include tablet{
     width: 712px;
     height: 522px;
-    overflow-y: scroll;
   }
 
   &__title {
@@ -87,6 +106,9 @@
     padding-left: 12px;
     padding-top: 15px;
     padding-bottom: 15px;
+    @include tablet{
+      height: 64px;
+    }
 
 
 
@@ -94,6 +116,7 @@
   }
 
   &__label {
+    display: block;
     font-family: 'Montserrat';
     font-weight: 500;
     font-size: 14px;
@@ -148,14 +171,15 @@
   right: 0;
   margin-right: 10px;
   width: 30px;
-  height: 54px;
+  height: 20px;
   background-color: transparent;
   padding: 0;
+  @include tablet{
+    top: 20px;
+  }
 }
 
-.inputs li:not(:last-child) {
-  margin-bottom: 24px;
-}
+
 
 .button-submit {
   padding: 20px 43px;
@@ -176,40 +200,39 @@
 
 
 .overlay {
-  display: none;
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  // display: none;
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, .4);
+  background-color: rgba(0, 0, 0, .3);
 
   z-index: 10;
+  transition: opacity $transition;
 }
 
 .modal.is-shown,
 .overlay.is-shown {
-  display: block;
+  opacity: 1;
+  pointer-events: all;
+  visibility:visible;
+  transition: opacity $transition;
 }
 
-.modal.restaurant{
-  height: 100vh;
-  z-index: 20;
-  overflow: hidden;
 
+.modal.room{
+  @include phone{
+    height: 780px;
+  }
   @include tablet{
-    max-width: 712px;
     height: 638px;
   }
-  
-  &__input-item{
-    max-width: 288px;
-    height: 64px;
-    @include tablet{
-      margin-bottom: 0;
-    }
-  }
 }
+
 
 .modal.price{
   width: 414px;
@@ -241,3 +264,13 @@
     font-size: 32px;
   }
 }
+
+// .set-3rdli{
+//   @include tablet{
+
+//     margin-left: 298px;
+//     margin-bottom: 24px;
+//   }
+// 
+// }
+
