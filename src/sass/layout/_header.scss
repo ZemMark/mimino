@@ -1,49 +1,56 @@
 .header {
-  display: block;
+  display: flex;
   position: absolute;
-  left: 50%;
-  margin-left: -50%;
-  top: 0px;
+  left: 0;
+  top: 0;
+  width: 100%;
   z-index: 8;
-  @include phone {
-    max-width: 414px;
-    margin-left: -207px;
-  }
-  @include tablet {
-    max-width: 1024px;
-    margin-left: -512px;
-  }
-  @include desktop {
-    max-width: 1280px;
-    margin-left: -640px;
-  }
 }
+
 
 .header-box {
-  display: flex;
   width: 100%;
   height: 64px;
-  background-color: transparent;
+  background-color: #0000;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+
   @include phone {
-    justify-content: space-around;
+  
+    max-width: 414px;
+    margin: 0 auto;
+  
   }
+    
   @include tablet {
-    justify-content: space-between;
+    max-width: 1024px;
+    height: 100px;
+    margin: 0 auto;
+    }
+
+  @include desktop {
+    max-width: 1280px;
+    margin: 0 auto;
   }
 }
-
 .header-logo {
   font-family: 'Film P3 Wide Light';
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 39px;
+  font-size: 36px;
+  line-height: 1.14;
   letter-spacing: 0.3em;
-  color: #ffffff;
+  color: $whiteColor;
   text-transform: uppercase;
   text-decoration: none;
+
+  @include tablet {
+    font-size: 40px;
+    line-height: 1.07;
+  }
 }
 
 .contacts-nav {
@@ -54,9 +61,11 @@
   display: flex;
   list-style: none;
   margin: 0;
+
   @include phone {
     gap: 20px;
   }
+
   @include tablet {
     gap: 72px;
   }
@@ -64,27 +73,30 @@
 
 .contacts-link {
   display: none;
+
   @include tablet {
     display: inline-block;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 17px;
+    line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #ffffff;
+    color: $whiteColor;
     padding: 11px 8px 12px 8px;
   }
 }
 
 .contacts-link:focus,
 .contacts-link:hover {
-  color: #f3c653;
+  color: $modalBackgroundColor;
+  transition: color $transition
 }
 
 .contacts-item {
   display: inline-flex;
   align-items: center;
+
   @include tablet {
     gap: 32px;
   }
@@ -95,23 +107,26 @@
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
   letter-spacing: 0.02em;
-  color: #f3c653;
+  color: $modalBackgroundColor;
   text-decoration: none;
 }
 
 .contacts-border {
   @include tablet {
     height: 40px;
-    border: 1px solid rgba(243, 198, 83, 0.7);
+    border: 1px solid $modalBackgroundColor;
     border-radius: 2px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
 
 .contacts-icon {
   vertical-align: middle;
-  fill: #f3c653;
+  fill: $modalBackgroundColor;
+
   @include tablet {
     margin-left: 8px;
   }
@@ -119,6 +134,7 @@
 
 .soc-box {
   display: none;
+
   @include desktop {
     display: flex;
   }
@@ -135,8 +151,14 @@
 
 .soc-icon {
   display: none;
+
   @include desktop {
     display: inline-block;
-    fill: #f3c653;
+    fill: $modalBackgroundColor;
+    &:hover, 
+    &:focus {
+      fill: $whiteColor;
+      transition: fill $transition
+    }
   }
 }
