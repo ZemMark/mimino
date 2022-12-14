@@ -44,3 +44,15 @@ $('.hero-slider').slick({
   nextArrow: $('.hero-slider__next'),
   zIndex: 1,
 });
+$(document).ready(function () {
+  $('.details-hotel__slaider').slick({
+    arrows: true,
+    slidesToShow: 2,
+    variableWidth: true,
+    appendArrows: $('.details-hotel-slider__btn'),
+  //   prevArrow: $('.details-hotel-slider__arrow-right'),
+  // nextArrow: $('.details-hotel-slider__arrow-left'),
+    speed: 300,
+    autoplay: true,
+  });
+});
