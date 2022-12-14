@@ -1,26 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Номер для двох</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- SLICK CSS -->
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./sass/index.scss" />
-  <script type="module" src="./js/index.js"></script>
-</head>
+    <link rel="stylesheet" href="./sass/index.scss" />
+    <script type="module" src="./js/index.js"></script>
+  </head>
 
-<body>
-  <include src="./partials/header.html"></include>
-  <include src="./partials/pages/modals/modals.html"></include>
-  <main>
-    <include src="./partials/pages/roomFor2Adult/hero.html"></include>
-    <include src="./partials/pages/roomFor2Adult/amenities.html"></include>
-  </main>
-  <include src="./partials/footer.html"></include>
-  <!-- modalWindow script -->
-  <script type="module" src="./js/modal.js"></script>
-</body>
-
+  <body>
+    <include src="./partials/header.html"></include>
+    <include src="./partials/pages/modals/modals.html"></include>
+    <main>
+      <include src="./partials/pages/roomFor2Adult/hero.html"></include>
+      <include src="./partials/pages/roomFor2Adult/amenities.html"></include>
+    </main>
+    <include src="./partials/footer.html"></include>
+    <!-- JQuery -->
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <!-- SLICK JS -->
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <!-- BASE JS -->
+    <script tabindex="module" src="./js/slick.js"></script>
+    <!-- modalWindow script -->
+    <script type="module" src="./js/modal.js"></script>
+  </body>
 </html>

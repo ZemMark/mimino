@@ -1,3 +1,42 @@
+.room-container {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  @include tablet {
+    padding-top: 62px;
+    padding-bottom: 104px;
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0) 278px,
+      #bababa66 279px,
+      rgba(0, 0, 0, 0) 280px 510px,
+      #bababa66 511px,
+      rgba(0, 0, 0, 0) 512px 740px,
+      #bababa66 741px,
+      rgba(0, 0, 0, 0) 742px
+    );
+  }
+
+  @include desktop {
+    padding-top: 72px;
+    padding-bottom: 112px;
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0) 338px,
+      #bababa66 339px,
+      rgba(0, 0, 0, 0) 340px 640px,
+      #bababa66 641px,
+      rgba(0, 0, 0, 0) 642px 940px,
+      #bababa66 941px,
+      rgba(0, 0, 0, 0) 942px
+    );
+  }
+  @media screen and (max-width: 414px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
 .wrap-discribe {
   display: block;
 
@@ -11,18 +50,6 @@
 
 .section-room {
   background: $primaryBackgroundColor;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
-  @include tablet {
-    padding-top: 62px;
-    padding-bottom: 104px;
-  }
-
-  @include desktop {
-    padding-top: 72px;
-    padding-bottom: 112px;
-  }
 }
 
 .text-pre-title {
@@ -211,7 +238,7 @@
   & .slick-list {
     overflow: hidden;
   }
-  ​ &__item {
+  &__item {
     width: 194px;
     height: 194px;
     @include desktop {
@@ -273,21 +300,22 @@
     }
   }
 }
-.slick-slide {
+
+.lux-room-slider__container .slick-slide {
   margin-right: 16px;
   @include tablet {
     margin-right: 40px;
   }
 }
 
-.slick-prev {
-  left: -15px !important;
-}
+// .lux-room-slider__container .slick-prev {
+//   left: -15px !important;
+// }
 
-.slick-prev:before,
-.slick-next:before {
-  color: transparent !important;
-}
+// .lux-room-slider__container .slick-prev:before,
+// .lux-room-slider__container .slick-next:before {
+//   color: transparent !important;
+// }
 
 .lux-room-slider__arrow-left,
 .lux-room-slider__arrow-right {
