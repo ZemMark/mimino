@@ -2,7 +2,7 @@
   background-color: #fffdee;
   // УДАЛИТЬ НЕ ЗАБЫТЬ
 
-  @media screen and (min-width: 320px) {
+  @media screen and (min-width: 320px) and(max-width:1023px) {
     overflow: hidden;
     height: 1191px;
   }
@@ -64,7 +64,10 @@
 }
 //  КОНТЕЙНЕРІ
 .container-slider-overflow-hidden {
-  overflow: hidden;
+  @media screen and (min-width: 320px) and(max-width:1023px) {
+    overflow: hidden;
+  }
+
   height: 100%;
 }
 .restaurant-wrap {
@@ -201,6 +204,7 @@
     position: relative;
     top: -60px;
     width: 350px;
+    margin-left: 40px;
   }
   @media screen and (min-width: 1280px) {
     width: 460px;
@@ -213,6 +217,8 @@
     top: -32px;
     width: 400px;
     margin-left: 5px;
+    z-index: 999;
+    margin-top: 0px;
   }
   @media screen and (min-width: 1280px) {
     width: 460px;
