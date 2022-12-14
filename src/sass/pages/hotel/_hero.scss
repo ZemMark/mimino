@@ -146,7 +146,7 @@
 
 // hero title
 
-hero-main__title {
+.hero-main__title {
   width: 260px;
   text-align: center;
   display: block;
@@ -161,18 +161,12 @@ hero-main__title {
   font-size: 96px;
   line-height: 1.07;
   letter-spacing: 0.3em;
+
   text-transform: uppercase;
-
-  background-color: $whiteColor;
-
-  text-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: #ffffff;
 
   @include tablet {
-    width: 345px;
+    width: 340px;
     margin-bottom: 16px;
     font-size: 128px;
     line-height: 1.08;

@@ -10,7 +10,6 @@
     padding-top: 164px;
   }
 }
-
 .hero-backround {
   position: relative;
   height: 740px;
@@ -40,28 +39,6 @@
 
   @include phone {
     max-width: 414px;
-  }
-
-  @media screen and (min-width: 600px) {
-    max-width: 1025px;
-    height: 740px;
-    background-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.65),
-        rgba(0, 0, 0, 0.65)
-      ),
-      url(../images/hero-index/hero-main-tab.jpg);
-
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: linear-gradient(
-          to right,
-          rgba(0, 0, 0, 0.65),
-          rgba(0, 0, 0, 0.65)
-        ),
-        url(../images/hero-index/hero-main-tab-2x.jpg);
-    }
   }
 
   @include tablet {
@@ -185,18 +162,12 @@
   font-size: 96px;
   line-height: 1.07;
   letter-spacing: 0.3em;
+
   text-transform: uppercase;
-
-  background-color: $whiteColor;
-
-  text-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: #ffffff;
 
   @include tablet {
-    width: 345px;
+    width: 340px;
     margin-bottom: 16px;
     font-size: 128px;
     line-height: 1.08;
@@ -282,9 +253,6 @@
 
   padding: 15px 24px 13px 24px;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
   &:hover {
     background-color: #ffffff;
     border: none;
@@ -355,14 +323,9 @@
 .hero-main-social__link {
   width: 100%;
   height: 100%;
-
-  transition: fill $transition;
 }
 .hero-main-social__icon {
-  fill: $borderColor;
-  transition: fill $transition;
+  fill: rgba(243, 198, 83, 0.7);
 
-  &:focus {
-    fill: red;
-  }
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
