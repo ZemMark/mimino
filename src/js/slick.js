@@ -45,13 +45,11 @@ $('.hero-slider').slick({
   zIndex: 1,
 });
 $(document).ready(function () {
-  $('.details-hotel__slaider').slick({
+  $('.restaurant-about-slider').slick({
     arrows: true,
     slidesToShow: 2,
     variableWidth: true,
-    appendArrows: $('.details-hotel-slider__btn'),
-  //   prevArrow: $('.details-hotel-slider__arrow-right'),
-  // nextArrow: $('.details-hotel-slider__arrow-left'),
+    appendArrows: $('.restaurant-about__slider-nav'),
     speed: 300,
     autoplay: true,
   });
