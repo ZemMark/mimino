@@ -40,6 +40,28 @@
     max-width: 414px;
   }
 
+  @media screen and (min-width: 600px) {
+    max-width: 1025px;
+    height: 740px;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(../images/hero-hotel/hot-hero-tab-1x.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/hero-hotel/hot-hero-tab-2x.jpg);
+    }
+  }
+
   @include tablet {
     min-width: 1024px;
     height: 740px;
@@ -85,8 +107,6 @@
   }
 }
 
-// adress
-
 .hero-main-adress {
   display: flex;
   position: absolute;
@@ -102,16 +122,6 @@
 
   @include desktop {
     left: 85px;
-  }
-
-  &:hover {
-    background-color: #ffffff;
-    color: #0e0c07;
-  }
-
-  &:focus {
-    background-color: #ffffff;
-    color: #0e0c07;
   }
 }
 
@@ -134,14 +144,23 @@
 
   border: 1px solid rgba(243, 198, 83, 0.7);
   border-radius: 2px;
+  transition: box-shadow $transition;
 
   @include tablet {
     font-size: 16px;
     line-height: 1.25;
   }
+
+  &:hover {
+    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.8) inset;
+  }
+
+  &:focus {
+    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.8) inset;
+  }
 }
 .hero-main-adress__icon {
-  fill: #f3c653;
+  fill: $modalBackgroundColor;
 }
 
 // hero title
@@ -161,12 +180,18 @@
   font-size: 96px;
   line-height: 1.07;
   letter-spacing: 0.3em;
-
   text-transform: uppercase;
-  color: #ffffff;
+
+  background-color: $whiteColor;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
 
   @include tablet {
-    width: 340px;
+    width: 345px;
     margin-bottom: 16px;
     font-size: 128px;
     line-height: 1.08;
@@ -192,7 +217,7 @@
 
   letter-spacing: 0.02em;
 
-  color: #ffffff;
+  color: $whiteColor;
 
   @include tablet {
     margin-bottom: 56px;
@@ -216,7 +241,7 @@
   text-transform: uppercase;
   letter-spacing: 0.05em;
 
-  color: #ffffff;
+  color: $whiteColor;
 
   @include tablet {
     margin-bottom: 145px;
@@ -236,7 +261,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 24px;
-
+  min-width: 235px;
   font-family: 'Montserrat';
 
   font-weight: 700;
@@ -245,25 +270,23 @@
 
   letter-spacing: 0.02em;
 
-  color: #f3c653;
+  color: $modalBackgroundColor;
   background-color: transparent;
-  border: 2px solid #ffffff;
+  border: 2px solid $whiteColor;
   border-radius: 25px;
 
   padding: 15px 24px 13px 24px;
 
+  transition: background-color $transition;
+
   &:hover {
-    background-color: #ffffff;
-    border: none;
+    background-color: $whiteColor;
   }
   &:active {
-    background-color: #ffffff;
-    border: none;
+    background-color: $whiteColor;
   }
-
   &:focus {
-    background-color: #ffffff;
-    border: none;
+    background-color: $whiteColor;
   }
 }
 
@@ -271,7 +294,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-
+  min-width: 235px;
   font-family: 'Montserrat';
 
   font-weight: 700;
@@ -280,25 +303,23 @@
 
   letter-spacing: 0.02em;
 
-  color: #f3c653;
+  color: $modalBackgroundColor;
   background-color: transparent;
-  border: 2px solid #ffffff;
+  border: 2px solid $whiteColor;
   border-radius: 25px;
 
   padding: 15px 24px 13px 24px;
+  transition: background-color $transition;
 
   &:hover {
     background-color: #ffffff;
-    border: none;
   }
   &:active {
     background-color: #ffffff;
-    border: none;
   }
 
   &:focus {
     background-color: #ffffff;
-    border: none;
   }
 }
 
@@ -322,9 +343,14 @@
 .hero-main-social__link {
   width: 100%;
   height: 100%;
-}
-.hero-main-social__icon {
-  fill: rgba(243, 198, 83, 0.7);
+  fill: $borderColor;
+  transition: fill $transition;
 
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus .hero-main-social__icon {
+    fill: $whiteColor;
+  }
+
+  &:active .hero-main-social__icon {
+    fill: $whiteColor;
+  }
 }
