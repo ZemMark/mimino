@@ -6,6 +6,7 @@
 // .text-contacts__wrap {
 //   // position: relative;
 // }
+
 .contacts__container {
   position: relative;
   @include tablet {
@@ -63,17 +64,12 @@
     }
   }
 }
+
 .contacts-adress-map__wrap {
   @include tablet {
     display: flex;
   }
 }
-
-// .contacts-adress {
-//   @include tablet {
-//     position: relative;
-//   }
-// }
 
 // logo
 
@@ -135,6 +131,10 @@
   &:hover {
     color: $textTitleColor;
   }
+
+  &:focus {
+    color: $textTitleColor;
+  }
 }
 
 .contacts-rest__list {
@@ -174,6 +174,7 @@
   color: $textTitleColor;
 
   text-decoration: none;
+
   transition: color $transition, background-color $transition;
 
   // анимации для ховера таблички с телефоном ресторана
@@ -211,6 +212,7 @@
   padding: 8px 8px 8px 8px;
   border: 0.5px solid $borderColor;
   border-radius: 2px;
+  transition: background-color $transition;
 
   @include tablet {
     gap: 16px;
@@ -241,8 +243,19 @@
 
   text-decoration: none;
 
-  .contacts-hotel-phone__list:hover & {
+  transition: color $transition;
+
+  &:hover {
     color: $borderColor;
+  }
+
+  &:focus {
+    color: $borderColor;
+  }
+
+  &:focus .contacts-hotel-phone__list {
+    color: $borderColor;
+    background-color: $textTitleColor;
   }
 }
 
@@ -259,7 +272,14 @@
     margin-bottom: 0;
   }
 
+  transition: background-color $transition, color $transition;
+
   & .contacts-adress-pin__link:hover {
+    background-color: $textTitleColor;
+    color: $borderColor;
+  }
+
+  & .contacts-adress-pin__link:focus {
     background-color: $textTitleColor;
     color: $borderColor;
   }
