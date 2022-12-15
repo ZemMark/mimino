@@ -1,44 +1,54 @@
 .footer {
   position: relative;
+  margin: auto;
+  max-width: 1280px;
   background-color: $footerColor;
-
-  @include tablet {
-    background-color: $textBlackColor;
-  }
 }
 .footer-grad {
   @include tablet {
+    width: 1024px;
+    margin: 0 auto;
     background-image: linear-gradient(
       to right,
-      $footerColor 508px,
-      rgba(122, 122, 122, 0.4) 509px,
-      $footerColor 510px,
-      $footerColor 743px,
-      rgba(122, 122, 122, 0.4) 744px,
-      $footerColor 745px
+      $footerColor 499px,
+      rgba(122, 122, 122, 0.4) 500px,
+      $footerColor 501px,
+      $footerColor 736px,
+      rgba(122, 122, 122, 0.4) 737px,
+      $footerColor 738px
     );
   }
   @include desktop {
+    width: 1280px;
     background-image: linear-gradient(
       to right,
-      $footerColor 639px,
-      rgba(122, 122, 122, 0.4) 640px,
-      $footerColor 641px,
-      $footerColor 941px,
-      rgba(122, 122, 122, 0.4) 942px,
-      $footerColor 943px
+      $footerColor 625px,
+      rgba(122, 122, 122, 0.4) 626px,
+      $footerColor 627px,
+      $footerColor 926px,
+      rgba(122, 122, 122, 0.4) 927px,
+      $footerColor 928px
     );
   }
 }
 .footer__container {
   display: flex;
-  width: 100%;
+
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  margin: 0 auto;
+
+  @include phone {
+    max-width: 414px;
+  }
+  @include tablet {
+    max-width: 1024px;
+  }
+  @include desktop {
+    max-width: 1280px;
+  }
 }
-.logo {
+.footer__logo {
   display: inline-block;
   text-decoration: none;
   font-style: normal;
@@ -48,6 +58,11 @@
   letter-spacing: 0.3em;
   color: $modalBackgroundColor;
   font-family: 'Film P3 Wide Light';
+  transition: $transition;
+  &:hover,
+  &:focus {
+    color: $whiteColor;
+  }
   @include tablet {
     font-size: 64px;
     line-height: 1.08;
@@ -84,6 +99,12 @@
   letter-spacing: 0.02em;
   text-decoration: none;
   color: $modalBackgroundColor;
+  transition: $transition;
+
+  &:hover,
+  &:focus {
+    color: $whiteColor;
+  }
 }
 
 .footer-socials__list {
@@ -103,22 +124,21 @@
     width: 144px;
   }
 }
-.footer-socials__link {
-  fill: rgba(243, 198, 83, 0.7);
+.footer-socials__text {
+  display: none;
   @include tablet {
-    fill: $modalBackgroundColor;
+    display: flex;
+  }
+}
+.footer-socials__link {
+  @include tablet {
+    color: $modalBackgroundColor;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border: 0.5px solid $modalBackgroundColor;
     border-radius: 2px;
     padding: 10px 12px;
-  }
-}
-.footer-socials__text {
-  display: none;
-
-  @include tablet {
     display: flex;
     font-weight: 400;
     font-size: 16px;
@@ -126,5 +146,25 @@
     align-items: center;
     letter-spacing: 0.02em;
     color: $modalBackgroundColor;
+    transition: $transition;
+
+    &:hover,
+    &:focus {
+      border-color: $whiteColor;
+      color: $whiteColor;
+    }
   }
+}
+
+.footer-socials__icon {
+  fill: #f3c653;
+  transition: $transition;
+  &:hover,
+  &:focus {
+    fill: $whiteColor;
+  }
+}
+.footer-socials__link:hover .footer-socials__icon,
+.footer-socials__link:focus .footer-socials__icon {
+  fill: $whiteColor;
 }

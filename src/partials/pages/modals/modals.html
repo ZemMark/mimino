@@ -6,7 +6,7 @@
     </svg>
   </button>
 
-  <form action="" class="modal__form">
+  <form action="#" method="post" enctype="multipart/form-data" class="modal__form">
     <p class="modal__title">ЗАБРОНЮВАТИ СТОЛИК</p>
 
     <ul class="inputs modal-container">
@@ -70,7 +70,6 @@
 <!-- overlay -->
 <div class="overlay js-modal-overlay"></div>
 
-<!-- modal book restaurant -->
 
 <div class="modal room js-modal" data-modal="room">
   <button type="modal__button-close" class="modal__close js-modal-close">
@@ -79,7 +78,7 @@
     </svg>
   </button>
 
-  <form action="" class="modal__form">
+  <form action="#" method="post" enctype="multipart/form-data" class="modal__form">
     <p class="modal__title">ЗАБРОНЮВАТИ НОМЕР</p>
 
     <ul class="inputs modal-container">
@@ -98,8 +97,15 @@
 
 
       </li>
+      <li class="input-item hidden">
 
-      <li class="input-item setting set-3rdli">
+        <input class="modal__input" type="text" name="name" value="+38 (___) ___-__-__" id="number" autofocus required>
+        <label class="modal__label" for="number">Номер телефону</label>
+
+
+      </li>
+
+      <li class="input-item setting">
 
         <select class="modal__input select" name="people" id="people">
           <option value="Двомісний люкс" selected>Двомісний люкс</option>
@@ -114,7 +120,7 @@
 
       </li>
 
-      <li class="input-item setting ">
+      <li class="input-item setting bottom-row">
 
         <select class="modal__input select" name="people" id="people">
           <option value="today">Сьогодні</option>
@@ -131,7 +137,7 @@
 
       </li>
 
-      <li class="input-item setting ">
+      <li class="input-item setting bottom-row">
 
         <select class="modal__input select" name="date" id="date">
           <option value="today">Сьогодні</option>
@@ -166,11 +172,105 @@
     </svg>
   </button>
 
-  <form action="" class="modal__form" id="form">
+  <form action="#" method="post" enctype="multipart/form-data" class="modal__form" id="form">
     <p class="modal__title">ЦІНИ НА НОМЕР</p>
     <div class="room-type__output">
 
       <output class="room-type">Двомісний люкс</output>
+
+      <label class="modal__label" for="room-type">Категорія номеру</label>
+    </div>
+
+
+    <ul class="inputs modal-container">
+
+      <li class="input-item">
+
+        <input class="modal__input" required type="number" name="nights" id="nights" autofocus required value="1">
+        <label class="modal__label" for="nights">Кількість ночей</label>
+
+
+      </li>
+
+      <li class="input-item modal-container">
+
+        <input class="modal__input" type="number" name="name" value="1000" id="price" autofocus required>
+        <label class="modal__label" for="price">грн</label>
+
+
+      </li>
+
+    </ul>
+
+    <button type="submit" class="button-submit">ЗАБРОНЮВАТИ НОМЕР</button>
+
+
+
+  </form>
+</div>
+
+<!-- modal price 2-->
+
+
+<div class="modal price js-modal" data-modal="price2">
+  <button type="modal__button-close" class="modal__close js-modal-close">
+    <svg class="modal__icon-close" width="24" height="24">
+      <use href="./images/icons.svg#close-button"></use>
+    </svg>
+  </button>
+
+  <form action="#" method="post" enctype="multipart/form-data" class="modal__form" id="form">
+    <p class="modal__title">ЦІНИ НА НОМЕР</p>
+    <div class="room-type__output">
+
+      <output class="room-type">ТРЬОХМІСНИЙ НОМЕР</output>
+
+      <label class="modal__label" for="room-type">Категорія номеру</label>
+    </div>
+
+
+    <ul class="inputs modal-container">
+
+      <li class="input-item">
+
+        <input class="modal__input" required type="number" name="nights" id="nights" autofocus required value="1">
+        <label class="modal__label" for="nights">Кількість ночей</label>
+
+
+      </li>
+
+      <li class="input-item modal-container">
+
+        <input class="modal__input" type="number" name="name" value="1000" id="price" autofocus required>
+        <label class="modal__label" for="price">грн</label>
+
+
+      </li>
+
+    </ul>
+
+    <button type="submit" class="button-submit">ЗАБРОНЮВАТИ НОМЕР</button>
+
+
+
+  </form>
+</div>
+
+
+<!-- modal price 3-->
+
+<div class="modal price js-modal" data-modal="price3">
+  <button type="modal__button-close" class="modal__close js-modal-close">
+    <svg class="modal__icon-close" width="24" height="24">
+      <use href="./images/icons.svg#close-button"></use>
+    </svg>
+  </button>
+
+  <form action="#" method="post" enctype="multipart/form-data" class="modal__form" id="form">
+    <p class="modal__title">ЦІНИ НА НОМЕР</p>
+    <div class="room-type__output">
+
+      <output class="room-type">ДВОМІСНИЙ НОМЕР</output>
 
       <label class="modal__label" for="room-type">Категорія номеру</label>
     </div>

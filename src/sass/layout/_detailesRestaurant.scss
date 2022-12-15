@@ -1,0 +1,281 @@
+.restdet {
+  padding-top: 24px;
+  padding-bottom: 40px;
+  max-width: 1280px;
+  background-size: cover;
+
+  @media screen and (min-width:320px) and (max-width:1023px) {
+    background-image: linear-gradient(to right,
+    rgba(0, 0, 0, 0.76) 139px,
+    rgba(122, 122, 122, 0.4) 140px,
+    rgba(0, 0, 0, 0.76) 141px,
+    rgba(0, 0, 0, 0.76) 273px,
+    rgba(122, 122, 122, 0.4) 274px,
+    rgba(0, 0, 0, 0.76) 275px),
+    url("../images/restaurant-details/mobrestdet-backgr-414.jpg");
+  
+  @include retina {
+    background-image: linear-gradient(to right,
+    rgba(0, 0, 0, 0.76) 139px,
+    rgba(122, 122, 122, 0.4) 140px,
+    rgba(0, 0, 0, 0.76) 141px,
+    rgba(0, 0, 0, 0.76) 273px,
+    rgba(122, 122, 122, 0.4) 274px,
+    rgba(0, 0, 0, 0.76) 275px),
+    url('../images/restaurant-details/mobrestdet-backgr-828.jpg');
+  }
+  }
+
+  @include tablet {
+    background-image: linear-gradient(to right,
+    rgba(0, 0, 0, 0.76) 277px,
+    rgba(122, 122, 122, 0.4) 278px,
+    rgba(0, 0, 0, 0.76) 279px,
+    rgba(0, 0, 0, 0.76) 508px,
+    rgba(122, 122, 122, 0.4) 509px,
+    rgba(0, 0, 0, 0.76) 510px,
+    rgba(0, 0, 0, 0.76) 743px,
+    rgba(122, 122, 122, 0.4) 744px,
+    rgba(0, 0, 0, 0.76) 745px),
+    url("../images/restaurant-details/tabrestdet-backgr-1024.jpg");
+  
+  @include retina {
+    background-image: 
+    linear-gradient(to right,
+    rgba(0, 0, 0, 0.76) 277px,
+    rgba(122, 122, 122, 0.4) 278px,
+    rgba(0, 0, 0, 0.76) 279px,
+    rgba(0, 0, 0, 0.76) 508px,
+    rgba(122, 122, 122, 0.4) 509px,
+    rgba(0, 0, 0, 0.76) 510px,
+    rgba(0, 0, 0, 0.76) 743px,
+    rgba(122, 122, 122, 0.4) 744px,
+    rgba(0, 0, 0, 0.76) 745px),
+    url('../images/restaurant-details/tabrestdet-backgr-2048.jpg');
+  }
+  }
+
+  @media screen and (min-width:1280px) {
+    background-image: linear-gradient(to right,
+    rgba(0, 0, 0, 0.76) 337px,
+    rgba(122, 122, 122, 0.4) 338px,
+    rgba(0, 0, 0, 0.76) 339px,
+    rgba(0, 0, 0, 0.76) 639px,
+    rgba(122, 122, 122, 0.4) 640px,
+    rgba(0, 0, 0, 0.76) 641px,
+    rgba(0, 0, 0, 0.76) 941px,
+    rgba(122, 122, 122, 0.4) 942px,
+    rgba(0, 0, 0, 0.76) 943px),
+    url("../images/restaurant-details/deskrestdet-backgr-1280.jpg");
+  
+  @include retina {
+    background-image: linear-gradient(to right,
+    rgba(0, 0, 0, 0.76) 337px,
+    rgba(122, 122, 122, 0.4) 338px,
+    rgba(0, 0, 0, 0.76), 339px,
+    rgba(0, 0, 0, 0.76) 639px,
+    rgba(122, 122, 122, 0.4) 640px,
+    rgba(0, 0, 0, 0.76) 641px,
+    rgba(0, 0, 0, 0.76) 941px,
+    rgba(122, 122, 122, 0.4) 942px,
+    rgba(0, 0, 0, 0.76) 943px),
+    url('../images/restaurant-details/deskrestdet-backgr-2560.jpg');
+  }
+  }
+
+  &__container {
+    padding-left: 140px;
+  }
+
+  &__logo {
+    color: white;
+
+    font-family: 'Film P3 Wide Light';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: calc(43 / 40);
+    letter-spacing: 0.3em;
+  }
+
+  &__title {
+    margin-top: 12px;
+    margin-bottom: 20px;
+    color: #ffffff;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+  }
+
+  &__text {
+    max-width: 259px;
+    margin-bottom: 48px;
+
+    font-weight: 600;
+    font-size: 12px;
+    line-height: calc(15 / 12);
+
+    color: #bababa;
+  }
+
+  &__button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+  }
+
+  &__order {
+    max-width: 236px;
+    padding: 14px 24px;
+    margin-bottom: 16px;
+    color: #F3C653;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 2px solid #FFFFFF;
+    border-radius: 25px;
+    font-weight: 700;
+    line-height: calc(20/16);
+    transition: background-color 300ms ease-in-out,
+    color 300ms ease-in-out, border-color 300ms ease-in-out;
+
+    &:hover,
+    &:focus {
+      background-color: #ffffff;
+      color: #F3C653;
+      border-color: #F3C653;
+    }
+  }
+
+  &__menu {
+    max-width: 236px;
+    padding: 14px 29px;
+    color: #F3C653;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 2px solid #FFFFFF;
+    border-radius: 25px;
+    font-weight: 700;
+    line-height: calc(20/16);
+    transition: background-color 300ms ease-in-out,
+    color 300ms ease-in-out, border-color 300ms ease-in-out;
+
+    &:hover,
+    &:focus {
+      background-color: #ffffff;
+      color: #F3C653;
+      border-color: #F3C653;
+    }
+  }
+}
+
+// Слайдер
+
+.restdet-slaider {
+  
+  height: 270px;
+
+  &__container {
+    position: relative;
+  }
+
+  &__images {
+    margin-right: 20px;
+  }
+
+  &__img {
+    height: 270px;
+    background-color: #DADADA;
+    border-radius: 2px;
+  }
+
+  &__arrow-left {
+    padding: 0;
+    border: none;
+    margin-right: 30px;
+    background-color: transparent;
+    fill: $whiteColor;
+  }
+
+  &__arrow-right {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    fill: $whiteColor;
+  }
+
+  &__buttons {
+    position: absolute;
+    top: 300px;
+    width: 108px;
+    @media screen and (max-width: 320px) {
+      left: 145px;
+    }
+    @include tablet {
+      right: 540px;
+      top: 300px;
+    }
+    @include desktop {
+      right: 730px;
+    }
+  }
+}
+
+// tablet
+@include tablet {
+  .restdet {
+    padding-top: 48px;
+    padding-bottom: 96px;
+
+    &__container {
+        padding-left: 278px;
+    }
+
+    &__logo {
+      font-size: 64px;
+      line-height: calc(69/64);
+    }
+
+    &__title {
+      margin-top: 16px;
+      margin-bottom: 8px;
+      font-size: 24px;
+      line-height: calc(29/24);
+    }
+
+    &__text {
+      max-width: 610px;
+      margin-bottom: 40px;
+      font-size: 16px;
+      line-height: calc(20/16);
+    }
+  }
+    // слайдер
+
+  .restdet-slaider {
+      max-width: 650px;
+      margin-left: 29px;
+
+    &__slaidercontainer {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
+  }
+}
+
+// desktop
+
+@include desktop {
+  .restdet-slaider {
+    max-width: 840px;
+    margin-left: 32px;
+
+    // &__container {
+    //   padding-left: 338px;
+    // }
+
+    &__images {
+      margin-right: 86px;
+    }
+  }
+}
