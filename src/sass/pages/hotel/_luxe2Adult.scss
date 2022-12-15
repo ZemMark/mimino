@@ -308,18 +308,17 @@
   }
 }
 
-// .lux-room-slider__container .slick-prev {
-//   left: -15px !important;
-// }
-
-// .lux-room-slider__container .slick-prev:before,
-// .lux-room-slider__container .slick-next:before {
-//   color: transparent !important;
-// }
-
 .lux-room-slider__arrow-left,
 .lux-room-slider__arrow-right {
   background-color: transparent;
+  transition: fill $transition;
+}
+
+.lux-room-slider__arrow-left:hover,
+.lux-room-slider__arrow-right:hover,
+.lux-room-slider__arrow-left:focus,
+.lux-room-slider__arrow-right:focus {
+  fill: $modalBackgroundColor;
 }
 
 .lux-room-slider__buttons {
