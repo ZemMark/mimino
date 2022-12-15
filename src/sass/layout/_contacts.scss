@@ -41,6 +41,28 @@
 
   top: 0;
   left: 140px;
+
+
+  
+  // позиціонування ліній від верхц секціх на телефон(не на всю висоту)
+  @media screen and (max-width: 1024px) {
+    position: absolute;
+    top: -36px;
+    height: 100%;
+  }
+  @include tablet{
+    position: absolute;
+    top: -69px;
+    height: 128%;
+  }
+  @include desktop{
+    position: absolute;
+    top: -64px;
+    height: 136%;
+  }
+
+
+
   @media screen and (min-width: 1024px) {
     left: 278px;
   }
@@ -169,6 +191,9 @@
 }
 
 .contacts-phone__num-single {
+  @media screen and (max-width: 1024px) {
+    position: relative;
+  }
   width: 100%;
   height: 100%;
   display: flex;
@@ -220,6 +245,9 @@
 }
 
 .contacts-hotel-phone__list {
+  @media screen and (max-width: 1024px) {
+      position: relative;
+    }
   display: flex;
   align-items: center;
   gap: 8px;
@@ -302,6 +330,9 @@
 }
 
 .contacts-adress-pin__link {
+  @media screen and (max-width: 1024px) {
+      position: relative;
+    }
   min-width: 255px;
   display: flex;
   align-items: center;
