@@ -210,12 +210,12 @@
   height: 100vh;
   background-color: rgba(0, 0, 0, .3);
 
-  z-index: 9990;
   transition: opacity $transition;
 }
 
 .modal.is-shown,
 .overlay.is-shown {
+  z-index: 9990;
   opacity: 1;
   pointer-events: all;
   visibility:visible;
