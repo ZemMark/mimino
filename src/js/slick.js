@@ -28,8 +28,8 @@ $('.restdet-slaider').slick({
   slidesToShow: 1,
   centerMode: false,
   variableWidth: true,
-  prevArrow: $(".restdet-slaider__arrow-left"),
-  nextArrow: $(".restdet-slaider__arrow-right")
+  prevArrow: $('.restdet-slaider__arrow-left'),
+  nextArrow: $('.restdet-slaider__arrow-right'),
 });
 
 /* room-page slider */
@@ -43,4 +43,27 @@ $('.hero-slider').slick({
   prevArrow: $('.hero-slider__prev'),
   nextArrow: $('.hero-slider__next'),
   zIndex: 1,
+});
+
+$(document).ready(function () {
+  $('.kitchen-about-slider').slick({
+    arrows: true,
+    slidesToShow: 2,
+    variableWidth: true,
+    appendArrows: $('.kitchen-about__slider-nav'),
+    speed: 300,
+    autoplay: true,
+  });
+});
+
+$('.details-hotel-slaider').slick({
+  dots: false,
+  infinite: true,
+  autoplay: true,
+  speed: 300,
+  slidesToShow: 1,
+  centerMode: false,
+  variableWidth: true,
+  prevArrow: $('.details-hotel-slaider__arrow-left'),
+  nextArrow: $('.details-hotel-slaider__arrow-right'),
 });
