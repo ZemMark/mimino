@@ -335,6 +335,9 @@
 }
 
 .contacts-adress-pin__link {
+  transition: background-color $transition, color $transition;
+
+  // так полоска буде під цим
   @media screen and (max-width: 1024px) {
       position: relative;
     }
