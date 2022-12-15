@@ -1,7 +1,6 @@
 .details-hotel {
   padding-top: 24px;
   padding-bottom: 40px;
-  height: 735px;
   background-size: cover;
   background-image: linear-gradient(
       to right,
@@ -83,7 +82,7 @@
   &__text {
     width: 243px;
     margin-bottom: 48px;
-    margin-left: 32px;
+    margin-left: 17px;
     font-weight: 600;
     font-size: 12px;
     line-height: 1.25;
@@ -91,6 +90,7 @@
   }
 
   &__btn {
+    margin-top: 75px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -116,11 +116,17 @@
       border-color: #f3c653;
     }
   }
+}
 
-  &__slaider {
+// Слайдер //
+
+.details-hotel-slaider {
+  height: 270px;
+
+  &__container {
+    position: relative;
     margin-left: -15px;
-    margin-right: 25px;
-    margin-bottom: 75px;
+    margin-right: 35px;
   }
 
   &__gallery {
@@ -129,96 +135,104 @@
 
   &__img {
     height: 270px;
+    background-color: #dadada;
+    border-radius: 2px;
   }
-}
 
-.details-hotel-slider__arrow-left {
-  padding: 0;
-  border: none;
-  margin-right: 30px;
-  background-color: transparent;
-  fill: $whiteColor;
-}
+  &__arrow-left {
+    padding: 0;
+    border: none;
+    margin-right: 30px;
+    background-color: transparent;
+    fill: $whiteColor;
+  }
 
-.details-hotel-slider__arrow-right {
-  padding: 0;
-  border: none;
-  background-color: transparent;
-  fill: $whiteColor;
+  &__arrow-right {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    fill: $whiteColor;
+  }
+
+  &__buttons {
+    position: absolute;
+    top: 286px;
+    width: 108px;
+    left: 270px;
+
+    @media screen and (max-width: 320px) {
+      left: 205px;
+    }
+    @include tablet {
+      top: 286px;
+      left: 566px;
+    }
+    @include desktop {
+      left: 776px;
+    }
+  }
 }
 
 @include tablet {
   .details-hotel {
-    height: 620px;
     padding-top: 48px;
     padding-bottom: 96px;
 
     &__container {
-      display: flex;
-      flex-direction: column;
       padding-right: 278px;
+      margin-left: 15px;
     }
 
     &__logo {
+      margin-right: 0;
+      margin-left: auto;
       margin-bottom: 16px;
       font-size: 64px;
+      line-height: 1.8;
     }
 
     &__title {
       margin-bottom: 8px;
       font-size: 24px;
+      line-height: 1.2;
     }
 
     &__text {
-      margin-left: 110px;
+      margin-right: 0;
+      margin-left: auto;
       margin-bottom: 40px;
       width: 549px;
       font-size: 16px;
+      line-height: 1.25;
     }
 
     &__btn {
       margin-top: 150px;
     }
 
+    // Слфйдер //
+
     &__slaiderwrap {
-      height: 270px;
       display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
     }
+  }
 
-    &__slaider {
-      max-width: 662px;
-      margin-left: 0px;
-    }
+  .details-hotel-slaider {
+    max-width: 662px;
 
-    &__gallery {
-      margin-left: 34px;
+    &__container {
+      margin-left: 0;
     }
   }
 }
 
 @include desktop {
-  .details-hotel {
-    &__wrap {
-      align-items: flex-end;
-    }
-
-    &__text {
-      width: 595px;
-      margin-right: -15px;
-      font-size: 17px;
-      line-height: 1.25;
-    }
-
-    &__slaiderwrap {
-      display: flex;
-      gap: 33px;
-      height: 270px;
-    }
-
-    &__slaider {
-      max-width: 840px;
-      margin-left: 32px;
-    }
+  .details-hotel-slaider {
+    max-width: 840px;
+    margin-left: 32px;
 
     &__gallery {
       margin-left: 84px;
