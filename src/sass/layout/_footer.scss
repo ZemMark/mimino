@@ -100,10 +100,12 @@
   text-decoration: none;
   color: $modalBackgroundColor;
   transition: $transition;
+  transition: text-shadow;
 
   &:hover,
   &:focus {
     color: $whiteColor;
+    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.8);
   }
 }
 
@@ -146,12 +148,16 @@
     align-items: center;
     letter-spacing: 0.02em;
     color: $modalBackgroundColor;
-    transition: $transition;
+    transition: border-color $transition;
+    transition: color $transition;
+    transition: text-shadow $transition;
 
     &:hover,
     &:focus {
       border-color: $whiteColor;
       color: $whiteColor;
+      text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.8);
+      box-shadow: inset 0px 2px 3px rgba(255, 255, 255, 0.8);
     }
   }
 }
