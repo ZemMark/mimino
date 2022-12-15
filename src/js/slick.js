@@ -55,3 +55,15 @@ $(document).ready(function () {
     autoplay: true,
   });
 });
+
+$('.details-hotel-slaider').slick({
+  dots: false,
+  infinite: true,
+  autoplay: true,
+  speed: 300,
+  slidesToShow: 1,
+  centerMode: false,
+  variableWidth: true,
+  prevArrow: $('.details-hotel-slaider__arrow-left'),
+  nextArrow: $('.details-hotel-slaider__arrow-right'),
+});

@@ -1,0 +1,150 @@
+<section class="details-hotel container">
+  <div class="details-hotel__container">
+    <p class="details-hotel__logo">MIMIHO</p>
+    <h2 class="details-hotel__title">Готель</h2>
+    <p class="details-hotel__text">
+      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+      Velit officia consequat duis enim velit mollit.
+    </p>
+  </div>
+
+  <!--  Слайдер  -->
+
+  <div class="details-hotel__slaiderwrap">
+    <div class="details-hotel-slaider__container">
+      <ul class="details-hotel-slaider">
+        <li class="details-hotel-slaider__gallery">
+          <picture class="etails-hotel-slaider__img">
+            <source
+              srcset="
+                ./images/details-hotel/details-hotel-desk1-1x.jpg 1x,
+                ./images/details-hotel/details-hotel-desk1-2x.jpg 2x
+              "
+              media="(max-width: 1280px)"
+            />
+            <source
+              srcset="
+                ./images/details-hotel/details-hotel-tab1-1x.jpg 1x,
+                ./images/details-hotel/details-hotel-tab1-2x.jpg 2x
+              "
+              media="(max-width: 1024px)"
+            />
+            <source
+              srcset="
+                ./images/details-hotel/details-hotel-mob1-1x.jpg 1x,
+                ./images/details-hotel/details-hotel-mob1-2x.jpg 2x
+              "
+              media="(max-width: 414px)"
+            />
+            <img
+              src="./images/details-hotel/details-hotel-mob1-1x.jpg"
+              alt="Готельний номер з великим ліжком"
+              width="270"
+            />
+          </picture>
+        </li>
+        <li class="details-hotel-slaider__gallery">
+          <picture class="etails-hotel-slaider__img">
+            <source
+              srcset="
+                ./images/details-hotel/details-hotel-desk2-1x.jpg 1x,
+                ./images/details-hotel/details-hotel-desk2-2x.jpg 2x
+              "
+              media="(max-width: 1280px)"
+            />
+            <source
+              srcset="
+                ./images/details-hotel/details-hotel-tab2-1x.jpg 1x,
+                ./images/details-hotel/details-hotel-tab2-2x.jpg 2x
+              "
+              media="(max-width: 1024px)"
+            />
+            <source
+              srcset="
+                ./images/details-hotel/details-hotel-mob2-1x.jpg 1x,
+                ./images/details-hotel/details-hotel-mob2-2x.jpg 2x
+              "
+              media="(max-width: 414px)"
+            />
+            <img
+              src="./images/details-hotel/details-hotel-mob2-1x.jpg"
+              alt="Ресторанна страва"
+              width="162"
+            />
+          </picture>
+        </li>
+        <li class="details-hotel-slaider__gallery">
+          <picture class="etails-hotel-slaider__img">
+            <source
+              srcset="
+                ./images/details-hotel/details-hotel-desk3-1x.jpg 1x,
+                ./images/details-hotel/details-hotel-desk3-2x.jpg 2x
+              "
+              media="(max-width: 1280px)"
+            />
+            <source
+              srcset="
+                ./images/details-hotel/details-hotel-tab3-1x.jpg 1x,
+                ./images/details-hotel/details-hotel-tab3-2x.jpg 2x
+              "
+              media="(max-width: 1024px)"
+            />
+            <source
+              srcset="
+                ./images/details-hotel/details-hotel-mob3-1x.jpg 1x,
+                ./images/details-hotel/details-hotel-mob3-2x.jpg 2x
+              "
+              media="(max-width: 414px)"
+            />
+            <img
+              src="./images/details-hotel/details-hotel-mob3-1x.jpg"
+              alt="Дівчина з валізою на ресепшині в готелі"
+              width="270"
+            />
+          </picture>
+        </li>
+      </ul>
+
+      <!-- Стрілочки -->
+
+      <div class="details-hotel-slaider__buttons">
+        <button class="details-hotel-slaider__arrow-left" type="button">
+          <svg
+            width="30px"
+            height="17px"
+            class="details-hotel-slaider__arrow-left-svg"
+          >
+            <use href="./images/icons.svg#icon-prev-button"></use>
+          </svg>
+        </button>
+        <button class="details-hotel-slaider__arrow-right" type="button">
+          <svg
+            width="30px"
+            height="17px"
+            class="details-hotel-slaider__arrow-right-svg"
+          >
+            <use href="./images/icons.svg#icon-next-button"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <ul class="details-hotel__btn">
+      <li>
+        <button
+          type="button"
+          class="details-hotel__reserve js-open-modal"
+          data-modal="room"
+        >
+          Забронювати номер
+        </button>
+      </li>
+      <li>
+        <a href="./hotel.html">
+          <button type="button" class="details-hotel__prices">
+            Переглянути ціни
+          </button>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
