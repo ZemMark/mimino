@@ -62,7 +62,7 @@
   }
   @include phone {
     width: 414px;
-    height: 668px;
+    height: 620px;
 
 
   }
@@ -78,7 +78,10 @@
     line-height: 1.16;
     letter-spacing: 0.05em;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
+    @include phone{
+      margin-bottom: 40px;
+    }
     @include tablet{
       font-size: 40px;
     }
@@ -88,7 +91,7 @@
   &__form {
     padding-left: 15px;
     padding-right: 15px;
-    padding-bottom: 60px;
+    padding-bottom: 10px;
     padding-top: 60px;
     width: 100%;
     @include tablet{
@@ -192,11 +195,15 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
   display: block;
   width: 100%;
+  @include tablet{
+    margin-top: 40px;
+    
+  }
 
 }
 
@@ -232,7 +239,7 @@
 .modal.room{
   
   @include phone{
-    height: 780px;
+    height: 710px;
   }
   @include tablet{
     height: 638px;
@@ -242,7 +249,11 @@
 
 .modal.price{
   width: 414px;
+  height: 520px;
+  @include phone{
   height: 572px;
+
+  }
   @include tablet{
     width: 712px;
     height: 638px;
