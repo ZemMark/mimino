@@ -44,12 +44,13 @@
 
 
   
-  // позиціонування ліній від верхц секціх на телефон(не на всю висоту)
+  // позиціонування ліній від верху секціх на телефон(не на всю висоту)
   @media screen and (max-width: 1024px) {
     position: absolute;
     top: -36px;
     height: 100%;
   }
+  // тут на всю
   @include tablet{
     position: absolute;
     top: -69px;
@@ -70,6 +71,10 @@
     left: 338px;
   }
   &::before {
+      display: none;
+      @include tablet{
+        display: block;
+      }
     content: ' ';
     height: 599px;
     width: 1px;
@@ -87,7 +92,7 @@
   }
   &::after {
     content: ' ';
-    height: 599px;
+    height: 100%;
     width: 1px;
     background-color: rgba(186, 186, 186, 0.4);
     position: absolute;
@@ -374,4 +379,8 @@
     height: 100%;
     width: 535px;
   }
+}
+
+.frame__wrap{
+  position: relative;
 }
