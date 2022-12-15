@@ -1,7 +1,22 @@
 .contacts-main {
   background-color: #fffdee;
 
+  padding-top: 20px;
   padding-bottom: 15px;
+  
+    @include phone {
+      padding-top: 36px;
+      padding-bottom: 32px;
+    }
+  
+    @include tablet {
+      padding-top: 69px;
+      padding-bottom: 40px;
+    }
+    @include desktop {
+      padding-top: 64px;
+      padding-bottom: 74px;
+    }
 }
 
 // .text-contacts__wrap {
