@@ -44,7 +44,6 @@ $('.hero-slider').slick({
   nextArrow: $('.hero-slider__next'),
   zIndex: 1,
 });
-
 /* details-hotel slider */
 $('.details-hotel-slaider').slick({
   dots: false,
@@ -56,15 +55,4 @@ $('.details-hotel-slaider').slick({
   variableWidth: true,
   prevArrow: $('.details-hotel-slaider__arrow-left'),
   nextArrow: $('.details-hotel-slaider__arrow-right'),
-
-
-$(document).ready(function () {
-  $('.kitchen-about-slider').slick({
-    arrows: true,
-    slidesToShow: 2,
-    variableWidth: true,
-    appendArrows: $('.kitchen-about__slider-nav'),
-    speed: 300,
-    autoplay: true,
-  });
 });
