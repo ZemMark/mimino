@@ -56,6 +56,10 @@
   transition: opacity $transition;
   box-shadow: -1px 5px 100px 18px rgba(0, 0, 0, 1);
   background-color: $primaryBackgroundColor;
+
+  & .table{
+  z-index: 9999;
+  }
   @include phone {
     width: 414px;
     height: 668px;
