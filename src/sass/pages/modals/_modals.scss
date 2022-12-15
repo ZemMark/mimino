@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
   @include tablet{
     flex-wrap: wrap;
     flex-direction: row;
@@ -48,7 +47,7 @@
   pointer-events: none;
   visibility: hidden;
   opacity: 0;
-  // display: none;
+  z-index: 999999;
   position: fixed;
   z-index: 20;
   top: 50%;
@@ -211,7 +210,7 @@
   height: 100vh;
   background-color: rgba(0, 0, 0, .3);
 
-  z-index: 10;
+  z-index: 9990;
   transition: opacity $transition;
 }
 
@@ -221,10 +220,13 @@
   pointer-events: all;
   visibility:visible;
   transition: opacity $transition;
+  overflow-y: hidden;
+  // z-index: 9990;
 }
 
 
 .modal.room{
+  
   @include phone{
     height: 780px;
   }
