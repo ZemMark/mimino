@@ -280,9 +280,9 @@
 @include desktop {
   .details-hotel-slaider {
     max-width: 840px;
-    // margin-left: 32px;
 
     &__gallery {
+      width: 270px;
       margin-left: 84px;
     }
   }
