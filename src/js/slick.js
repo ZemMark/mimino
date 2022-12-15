@@ -56,7 +56,7 @@ $('.details-hotel-slaider').slick({
   variableWidth: true,
   prevArrow: $('.details-hotel-slaider__arrow-left'),
   nextArrow: $('.details-hotel-slaider__arrow-right'),
-  });
+});
 
 $(document).ready(function () {
   $('.kitchen-about-slider').slick({
@@ -66,5 +66,5 @@ $(document).ready(function () {
     appendArrows: $('.kitchen-about__slider-nav'),
     speed: 300,
     autoplay: true,
- });
-
+  });
+});
