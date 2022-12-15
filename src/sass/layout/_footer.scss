@@ -3,10 +3,6 @@
   margin: auto;
   max-width: 1280px;
   background-color: $footerColor;
-
-  @include tablet {
-    background-color: $textBlackColor;
-  }
 }
 .footer-grad {
   @include tablet {
