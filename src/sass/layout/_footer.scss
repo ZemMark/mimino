@@ -156,6 +156,8 @@
     transition: border-color $transition;
     transition: color $transition;
     transition: text-shadow $transition;
+    transition: background $transition;
+    transition: box-shadow $transition;
 
     &:hover,
     &:focus {
@@ -163,9 +165,15 @@
       color: $whiteColor;
       // text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.8);
       // box-shadow: inset 0px 2px 3px rgba(255, 255, 255, 0.8);
-      background: linear-gradient(145deg, #cacaca, #f0f0f0);
-        box-shadow: 22px 22px 55px #6c6c6c,
-          -22px -22px 55px #ffffff;
+
+
+      // background: linear-gradient(145deg, #cacaca, #f0f0f0);
+      //   box-shadow: 22px 22px 55px #6c6c6c,
+      //     -22px -22px 55px #ffffff;
+      background: linear-gradient(145deg, #8b8888, #bebebe);
+      box-shadow: 12px 12px 32px #666666,
+          -12px -12px 32px #ffffff;
+      text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.8);
     }
   }
 }
