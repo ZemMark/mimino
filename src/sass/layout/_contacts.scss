@@ -1,10 +1,6 @@
 .contacts-main {
   background-color: #fffdee;
   padding-bottom: 15px;
-
-  // @include tablet {
-  //   height: 521px;
-  // }
 }
 
 // .text-contacts__wrap {
@@ -137,11 +133,7 @@
   transition: color $transition;
 
   &:hover {
-    color: #494848;
-  }
-
-  &:focus {
-    color: #494848;
+    color: $textTitleColor;
   }
 }
 
@@ -160,27 +152,38 @@
   }
 }
 
-.contacts-rest__item {
-  background-color: #ffffff;
+.contacts-phone__num-single {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Montserrat';
+
+  background-color: $whiteColor;
   padding: 8px 8px 8px 8px;
   border: 0.5px solid $borderColor;
   border-radius: 2px;
 
-  & > a {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
 
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
+  letter-spacing: 0.02em;
+  fill: $borderColor;
+  color: $textTitleColor;
 
-    letter-spacing: 0.02em;
-    fill: $borderColor;
-    color: #494848;
+  text-decoration: none;
+  transition: color $transition, background-color $transition;
 
-    text-decoration: none;
+  // анимации для ховера таблички с телефоном ресторана
+  &:hover {
+    color: $borderColor;
+    background-color: $textTitleColor;
+  }
+  &:focus {
+    color: $borderColor;
+    background-color: $textTitleColor;
   }
 }
 
@@ -204,13 +207,21 @@
   align-items: center;
   gap: 8px;
 
-  background-color: #ffffff;
+  background-color: $whiteColor;
   padding: 8px 8px 8px 8px;
   border: 0.5px solid $borderColor;
   border-radius: 2px;
 
   @include tablet {
     gap: 16px;
+  }
+
+  &:hover {
+    background-color: $textTitleColor;
+  }
+
+  &:focus {
+    background-color: $textTitleColor;
   }
 }
 
@@ -225,10 +236,14 @@
   line-height: 17px;
 
   letter-spacing: 0.02em;
+  color: $textTitleColor;
   fill: $borderColor;
-  color: #494848;
 
   text-decoration: none;
+
+  .contacts-hotel-phone__list:hover & {
+    color: $borderColor;
+  }
 }
 
 // location
@@ -245,11 +260,11 @@
   }
 
   & .contacts-adress-pin__link:hover {
-    // box-shadow: 2px 2px 10px rgba(25, 25, 25, 0.8) inset;
-    background-color: #494848;
+    background-color: $textTitleColor;
     color: $borderColor;
   }
 }
+
 .contacts-adress-pin__link {
   min-width: 255px;
   display: flex;
@@ -265,20 +280,17 @@
 
   letter-spacing: 0.02em;
 
-  color: #494848;
+  color: $textTitleColor;
 
   text-decoration: none;
 
-  background-color: #ffffff;
+  background-color: $whiteColor;
   padding: 8px 8px 8px 8px;
   border: 0.5px solid $borderColor;
   border-radius: 2px;
+
   @include tablet {
     width: 100%;
-  }
-
-  &:hover {
-    // box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.8) inset;
   }
 }
 
