@@ -110,7 +110,10 @@
 .contacts-border:hover,
 .contacts-border:active,
 .contacts-border:focus{
-  box-shadow: inset 2px 2px 10px #fffc;
+  @include tablet{
+
+    box-shadow: inset 2px 2px 10px #fffc;
+  }
 }
 
 .contacts-item {
