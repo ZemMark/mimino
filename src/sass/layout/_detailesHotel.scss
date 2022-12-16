@@ -2,53 +2,93 @@
   padding-top: 24px;
   padding-bottom: 40px;
   background-size: cover;
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.7)
-    ),
-    url(../images/details-hotel/details-hotel-background-mob-1x.jpg);
 
-  @include retina {
+  @media screen and (min-width: 320px) and (max-width: 1023px) {
     background-image: linear-gradient(
         to right,
-        rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.7)
+        rgba(0, 0, 0, 0.76) 139px,
+        rgba(122, 122, 122, 0.4) 140px,
+        rgba(0, 0, 0, 0.76) 141px,
+        rgba(0, 0, 0, 0.76) 273px,
+        rgba(122, 122, 122, 0.4) 274px,
+        rgba(0, 0, 0, 0.76) 275px
       ),
-      url(../images/details-hotel/details-hotel-background-mob-2x.jpg);
+      url(../images/details-hotel/details-hotel-background-mob-1x.jpg);
+
+    @include retina {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.76) 139px,
+          rgba(122, 122, 122, 0.4) 140px,
+          rgba(0, 0, 0, 0.76) 141px,
+          rgba(0, 0, 0, 0.76) 273px,
+          rgba(122, 122, 122, 0.4) 274px,
+          rgba(0, 0, 0, 0.76) 275px
+        ),
+        url(../images/details-hotel/details-hotel-background-mob-2x.jpg);
+    }
   }
 
   @include tablet {
     background-image: linear-gradient(
         to right,
-        rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.7)
+        rgba(0, 0, 0, 0.76) 277px,
+        rgba(122, 122, 122, 0.4) 278px,
+        rgba(0, 0, 0, 0.76) 279px,
+        rgba(0, 0, 0, 0.76) 508px,
+        rgba(122, 122, 122, 0.4) 509px,
+        rgba(0, 0, 0, 0.76) 510px,
+        rgba(0, 0, 0, 0.76) 743px,
+        rgba(122, 122, 122, 0.4) 744px,
+        rgba(0, 0, 0, 0.76) 745px
       ),
       url(../images/details-hotel/details-hotel-background-tab-1x.jpg);
 
     @include retina {
       background-image: linear-gradient(
           to right,
-          rgba(0, 0, 0, 0.7),
-          rgba(0, 0, 0, 0.7)
+          rgba(0, 0, 0, 0.76) 277px,
+          rgba(122, 122, 122, 0.4) 278px,
+          rgba(0, 0, 0, 0.76) 279px,
+          rgba(0, 0, 0, 0.76) 508px,
+          rgba(122, 122, 122, 0.4) 509px,
+          rgba(0, 0, 0, 0.76) 510px,
+          rgba(0, 0, 0, 0.76) 743px,
+          rgba(122, 122, 122, 0.4) 744px,
+          rgba(0, 0, 0, 0.76) 745px
         ),
         url(../images/details-hotel/details-hotel-background-tab-2x.jpg);
     }
   }
 
-  @include desktop {
+  @media screen and (min-width: 1280px) {
     background-image: linear-gradient(
         to right,
-        rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.7)
+        rgba(0, 0, 0, 0.76) 337px,
+        rgba(122, 122, 122, 0.4) 338px,
+        rgba(0, 0, 0, 0.76) 339px,
+        rgba(0, 0, 0, 0.76) 639px,
+        rgba(122, 122, 122, 0.4) 640px,
+        rgba(0, 0, 0, 0.76) 641px,
+        rgba(0, 0, 0, 0.76) 941px,
+        rgba(122, 122, 122, 0.4) 942px,
+        rgba(0, 0, 0, 0.76) 943px
       ),
       url(../images/details-hotel/details-hotel-background-desk-1x.jpg);
 
     @include retina {
       background-image: linear-gradient(
           to right,
-          rgba(0, 0, 0, 0.7),
-          rgba(0, 0, 0, 0.7)
+          rgba(0, 0, 0, 0.76) 337px,
+          rgba(122, 122, 122, 0.4) 338px,
+          rgba(0, 0, 0, 0.76),
+          339px,
+          rgba(0, 0, 0, 0.76) 639px,
+          rgba(122, 122, 122, 0.4) 640px,
+          rgba(0, 0, 0, 0.76) 641px,
+          rgba(0, 0, 0, 0.76) 941px,
+          rgba(122, 122, 122, 0.4) 942px,
+          rgba(0, 0, 0, 0.76) 943px
         ),
         url(../images/details-hotel/details-hotel-background-desk-2x.jpg);
     }
@@ -145,6 +185,11 @@
     margin-right: 30px;
     background-color: transparent;
     fill: $whiteColor;
+    transition: fill $transition;
+    &:hover,
+    &:focus {
+      fill: $modalBackgroundColor;
+    }
   }
 
   &__arrow-right {
@@ -152,6 +197,11 @@
     border: none;
     background-color: transparent;
     fill: $whiteColor;
+    transition: fill $transition;
+    &:hover,
+    &:focus {
+      fill: $modalBackgroundColor;
+    }
   }
 
   &__buttons {
@@ -164,11 +214,11 @@
       left: 205px;
     }
     @include tablet {
-      top: 286px;
-      left: 566px;
+      top: 296px;
+      left: 568px;
     }
     @include desktop {
-      left: 776px;
+      left: 746px;
     }
   }
 }
@@ -232,9 +282,9 @@
 @include desktop {
   .details-hotel-slaider {
     max-width: 840px;
-    margin-left: 32px;
 
     &__gallery {
+      width: 270px;
       margin-left: 84px;
     }
   }
