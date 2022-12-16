@@ -5,6 +5,7 @@
   top: 0;
   width: 100%;
   z-index: 8;
+  
 }
 
 
@@ -34,6 +35,8 @@
   @include desktop {
     max-width: 1280px;
     margin: 0 auto;
+    padding-left: 88px;
+      padding-right: 88px;
   }
 }
 .header-logo {
@@ -51,6 +54,7 @@
   @include tablet {
     font-size: 40px;
     line-height: 1.07;
+    // margin-right: 83px;
   }
 }
 .header-logo:hover,
