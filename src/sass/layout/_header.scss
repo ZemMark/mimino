@@ -83,6 +83,8 @@
 
 .contacts-link {
   display: none;
+  transition: color $transition;
+  transition: text-shadow $transition;
 
   @include tablet {
     display: inline-block;
@@ -98,9 +100,17 @@
 }
 
 .contacts-link:focus,
-.contacts-link:hover {
+.contacts-link:hover,
+.contacts-link:active{
   color: $modalBackgroundColor;
-  transition: color $transition
+  text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.8);
+
+}
+
+.contacts-border:hover,
+.contacts-border:active,
+.contacts-border:focus{
+  box-shadow: inset 2px 2px 10px #fffc;
 }
 
 .contacts-item {
@@ -146,6 +156,7 @@
 }
 
 .contacts-border {
+  transition: box-shadow $transition;
   @include tablet {
     height: 40px;
     border: 1px solid $modalBackgroundColor;
