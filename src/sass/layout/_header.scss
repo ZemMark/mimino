@@ -5,6 +5,7 @@
   top: 0;
   width: 100%;
   z-index: 8;
+  
 }
 
 
@@ -34,6 +35,8 @@
   @include desktop {
     max-width: 1280px;
     margin: 0 auto;
+    padding-left: 88px;
+      padding-right: 88px;
   }
 }
 .header-logo {
@@ -46,11 +49,18 @@
   color: $whiteColor;
   text-transform: uppercase;
   text-decoration: none;
-
+  transition: text-shadow $transition;
+  
   @include tablet {
     font-size: 40px;
     line-height: 1.07;
+    // margin-right: 83px;
   }
+}
+.header-logo:hover,
+.header-logo:active,
+.header-logo:focus{
+  text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.8);
 }
 
 .contacts-nav {
@@ -73,6 +83,8 @@
 
 .contacts-link {
   display: none;
+  transition: color $transition;
+  transition: text-shadow $transition;
 
   @include tablet {
     display: inline-block;
@@ -88,17 +100,33 @@
 }
 
 .contacts-link:focus,
-.contacts-link:hover {
+.contacts-link:hover,
+.contacts-link:active{
   color: $modalBackgroundColor;
-  transition: color $transition
+  text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.8);
+
+}
+
+.contacts-border:hover,
+.contacts-border:active,
+.contacts-border:focus{
+  box-shadow: inset 2px 2px 10px #fffc;
 }
 
 .contacts-item {
   display: inline-flex;
   align-items: center;
+  
 
   @include tablet {
     gap: 32px;
+  }
+}
+.contacts-icon:focus,
+.contacts-icon:active,
+.contacts-icon:hover{
+  @media screen and (max-width: 1024px) {
+    fill: $whiteColor;
   }
 }
 
@@ -111,9 +139,24 @@
   letter-spacing: 0.02em;
   color: $modalBackgroundColor;
   text-decoration: none;
+  transition: color $transition;
+  transition: text-shadow $transition;
+
+}
+.contacts-title:focus,
+.contacts-title:active,
+.contacts-title:hover{
+  @include phone{
+    color: $whiteColor;
+    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.8);
+    // text-shadow: 20px 20px 60px #d9d9d9,
+    //     -20px -20px 60px #ffffff;
+
+  }
 }
 
 .contacts-border {
+  transition: box-shadow $transition;
   @include tablet {
     height: 40px;
     border: 1px solid $modalBackgroundColor;
@@ -126,6 +169,7 @@
 .contacts-icon {
   vertical-align: middle;
   fill: $modalBackgroundColor;
+  transition: fill $transition;
 
   @include tablet {
     margin-left: 8px;
@@ -148,17 +192,18 @@
 .soc-link {
   gap: 20px;
 }
+.soc-link:hover .soc-icon,
+.soc-link:active .soc-icon,
+.soc-link:focus .soc-icon{
+  fill: $whiteColor;
+}
 
 .soc-icon {
+  transition: fill $transition;
   display: none;
-
+  
   @include desktop {
     display: inline-block;
     fill: $modalBackgroundColor;
-    &:hover, 
-    &:focus {
-      fill: $whiteColor;
-      transition: fill $transition
-    }
   }
 }
