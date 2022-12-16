@@ -1,5 +1,7 @@
 .hero__container {
   padding-top: 181px;
+  position: relative;
+  height: 100%;
 
   @include tablet {
     padding-top: 188px;
