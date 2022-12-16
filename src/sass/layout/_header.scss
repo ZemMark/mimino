@@ -15,25 +15,25 @@
   background-color: #0000;
   justify-content: space-between;
   align-items: center;
-  padding-left: 15px;
-  padding-right: 15px;
+  // padding-left: 15px;
+  // padding-right: 15px;
   display: flex;
 
   @include phone {
   
-    max-width: 414px;
+    width: 414px;
     margin: 0 auto;
   
   }
     
   @include tablet {
-    max-width: 1024px;
+    width: 1024px;
     height: 100px;
     margin: 0 auto;
     }
 
   @include desktop {
-    max-width: 1280px;
+    width: 1280px;
     margin: 0 auto;
     padding-left: 88px;
       padding-right: 88px;
