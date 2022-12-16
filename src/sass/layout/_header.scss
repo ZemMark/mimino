@@ -177,17 +177,18 @@
 .soc-link {
   gap: 20px;
 }
+.soc-link:hover .soc-icon,
+.soc-link:active .soc-icon,
+.soc-link:focus .soc-icon{
+  fill: $whiteColor;
+}
 
 .soc-icon {
+  transition: fill $transition;
   display: none;
-
+  
   @include desktop {
     display: inline-block;
     fill: $modalBackgroundColor;
-    &:hover, 
-    &:focus {
-      fill: $whiteColor;
-      transition: fill $transition
-    }
   }
 }
