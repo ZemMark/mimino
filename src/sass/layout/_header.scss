@@ -96,9 +96,17 @@
 .contacts-item {
   display: inline-flex;
   align-items: center;
+  
 
   @include tablet {
     gap: 32px;
+  }
+}
+.contacts-icon:focus,
+.contacts-icon:active,
+.contacts-icon:hover{
+  @media screen and (max-width: 1024px) {
+    fill: $whiteColor;
   }
 }
 
@@ -111,6 +119,20 @@
   letter-spacing: 0.02em;
   color: $modalBackgroundColor;
   text-decoration: none;
+  transition: color $transition;
+  transition: text-shadow $transition;
+
+}
+.contacts-title:focus,
+.contacts-title:active,
+.contacts-title:hover{
+  @include phone{
+    color: $whiteColor;
+    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.8);
+    // text-shadow: 20px 20px 60px #d9d9d9,
+    //     -20px -20px 60px #ffffff;
+
+  }
 }
 
 .contacts-border {
@@ -126,6 +148,7 @@
 .contacts-icon {
   vertical-align: middle;
   fill: $modalBackgroundColor;
+  transition: fill $transition;
 
   @include tablet {
     margin-left: 8px;
