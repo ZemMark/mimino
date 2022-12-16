@@ -193,6 +193,12 @@
     margin-right: 30px;
     background-color: transparent;
     fill: $whiteColor;
+    transition: fill 300ms ease-in-out;
+
+    &:hover,
+    &:focus {
+      fill: #F3C653;
+    }
   }
 
   &__arrow-right {
@@ -200,6 +206,12 @@
     border: none;
     background-color: transparent;
     fill: $whiteColor;
+    transition: fill 300ms ease-in-out;
+
+    &:hover,
+    &:focus {
+      fill: #F3C653;
+    }
   }
 
   &__buttons {
