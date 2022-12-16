@@ -115,20 +115,26 @@
 .hero-main-adress {
   display: flex;
   position: absolute;
-  @media screen and (max-width: 1023px) {
+  
     top: 64px;
     right: 15px;
+
+    // @include tablet{
+      // position: relative;
+    // }
+    @include tablet {
+      top: 600px;
+      left: 47px;
+      width: 285px;
+      height: 56px;
+    }
+  
+    @include desktop {
+      left: 85px;
+    }
   }
 
-  @include tablet {
-    bottom: 85px;
-    left: 47px;
-  }
 
-  @include desktop {
-    left: 85px;
-  }
-}
 
 .hero-main-adress__link {
   display: flex;
@@ -150,18 +156,18 @@
   border: 1px solid rgba(243, 198, 83, 0.7);
   border-radius: 2px;
   transition: box-shadow $transition;
+  transition: text-shadow $transition;
 
   @include tablet {
     font-size: 16px;
     line-height: 1.25;
   }
 
-  &:hover {
+  &:hover,
+    &:focus,
+    &:active{
     box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.8) inset;
-  }
-
-  &:focus {
-    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.8) inset;
+    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.8);
   }
 }
 .hero-main-adress__icon {
