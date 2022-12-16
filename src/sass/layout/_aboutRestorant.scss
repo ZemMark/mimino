@@ -330,8 +330,11 @@
       top: 260px;
     }
   }
-  &__arrow-left-svg {
-  }
+  // &__arrow-left-svg:hover,
+  // &__arrow-left-svg:focus,
+  // &__arrow-left-svg:active{
+    // fill: $modalBackgroundColor;
+  // }
 }
 .slick-prev {
   left: -15px !important;
@@ -340,3 +343,7 @@
 .slick-next:before {
   color: transparent !important;
 }
+
+// .restaurant-about-slider__arrow-left-svg:hover{
+//   fill: $modalBackgroundColor;
+// }
