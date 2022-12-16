@@ -46,6 +46,7 @@
 .room-hero__container {
   position: relative;
   z-index: 2;
+  height: 740px;
 
   padding-top: 64px;
   padding-bottom: 40px;
@@ -60,11 +61,17 @@
   @include tablet {
     padding-top: 468px;
     padding-bottom: 64px;
+
+    height: 720px;
   }
 
   @include desktop {
     padding-top: 524px;
     padding-bottom: 48px;
+  }
+  @media screen and (max-width: 414px) {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 /* АДРЕСА */
@@ -80,6 +87,14 @@
 
   border: 1px solid rgba(243, 198, 83, 0.7);
   border-radius: 2px;
+
+  transition: box-shadow $transition;
+
+  &:hover,
+  &:focus,
+  &:active {
+    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.8) inset;
+  }
 
   @include tablet {
     position: absolute;
@@ -158,6 +173,8 @@
 .room-hero__title {
   margin-bottom: 14px;
 
+  min-height: 64px;
+
   font-family: 'Times New Roman';
   font-style: normal;
   font-weight: 700;
@@ -230,7 +247,7 @@
   border: 2px solid $whiteColor;
   border-radius: 25px;
 
-  transition: background-color 300ms ease-in-out;
+  transition: background-color $transition;
 
   &:hover,
   &:focus,
@@ -238,4 +255,54 @@
     background-color: $whiteColor;
     border: 2px solid $modalBackgroundColor;
   }
+}
+
+/* ІКОНКИ СОЦМЕРЕЖ */
+.room-soc-links {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+
+  @include tablet {
+    left: 372px;
+    bottom: 30px;
+  }
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.room-soc-links__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  @include tablet {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  @media screen and (max-width: 413px) {
+    gap: 3px;
+  }
+}
+
+.room-soc-links__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $modalBackgroundColor;
+
+  transition: color $transition;
+
+  &:focus,
+  &:hover,
+  &:active {
+    color: $whiteColor;
+  }
+}
+
+.room-soc-links__icon {
+  fill: currentColor;
 }
