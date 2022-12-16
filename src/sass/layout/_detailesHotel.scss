@@ -185,6 +185,7 @@
     margin-right: 30px;
     background-color: transparent;
     fill: $whiteColor;
+    transition: fill $transition;
     &:hover,
     &:focus {
       fill: $modalBackgroundColor;
@@ -196,6 +197,7 @@
     border: none;
     background-color: transparent;
     fill: $whiteColor;
+    transition: fill $transition;
     &:hover,
     &:focus {
       fill: $modalBackgroundColor;
@@ -212,8 +214,8 @@
       left: 205px;
     }
     @include tablet {
-      top: 286px;
-      left: 566px;
+      top: 296px;
+      left: 568px;
     }
     @include desktop {
       left: 746px;
