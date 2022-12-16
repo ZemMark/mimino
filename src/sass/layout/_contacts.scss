@@ -1,7 +1,22 @@
 .contacts-main {
   background-color: #fffdee;
 
+  padding-top: 20px;
   padding-bottom: 15px;
+  
+    @include phone {
+      padding-top: 36px;
+      padding-bottom: 32px;
+    }
+  
+    @include tablet {
+      padding-top: 69px;
+      padding-bottom: 40px;
+    }
+    @include desktop {
+      padding-top: 64px;
+      padding-bottom: 74px;
+    }
 }
 
 // .text-contacts__wrap {
@@ -26,6 +41,29 @@
 
   top: 0;
   left: 140px;
+
+
+  
+  // позиціонування ліній від верху секціх на телефон(не на всю висоту)
+  @media screen and (max-width: 1024px) {
+    position: absolute;
+    top: -36px;
+    height: 100%;
+  }
+  // тут на всю
+  @include tablet{
+    position: absolute;
+    top: -69px;
+    height: 128%;
+  }
+  @include desktop{
+    position: absolute;
+    top: -64px;
+    height: 136%;
+  }
+
+
+
   @media screen and (min-width: 1024px) {
     left: 278px;
   }
@@ -33,6 +71,10 @@
     left: 338px;
   }
   &::before {
+      display: none;
+      @include tablet{
+        display: block;
+      }
     content: ' ';
     height: 599px;
     width: 1px;
@@ -50,7 +92,7 @@
   }
   &::after {
     content: ' ';
-    height: 599px;
+    height: 100%;
     width: 1px;
     background-color: rgba(186, 186, 186, 0.4);
     position: absolute;
@@ -154,6 +196,9 @@
 }
 
 .contacts-phone__num-single {
+  @media screen and (max-width: 1024px) {
+    position: relative;
+  }
   width: 100%;
   height: 100%;
   display: flex;
@@ -205,6 +250,9 @@
 }
 
 .contacts-hotel-phone__list {
+  @media screen and (max-width: 1024px) {
+      position: relative;
+    }
   display: flex;
   align-items: center;
   gap: 8px;
@@ -287,6 +335,12 @@
 }
 
 .contacts-adress-pin__link {
+  transition: background-color $transition, color $transition;
+
+  // так полоска буде під цим
+  @media screen and (max-width: 1024px) {
+      position: relative;
+    }
   min-width: 255px;
   display: flex;
   align-items: center;
@@ -328,4 +382,8 @@
     height: 100%;
     width: 535px;
   }
+}
+
+.frame__wrap{
+  position: relative;
 }
