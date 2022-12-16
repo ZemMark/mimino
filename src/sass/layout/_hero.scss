@@ -344,17 +344,17 @@
   display: flex;
   gap: 23px;
 }
+.hero-main-social__icon{
 
+  transition: fill $transition;
+}
 .hero-main-social__link {
   width: 100%;
   height: 100%;
   fill: $borderColor;
-  transition: fill $transition;
 
-  &:focus .hero-main-social__icon {
-    fill: $whiteColor;
-  }
-
+  &:hover .hero-main-social__icon,
+  &:focus .hero-main-social__icon,
   &:active .hero-main-social__icon {
     fill: $whiteColor;
   }
